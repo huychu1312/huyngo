@@ -2,7 +2,7 @@ getgenv().ConfigsKaitun = {
 	["Block Pet Gift"] = true,
 
 	Collect_Cooldown = 60, -- cooldown to collect fruit
-	JustFuckingCollectAll = false, -- Collect all (fruit not wait mutation)
+	JustFuckingCollectAll = true, -- Collect all (fruit not wait mutation)
 
 	["Low Cpu"] = true,
 	["Auto Rejoin"] = true,
@@ -56,7 +56,7 @@ getgenv().ConfigsKaitun = {
 		},
 		["Zen Event"] = {
 			["Restocking"] = { -- Minimumthing to restock
-				Max_Restocks_Price = 100_000_000,
+				Max_Restocks_Price = 999_999_999,
 				Minimum_Money = 10_000_000,
 				Minimum_Chi = 200
 			},
@@ -103,6 +103,7 @@ getgenv().ConfigsKaitun = {
 			"Level Up Lollipop",
 			"Medium Treat",
 			"Medium Toy",
+			"Grandmaster Sprinkler",
 		},
 		Lock = {
 			"Master Sprinkler",
@@ -110,6 +111,7 @@ getgenv().ConfigsKaitun = {
 			"Advanced Sprinkler",
 			"Basic Sprinkler",
 			"Lightning Rod",
+			"Grandmaster Sprinkler",
 		},
 	},
 
@@ -139,6 +141,7 @@ getgenv().ConfigsKaitun = {
 			"Bug Egg",
 			"Mythical Egg",
 			"Common Egg",
+			"Zen Egg",
 		}
 	},
 
@@ -150,12 +153,11 @@ getgenv().ConfigsKaitun = {
 			},
 			["Limit Upgrade"] = 2,
 			["Equip When Done"] = {
-				["Tanchozuru"] = { 5, 100, 1 }, -- 5 on the first mean equip only 5 | pet , 100 mean equip only level pet lower than 100 | the one on the last is priority it will ues first if possible 
-				["Ostrich"] = { 3, 100, 2 },
-				["Blood Kiwi"] = { 8, 100 },
-				["Seal"] = { 8, 100 },
-				["Rooster"] = { 8, 100 },
+				["Tanchozuru"] = { 1, 100, 1 }, -- 5 on the first mean equip only 5 | pet , 100 mean equip only level pet lower than 100 | the one on the last is priority it will ues first if possible 
+				["Kodama"] = { 5, 100, 2 },
+				["Capybara"] = { 8, 100 },
 				["Starfish"] = { 5, 75 },
+				["Corrupted Kodama"] = { 1, 100, },
 			},
 		},
 		Favorite_LockedPet = true,
@@ -186,9 +188,11 @@ getgenv().ConfigsKaitun = {
 			"Mimic Octopus",
 			"Red Fox",
 			"Blood Owl",
+			"Mochi Mouse",
+			"French Fry Ferret",
 			["Starfish"] = 10,
 		},
-		LockPet_Weight = 7, -- if Weight >= 10 they will locked
+		LockPet_Weight = 5, -- if Weight >= 10 they will locked
 	},
 
 	Webhook = {
