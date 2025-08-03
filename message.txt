@@ -39,11 +39,11 @@ getgenv().gagConfig = {
     KEEP_PETS_AGE = { ["Starfish"] = 60, ["Capybara"] = 60},
 
     -- EQUIP_PETS Priority (Left -> Right)
-    EQUIP_PETS = { ["Kodama"] = 4, ["Tanchozuru"] = 4,},
+    EQUIP_PETS = { ["Starfish"] = 7, ["Capybara"] = 1,},
     USE_PETS_FOR_UPGRADE_SLOT = { "Starfish", "Capybara"},
     REMOVE_PET_MAX_UPGRADE = {},
 
-    BUY_GEAR_SHOP = { "Master Sprinkler", "Grandmaster Sprinkler", "Godly Sprinkler", "Advanced Sprinkler", "Basic Sprinkler" },
+    BUY_GEAR_SHOP = { "Master Sprinkler", "Grandmaster Sprinkler", "Godly Sprinkler", "Advanced Sprinkler", "Trading Ticket", "Level Up Lollipop", "Basic Sprinkler" },
     USE_SPRINKLER = { "Basic Sprinkler", "Grandmaster Sprinkler", "Master Sprinkler", "Godly Sprinkler", "Advanced Sprinkler" },
 
     PET_WEBHOOK_URL = "https://discord.com/api/webhooks/1394039615949639822/ru1nhLaHQ0YheuaUN238iKf337NATfBXg224aTMSInFTWhNg24i7aPpFSIy6NAUAfr3r",
