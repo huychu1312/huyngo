@@ -24,6 +24,7 @@ getgenv().ConfigsKaitun = {
 			"Elephant Ears",
 			"Dragon Pepper",
 			"Serenity",
+			"Elder Strawberry",
 		}
 	},
 
