@@ -4,7 +4,7 @@ getgenv().gagConfig = {
     SCRIPT_KEY = script_key,
     -- Event:
     CRAFT_EVENT = { "Anti Bee Egg" },
-    BUY_TRAVELING_MERCHANT = { "Bee Egg", "Loquat", "Feijoa", "Pitcher Plant" },
+    BUY_TRAVELING_MERCHANT = { "Bee Egg", "Primal Egg", "Loquat", "Feijoa", "Pitcher Plant" },
     BUY_EVENT_SHOP = { "Zen Egg", "Koi"},
     MAX_EVENT_RESTOCK_SHECKLES = 4000000000,
     PLACE_ALL_EVENT_STAFF = true,
@@ -12,7 +12,7 @@ getgenv().gagConfig = {
     -- General:
     AUTO_UPDATE_RESTART = true,
     REDEEM_CODES = {},
-    EXTRA_PET_SLOTS = 4,
+    EXTRA_PET_SLOTS = 5,
     EXTRA_EGG_SLOTS = 5,
     EXTRA_PET_EQUIP_SLOTS = 0,
     ADD_FRIEND = true,
@@ -20,7 +20,7 @@ getgenv().gagConfig = {
     FAST_LEVEL_PET = true,
 
     MAX_PLANTS = 400,
-    DESTROY_UNTIL_MIN_PLANTS = 380,
+    DESTROY_UNTIL_MIN_PLANTS = 350,
     DELETE_PLANTS_AFTER_MAX = { "Strawberry", "Blueberry", "Carrot", "Orange Tulip", "Tomato", "Bamboo", "Corn", "Tomato", "Daffodil", "Apple", "Coconut" },
     LIMIT_PLANT_SEED = { ["Strawberry"] = 1, ["Blueberry"] = 1, ["Apple"] = 1, ["Orange Tulip"] = 1, ["Carrot"] = 1, ["Tomato"] = 1, ["Bamboo"] = 1, ["Corn"] = 1, ["Coconut"] = 3, ["Pumpkin"] = 3, ["Watermelon"] = 2, ["Pepper"] = 3 },
     
