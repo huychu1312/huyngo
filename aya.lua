@@ -9,12 +9,21 @@ getgenv().ConfigsKaitun = {
 
 	["Rejoin When Update"] = false,
 	["Limit Tree"] = {
-		["Limit"] = 300,
-		["Destroy Untill"] = 280,
+		["Limit"] = 500,
+		["Destroy Untill"] = 480,
 
 		["Safe Tree"] = {
-			"Moon Blossom",
+			"Bone Blossom",
 			"Fossilight",
+			"Sugar Apple",
+			"Ember Lily",
+			"Beanstalk",
+			"Giant Pinecone",
+			"Burning Bud",
+			"Maple Apple",
+			"Elephant Ears",
+			"Dragon Pepper",
+			"Serenity",
 		}
 	},
 
@@ -23,23 +32,31 @@ getgenv().ConfigsKaitun = {
 			Mode = "Auto", -- Custom , Auto
 			Custom = { -- any fruit u need to place
 				"Carrot",
+				"Bamboo",
+				"Pumpkin",
+				"Daffodil",
+				"Orange Tulip",
+				"Watermelon",
+				"Mushroom",
+				"Nightshade",
+				"Beanstalk",
 			}
 		},
 		Place = {
 			Mode = "Lock", -- Select , Lock
 			Select = {
-				"Carrot"
+				"Serenity",
+				"Hinomai",
+				"Lucky Bamboo",
+				"Tranquil Bloom",
+				"Enkaku",
+				"Sakura Bush",
+				"Soft Sunshine",
+				"Spiked Mango",
+				"Bone Blossom",
+				"Maple Apple",
 			},
 			Lock = {
-				"Maple Apple",
-				"Sunflower",
-				"Dragon Pepper",
-				"Elephant Ears",
-				"Moon Melon",
-				"Easter Egg",
-				"Moon Mango",
-				"Bone Blossom",
-				"Fossilight",
 			}
 		}
 	},
@@ -56,14 +73,14 @@ getgenv().ConfigsKaitun = {
 		},
 		["Zen Event"] = {
 			["Restocking"] = { -- Minimumthing to restock
-				Max_Restocks_Price = 999_999_999,
-				Minimum_Money = 10_000_000,
-				Minimum_Chi = 200
+				Max_Restocks_Price = 3_000_000_000,
+				Minimum_Money = 100,
+				Minimum_Chi = 30
 			},
 			["Doing"] = {
-				Minimum_Money = 30_000_000, -- minimum money to start play this event
-				First_Upgrade_Tree = 4,
-				Maximum_Chi = 250,
+				Minimum_Money = 32_000_000, -- minimum money to start play this event
+				First_Upgrade_Tree = 1,
+				Maximum_Chi = 1000,
 
 				-- // thing to skip doing
 				Skip_Fox = false, -- Skip The Middle Fox Trade (Corrupted Kitsune)
@@ -72,6 +89,9 @@ getgenv().ConfigsKaitun = {
 			}
 		},
 		["Traveling Shop"] = {
+			"Bald Eagle",
+			"Night Staff",
+			"Star Caller",
 			"Bee Egg",
 		},
 		Craft = {
@@ -104,6 +124,7 @@ getgenv().ConfigsKaitun = {
 			"Medium Treat",
 			"Medium Toy",
 			"Grandmaster Sprinkler",
+			"Trading Ticket",
 		},
 		Lock = {
 			"Master Sprinkler",
@@ -127,8 +148,8 @@ getgenv().ConfigsKaitun = {
 			"Bug Egg",
 			"Paradise Egg",
 			"Bee Egg",
-			"Rare Summer Egg",
 			"Mythical Egg",
+			"Common Summer Egg",
 		},
 		Buy = {
 			"Bee Egg",
@@ -141,6 +162,8 @@ getgenv().ConfigsKaitun = {
 			"Mythical Egg",
 			"Common Egg",
 			"Zen Egg",
+			"Common Summer Egg",
+			"Gourmet Egg",
 		}
 	},
 
@@ -152,11 +175,8 @@ getgenv().ConfigsKaitun = {
 			},
 			["Limit Upgrade"] = 2,
 			["Equip When Done"] = {
-				["Tanchozuru"] = { 1, 100, 1 }, -- 5 on the first mean equip only 5 | pet , 100 mean equip only level pet lower than 100 | the one on the last is priority it will ues first if possible 
-				["Kodama"] = { 5, 100, 2 },
-				["Capybara"] = { 8, 100 },
-				["Starfish"] = { 5, 75 },
-				["Corrupted Kodama"] = { 1, 100, },
+				["Capybara"] = { 1, 999, 1 },
+				["Starfish"] = { 7, 999, 1 },
 			},
 		},
 		Favorite_LockedPet = true,
@@ -189,15 +209,15 @@ getgenv().ConfigsKaitun = {
 			"Blood Owl",
 			"Mochi Mouse",
 			"French Fry Ferret",
-			["Starfish"] = 10,
+			["Starfish"] = 20,
 		},
 		LockPet_Weight = 5, -- if Weight >= 10 they will locked
 	},
 
 	Webhook = {
-		UrlPet = "xxx",
+		UrlPet = "https://discord.com/api/webhooks/1394039615949639822/ru1nhLaHQ0YheuaUN238iKf337NATfBXg224aTMSInFTWhNg24i7aPpFSIy6NAUAfr3r",
 		UrlSeed = "xxx",
-		PcName = "xxx",
+		PcName = "tienveaeoi",
 
 		Noti = {
 			Seeds = {
@@ -221,7 +241,6 @@ getgenv().ConfigsKaitun = {
 				"Fennec Fox",
 				"Dragonfly",
 				"Raccoon",
-				"Red Fox",
 			},
 			Pet_Weight_Noti = true,
 		}
