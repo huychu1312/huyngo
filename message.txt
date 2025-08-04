@@ -21,8 +21,8 @@ getgenv().gagConfig = {
 
     MAX_PLANTS = 400,
     DESTROY_UNTIL_MIN_PLANTS = 380,
-    DELETE_PLANTS_AFTER_MAX = { "Strawberry", "Blueberry", "Corn", "Tomato", "Daffodil", "Apple", "Coconut" },
-    LIMIT_PLANT_SEED = { ["Strawberry"] = 1, ["Blueberry"] = 1, ["Apple"] = 1, ["Tomato"] = 2, ["Corn"] = 1, ["Coconut"] = 3, ["Pumpkin"] = 3, ["Watermelon"] = 2, ["Pepper"] = 3 },
+    DELETE_PLANTS_AFTER_MAX = { "Strawberry", "Blueberry", "Carrot", "Orange Tulip", "Tomato", "Bamboo", "Corn", "Tomato", "Daffodil", "Apple", "Coconut" },
+    LIMIT_PLANT_SEED = { ["Strawberry"] = 1, ["Blueberry"] = 1, ["Apple"] = 1, ["Orange Tulip"] = 1, ["Carrot"] = 1, ["Tomato"] = 1, ["Bamboo"] = 1, ["Corn"] = 1, ["Coconut"] = 3, ["Pumpkin"] = 3, ["Watermelon"] = 2, ["Pepper"] = 3 },
     
     BUY_EGGS = {"Mythical Egg", "Bug Egg", "Bee Egg", "Paradise Egg", "Uncommon Egg", ["Common Summer Egg"] = 20, ["Rare Summer Egg"] = 20},
     PLANT_EGGS = { "Gourmet Egg", "Corrupted Zen Egg", "Zen Egg", "Dinosaur Egg", "Primal Egg", "Anti Bee Egg", "Bee Egg", "Night Egg", "Bug Egg", "Paradise Egg", "Mythical Egg", "Common Summer Egg", "Rare Egg", "Uncommon Egg" },
