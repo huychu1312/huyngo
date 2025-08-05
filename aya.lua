@@ -2,7 +2,7 @@ getgenv().ConfigsKaitun = {
 	["Block Pet Gift"] = true,
 
 	Collect_Cooldown = 60, -- cooldown to collect fruit
-	JustFuckingCollectAll = false, -- Collect all (fruit not wait mutation)
+	JustFuckingCollectAll = true, -- Collect all (fruit not wait mutation)
 
 	["Low Cpu"] = true,
 	["Auto Rejoin"] = true,
@@ -81,7 +81,7 @@ getgenv().ConfigsKaitun = {
 			["Doing"] = {
 				Minimum_Money = 32_000_000, -- minimum money to start play this event
 				First_Upgrade_Tree = 1,
-				Maximum_Chi = 1000,
+				Maximum_Chi = 250,
 
 				-- // thing to skip doing
 				Skip_Fox = false, -- Skip The Middle Fox Trade (Corrupted Kitsune)
@@ -168,8 +168,9 @@ getgenv().ConfigsKaitun = {
 			},
 			["Limit Upgrade"] = 2,
 			["Equip When Done"] = {
-				["Capybara"] = { 1, 999, 1 },
-				["Starfish"] = { 7, 999, 1 },
+				["Kodama"] = { 8, 999, 1 },
+				["Tanchozuru"] = { 8, 999, 2 },
+				["Corrupted Kodama"] = { 4, 999, 2 },
 			},
 		},
 		Favorite_LockedPet = true,
