@@ -168,9 +168,8 @@ getgenv().ConfigsKaitun = {
 			},
 			["Limit Upgrade"] = 2,
 			["Equip When Done"] = {
-				["Kodama"] = { 8, 999, 1 },
-				["Tanchozuru"] = { 8, 999, 2 },
-				["Corrupted Kodama"] = { 4, 999, 2 },
+				["Starfish"] = { 7, 999, 1 },
+				["Capybara"] = { 1, 999, 2 },
 			},
 		},
 		Favorite_LockedPet = true,
