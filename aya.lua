@@ -2,12 +2,12 @@ getgenv().ConfigsKaitun = {
 	["Block Pet Gift"] = true,
 
 	Collect_Cooldown = 60, -- cooldown to collect fruit
-	JustFuckingCollectAll = true, -- Collect all (fruit not wait mutation)
+	JustFuckingCollectAll = false, -- Collect all (fruit not wait mutation)
 
 	["Low Cpu"] = true,
 	["Auto Rejoin"] = true,
 
-	["Rejoin When Update"] = false,
+	["Rejoin When Update"] = true,
 	["Limit Tree"] = {
 		["Limit"] = 500,
 		["Destroy Untill"] = 480,
@@ -204,7 +204,7 @@ getgenv().ConfigsKaitun = {
 			"French Fry Ferret",
 			["Starfish"] = 20,
 		},
-		LockPet_Weight = 5, -- if Weight >= 10 they will locked
+		LockPet_Weight = 5, -- if Weight >= 5 they will locked
 	},
 
 	Webhook = {
