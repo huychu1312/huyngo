@@ -64,7 +64,6 @@ getgenv().ConfigsKaitun = {
 
 	["Seed Pack"] = {
 		Locked = {
-
 		}
 	},
 
@@ -201,8 +200,7 @@ getgenv().ConfigsKaitun = {
 			"Red Fox",
 			"Blood Owl",
 			"Mochi Mouse",
-			"French Fry Ferret",
-			["Starfish"] = 20,
+			"Starfish",
 		},
 		LockPet_Weight = 5, -- if Weight >= 5 they will locked
 	},
@@ -214,9 +212,6 @@ getgenv().ConfigsKaitun = {
 
 		Noti = {
 			Seeds = {
-				"Sunflower",
-				"Dragon Pepper",
-				"Elephant Ears",
 			},
 			SeedPack = {
 				"Idk"
