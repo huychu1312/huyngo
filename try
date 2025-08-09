@@ -17,7 +17,7 @@ getgenv().gagConfig = {
 
     MAX_PLANTS = 400,
     DESTROY_UNTIL_MIN_PLANTS = 380,
-    DELETE_PLANTS_AFTER_MAX = { "Carrot", "Strawberry", "Blueberry", "Tomato", "Apple" },
+    DELETE_PLANTS_AFTER_MAX = { "Carrot", "Strawberry", "Blueberry", "Tomato", "Cauliflower", "Apple", "Coconut" },
     LIMIT_PLANT_SEED = { ["Strawberry"] = 1, ["Blueberry"] = 1, ["Apple"] = 1, ["Tomato"] = 1, ["Corn"] = 1, ["Bamboo"] = 1, ["Coconut"] = 1, ["Pumpkin"] = 1, ["Watermelon"] = 1, ["Pepper"] = 1 },
     
     BUY_EGGS = { "Bug Egg", "Bee Egg", "Paradise Egg", "Mythical Egg", "Rare Summer Egg", "Common Summer Egg", "Rare Egg", "Uncommon Egg" },
@@ -44,7 +44,7 @@ getgenv().gagConfig = {
     PET_WEBHOOK_URL = "https://discord.com/api/webhooks/1394039615949639822/ru1nhLaHQ0YheuaUN238iKf337NATfBXg224aTMSInFTWhNg24i7aPpFSIy6NAUAfr3r",
     SEED_WEBHOOK_URL = "", 
     NOTIFY_PETS = { "Lobster Thermidor", "French Fry Ferret", "Corrupted Kitsune", "Raiju", "Mizuchi", "Bald Eagle", "Koi", "Kitsune", "Fennec Fox", "Disco Bee", "Raccoon", "Queen Bee", "Night Owl", "Dragonfly", "Butterfly", "Mimic Octopus", "Red Fox", "Brontosaurus", "T-Rex", "Ankylosaurus", "Spinosaurus" },
-    NOTIFY_PETS_WEIGHT = { ["Red Giant Ant"] = 5, ["Bear Bee"] = 5, ["Tanchozuru"] = 5 },
+    NOTIFY_PETS_WEIGHT = 5,
     DISCORD_ID = "993062998652493824",
     WEBHOOK_NOTE = "khong dem duoc bao nhieu do",
     SHOW_WEBHOOK_USERNAME = true,
