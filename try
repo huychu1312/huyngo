@@ -36,7 +36,7 @@ getgenv().gagConfig = {
     KEEP_PETS_WEIGHT = 5,
     KEEP_PETS_AGE = { ["Starfish"] = 60, ["Capybara"] = 60},
 
-    EQUIP_PETS = { ["Gorilla Chef"] = 4, ["Spaghetti Sloth"] = 4, "Starfish", ["Capybara"] = 1 },
+    EQUIP_PETS = { ["Sushi Bear"] = 4, ["Gorilla Chef"] = 4, ["Spaghetti Sloth"] = 4, ["Starfish"] = 4, ["Capybara"] = 1 },
     USE_PETS_FOR_UPGRADE_SLOT = { "Starfish" },
     REMOVE_PET_MAX_UPGRADE = {},  -- Unequip from garden
 
