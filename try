@@ -4,10 +4,13 @@ setfpscap(3)
 getgenv().gagConfig = {
     -- Event:
     CRAFT_EVENT = { "Anti Bee Egg" },
-    BUY_TRAVELING_MERCHANT = { "Bee Egg", "Loquat", "Feijoa", "Pitcher Plant" },
+    BUY_TRAVELING_MERCHANT = { "Bee Egg", "Primal Egg", "Loquat", "Feijoa", "Pitcher Plant" },
     CLAIM_FOOD_CONNOISSEUR_REWARD = { "Culinarian Chest", "Gorilla Chef", "Gourmet Egg", "Sunny-Side Chicken", "Pet Shard Aromatic", "Cooking Cauldron", "Gourmet Seed Pack", "Bitter Melon Seed", "Pricklefruit Seed", "Butternut Squash Seed", "Spring Onion Seed", "Kitchen Crate", "Kitchen Flooring", "Kitchen Cart", "Smoothie Fountain" },
     PLACE_COSMETIC = { "Cooking Cauldron", "Cooking Pot" },
     FORCE_COOK_MUTATION_ONLY = false,
+    BUY_EVENT_SHOP = { "Zen Egg"},
+    MAX_EVENT_RESTOCK_SHECKLES = 4000000000,
+    PLACE_ALL_EVENT_STAFF = true,
     
     -- General:
     AUTO_UPDATE_RESTART = true,
@@ -36,7 +39,7 @@ getgenv().gagConfig = {
     KEEP_PETS_WEIGHT = 5,
     KEEP_PETS_AGE = { ["Starfish"] = 60, ["Capybara"] = 60},
 
-    EQUIP_PETS = { ["Sushi Bear"] = 4, ["Gorilla Chef"] = 4, ["Spaghetti Sloth"] = 4, ["Starfish"] = 4, ["Capybara"] = 1 },
+    EQUIP_PETS = { ["Sushi Bear"] = 4, ["Gorilla Chef"] = 4, ["Spaghetti Sloth"] = 4, ["Starfish"] = 4, ["Capybara"] = 1, ["Kodama"] = 2, ["Tanchozuru"] = 2 },
     USE_PETS_FOR_UPGRADE_SLOT = { "Starfish" },
     REMOVE_PET_MAX_UPGRADE = {},  -- Unequip from garden
 
