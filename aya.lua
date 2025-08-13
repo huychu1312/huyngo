@@ -13,8 +13,8 @@ getgenv().ConfigsKaitun = {
 
     ["Rejoin When Update"] = false,
     ["Limit Tree"] = {
-        ["Limit"] = 250,
-        ["Destroy Untill"] = 230,
+        ["Limit"] = 200,
+        ["Destroy Untill"] = 180,
 
         ["Safe Tree"] = {
             "Moon Blossom",
@@ -75,6 +75,9 @@ getgenv().ConfigsKaitun = {
                 "Gourmet Egg",
 				"Cooking Cauldron",
 				"Gorilla Chef",
+				"Sunny-Side Chicken",
+				"Pet Shard Aromatic",
+				"Gourmet Seed Pack",
                 -- u can add it more as u want, if it not in list.
             }
         },
