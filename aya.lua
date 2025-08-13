@@ -56,18 +56,6 @@ getgenv().ConfigsKaitun = {
     },
 
     Events = {
-		["Zen Event"] = {
-			["Restocking"] = { -- Minimumthing to restock
-				Max_Restocks_Price = 10_000_000_000,
-				Minimum_Money = 10_000_000,
-				Minimum_Chi = 30
-			},
-			["Doing"] = {
-				Minimum_Money = 1000, -- minimum money to start play this event
-				First_Upgrade_Tree = 1,
-				Maximum_Chi = 50,
-			}
-		},
         ["Cook Event"] = {
             Minimum_Money = 10_000_000,          -- minimum money to start play this event
             Rewards_Item = {   -- The top is the most top mean prefered.
