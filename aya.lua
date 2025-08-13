@@ -73,8 +73,6 @@ getgenv().ConfigsKaitun = {
             Rewards_Item = {   -- The top is the most top mean prefered.
                 "Culinarian Chest",
                 "Gourmet Egg",
-                "Gourmet Seed Pack",
-                "Sunny-Side Chicken",
 				"Cooking Cauldron",
 				"Gorilla Chef",
                 -- u can add it more as u want, if it not in list.
@@ -153,7 +151,8 @@ getgenv().ConfigsKaitun = {
             },
             ["Limit Upgrade"] = 5,-- max is 5 (more than or lower than 1 will do nothing)
             ["Equip When Done"] = {
-                ["Gorilla Chef"] = { 8, 100, 1 },
+                ["Gorilla Chef"] = { 6, 100, 1 },
+                ["Sushi Bear"] = { 2, 100, 1 },
             },
         },
         Favorite_LockedPet = true,
