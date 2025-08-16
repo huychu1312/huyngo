@@ -49,6 +49,9 @@ getgenv().ConfigsKaitun = {
 			"Mangosteen",
 			"Princess Thorn",
 			"Ember Lily",
+			"Burning Bud",
+			"Pepper",
+			"Mushroom",
 
 		}
 	},
@@ -109,6 +112,9 @@ getgenv().ConfigsKaitun = {
 				"Mangosteen",
 				"Princess Thorn",
 				"Ember Lily",
+				"Burning Bud",
+				"Mushroom",
+				"Pepper",
 			}
 		}
 	},
@@ -121,15 +127,15 @@ getgenv().ConfigsKaitun = {
 
 	Events = {
 		["Bean Event"] = {
-			Minimum_Money = 1_000_000_000, -- minimum money to start play this event
+			Minimum_Money = 10_000_000, -- minimum money to start play this event
 		},
 		Shop = { -- delete -- to buy
 			"Sprout Seed Pack",
 			"Sprout Egg",
-			"Mandrake",
+			-- "Mandrake",
 			"Silver Fertilizer",
-			"Canary Melon",
-			"Amberheart",
+			-- "Canary Melon",
+			-- "Amberheart",
 			"Spriggan",
 		},
 		["Traveling Shop"] = {
@@ -184,6 +190,7 @@ getgenv().ConfigsKaitun = {
 		},
 		Buy = {
 			"Bee Egg",
+			"Sprout Egg",
 			"Oasis Egg",
 			"Paradise Egg",
 			"Anti Bee Egg",
@@ -191,7 +198,7 @@ getgenv().ConfigsKaitun = {
 			["Rare Summer Egg"] = 20,
 			"Bug Egg",
 			"Mythical Egg",
-			["Common Summer Egg"] = 20,
+			"Common Summer Egg",
 			["Common Egg"] = 40,
 			"Zen Egg",
 		}
@@ -205,8 +212,7 @@ getgenv().ConfigsKaitun = {
             },
             ["Limit Upgrade"] = 5,-- max is 5 (more than or lower than 1 will do nothing)
             ["Equip When Done"] = {
-                ["Spriggan"] = { 5, 100, 1 },
-				["Dairy Cow"] = { 3, 100, 2},
+				["Dairy Cow"] = { 8, 100, 2},
                 ["Capybara"] = { 1, 100 },
                 ["Starfish"] = { 8, 100 },
             },
@@ -220,7 +226,7 @@ getgenv().ConfigsKaitun = {
             "French Fry Ferret",
             "Kodama",
             "Golem",
-            ["Dairy Cow"] = 3,
+            ["Dairy Cow"] = 8,
             "Spriggan",
             "Corrupted Kitsune",
             "Nihonzaru",
