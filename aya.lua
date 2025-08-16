@@ -166,6 +166,7 @@ getgenv().ConfigsKaitun = {
             "French Fry Ferret",
             ["Spaghetti Sloth"] = 1,
             "Kodama",
+            "Spriggan",
             "Corrupted Kitsune",
             "Nihonzaru",
             ["Starfish"] = 8,
