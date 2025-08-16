@@ -6,7 +6,7 @@ getgenv().ConfigsKaitun = {
 
 	["Block Pet Gift"] = true,
  
-	Collect_Cooldown = 60, -- cooldown to collect fruit
+	Collect_Cooldown = 120, -- cooldown to collect fruit
 	JustFuckingCollectAll = false, -- Collect all (fruit not wait mutation)
 
 	["Low Cpu"] = true,
@@ -14,16 +14,41 @@ getgenv().ConfigsKaitun = {
 
 	["Rejoin When Update"] = false,
 	["Limit Tree"] = {
-		["Limit"] = 150,
-		["Destroy Untill"] = 135,
+		["Limit"] = 250,
+		["Destroy Untill"] = 225,
 
 		["Safe Tree"] = {
 			"Tranquil Bloom",
-			"Maple Apple",
-			"Moon Mango",
 			"Bone Blossom",
 			"Fossilight",
-			"Serenity",
+			"Sunflower",
+			"Dragon Pepper",
+			"Elephant Ears",
+			"Moon Melon",
+			"Moon Mango",
+			"Fossilight",
+			"Pineapple",
+			"Spike Mango",
+			"Starfruit",
+			"Horned Dinoshroom",
+			"Celestiberry",
+			"Mango",
+			"Watermelon",
+			"Grape",
+			"Mapple Apple",
+			"Moon Blossom",
+			"Sugar Apple",
+			"Beanstalk",
+			"Cacao",
+			"Apple",
+			"Conocut",
+			"Dragon Fruit",
+			"Grand Tomato",
+			"Pricklefruit",
+			"Mandrake",
+			"Mangosteen",
+			"Princess Thorn",
+			"Ember Lily",
 
 		}
 	},
@@ -62,6 +87,28 @@ getgenv().ConfigsKaitun = {
 				"Moon Melon",
 				"Moon Mango",
 				"Fossilight",
+				"Pineapple",
+				"Spike Mango",
+				"Starfruit",
+				"Horned Dinoshroom",
+				"Celestiberry",
+				"Mango",
+				"Watermelon",
+				"Grape",
+				"Mapple Apple",
+				"Moon Blossom",
+				"Sugar Apple",
+				"Beanstalk",
+				"Cacao",
+				"Apple",
+				"Conocut",
+				"Dragon Fruit",
+				"Grand Tomato",
+				"Pricklefruit",
+				"Mandrake",
+				"Mangosteen",
+				"Princess Thorn",
+				"Ember Lily",
 			}
 		}
 	},
@@ -73,9 +120,17 @@ getgenv().ConfigsKaitun = {
 	},
 
 	Events = {
-		["Cook Event"] = {
-			Minimum_Money = 30_000_000, -- minimum money to start play this event
-			Rewards_Item = { "Culinarian Chest", "Gourmet Egg", "Gorilla Chef", "Sunny-Side Chicken", "Cooking Cauldron", "Pet Shard Aromatic", "Gourmet Seed Pack", "Bitter Melon Seed", "Pricklefruit Seed", "Butternut Squash Seed", "Spring Onion Seed", "Kitchen Crate", "Kitchen Flooring", "Kitchen Cart", "Smoothie Fountain" }
+		["Bean Event"] = {
+			Minimum_Money = 1_000_000_000, -- minimum money to start play this event
+		},
+		Shop = { -- delete -- to buy
+			"Sprout Seed Pack",
+			"Sprout Egg",
+			"Mandrake",
+			"Silver Fertilizer",
+			"Canary Melon",
+			"Amberheart",
+			"Spriggan",
 		},
 		["Traveling Shop"] = {
 			"Bee Egg",
@@ -113,6 +168,7 @@ getgenv().ConfigsKaitun = {
 	Eggs = {
 		Place = {
 			"Gourmet Egg",
+			"Sprout Egg",
 			"Zen Egg",
 			"Primal Egg",
 			"Dinosaur Egg",
@@ -149,8 +205,8 @@ getgenv().ConfigsKaitun = {
             },
             ["Limit Upgrade"] = 5,-- max is 5 (more than or lower than 1 will do nothing)
             ["Equip When Done"] = {
-                ["Gorilla Chef"] = { 7, 100, 1 },
-				["Sushi Bear"] = { 1, 100, 2},
+                ["Spriggan"] = { 5, 100, 1 },
+				["Dairy Cow"] = { 3, 100, 2},
                 ["Capybara"] = { 1, 100 },
                 ["Starfish"] = { 8, 100 },
             },
@@ -158,14 +214,13 @@ getgenv().ConfigsKaitun = {
         Favorite_LockedPet = true,
         Locked_Pet_Age = 76, -- pet that age > 60 will lock
         Locked = {
-			["Sushi Bear"] = 5,
 			"Lobster Thermidor",
-            ["Gorilla Chef"] = 8,
+			"Golden Goose",
         	["Sunny-Side Chicken"] = 20,
-            ["Junkbot"] = 4,
             "French Fry Ferret",
-            ["Spaghetti Sloth"] = 1,
             "Kodama",
+            "Golem",
+            ["Dairy Cow"] = 3,
             "Spriggan",
             "Corrupted Kitsune",
             "Nihonzaru",
@@ -200,6 +255,7 @@ getgenv().ConfigsKaitun = {
 			Pets = {
 				"French Fry Ferret",
                 "Lobster Thermidor",
+                "Golden Goose",
 				"Disco Bee",
 		        "Corrupted Kitsune",
 				"Butterfly",
