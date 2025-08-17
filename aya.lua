@@ -52,6 +52,9 @@ getgenv().ConfigsKaitun = {
 			"Burning Bud",
 			"Pepper",
 			"Mushroom",
+			"Strawberry",
+			"Blueberry",
+			"Tomato",
 
 		}
 	},
@@ -115,6 +118,10 @@ getgenv().ConfigsKaitun = {
 				"Burning Bud",
 				"Mushroom",
 				"Pepper",
+				"Strawberry",
+				"Blueberry",
+				"Tomato",
+
 			}
 		}
 	},
@@ -136,7 +143,7 @@ getgenv().ConfigsKaitun = {
 			"Silver Fertilizer",
 			-- "Canary Melon",
 			-- "Amberheart",
-			"Spriggan",
+			-- "Spriggan",
 		},
 		["Traveling Shop"] = {
 			"Bee Egg",
@@ -214,7 +221,7 @@ getgenv().ConfigsKaitun = {
             ["Equip When Done"] = {
 				["Dairy Cow"] = { 8, 100, 2},
                 ["Capybara"] = { 1, 100 },
-                ["Starfish"] = { 8, 100 },
+                ["Sunny-Side Chicken"] = { 4, 100 },
             },
         },
         Favorite_LockedPet = true,
