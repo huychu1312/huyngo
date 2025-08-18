@@ -221,8 +221,7 @@ getgenv().ConfigsKaitun = {
             ["Equip When Done"] = {
                 ["Capybara"] = { 1, 100 },
                 ["Sunny-Side Chicken"] = { 4, 100 },
-                ["Dairy Cow"] = { 2, 100 },
-                ["Spriggan"] = { 1, 100 },
+                ["Starfish"] = { 8, 100 },
             },
         },
         Favorite_LockedPet = true,
@@ -231,7 +230,6 @@ getgenv().ConfigsKaitun = {
 			"Lobster Thermidor",
 			"Golem",
 			"Seedling",
-			"Spriggan",
 			"Golden Goose",
         	["Sunny-Side Chicken"] = 20,
             "French Fry Ferret",
