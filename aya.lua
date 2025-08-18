@@ -26,7 +26,6 @@ getgenv().ConfigsKaitun = {
 			"Elephant Ears",
 			"Moon Melon",
 			"Moon Mango",
-			"Fossilight",
 			"Pineapple",
 			"Spike Mango",
 			"Starfruit",
