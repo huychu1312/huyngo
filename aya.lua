@@ -6,7 +6,7 @@ getgenv().ConfigsKaitun = {
 
 	["Block Pet Gift"] = true,
  
-	Collect_Cooldown = 3, -- cooldown to collect fruit
+	Collect_Cooldown = 60, -- cooldown to collect fruit
 	JustFuckingCollectAll = false, -- Collect all (fruit not wait mutation)
 
 	["Low Cpu"] = true,
@@ -141,7 +141,6 @@ getgenv().ConfigsKaitun = {
 			"Sprout Seed Pack",
 			"Sprout Egg",
 			-- "Mandrake",
-			"Silver Fertilizer",
 			-- "Canary Melon",
 			-- "Amberheart",
 			-- "Spriggan",
@@ -220,15 +219,19 @@ getgenv().ConfigsKaitun = {
             },
             ["Limit Upgrade"] = 5,-- max is 5 (more than or lower than 1 will do nothing)
             ["Equip When Done"] = {
-				["Dairy Cow"] = { 8, 100, 2},
                 ["Capybara"] = { 1, 100 },
                 ["Sunny-Side Chicken"] = { 4, 100 },
+                ["Dairy Cow"] = { 2, 100 },
+                ["Spriggan"] = { 1, 100 },
             },
         },
         Favorite_LockedPet = true,
         Locked_Pet_Age = 76, -- pet that age > 60 will lock
         Locked = {
 			"Lobster Thermidor",
+			"Golem",
+			"Seedling",
+			"Spriggan",
 			"Golden Goose",
         	["Sunny-Side Chicken"] = 20,
             "French Fry Ferret",
