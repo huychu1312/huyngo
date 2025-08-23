@@ -1,4 +1,4 @@
-script_key="";
+script_key="vLWdbNreGgFPiqFULEltMypKsTMkYZnn";
 setfpscap(3)
 
 getgenv().gagConfig = {
@@ -27,9 +27,8 @@ getgenv().gagConfig = {
     FAVOURITE_FRUIT_MUTATIONS = {},
     SKIP_HARVEST_MUTATIONS = {},
 
-    KEEP_PETS = { "Gnome", "Green Bean", "Apple Gazelle", "Lemon Lion", "Peach Wasp", "Griffin", "Golden Goose", "Junkbot", "Lobster Thermidor", "French Fry Ferret", "Corrupted Kitsune", "Raiju", "Mizuchi", "Kitsune", "Koi", "Bald Eagle", "Ankylosaurus", "Spinosaurus", "Brontosaurus", "T-Rex", "Seal", "Fennec Fox", "Disco Bee", "Raccoon", "Queen Bee", "Night Owl", "Dragonfly", "Butterfly", "Mimic Octopus", "Red Fox", "Hyacinth Macaw", "Pack Bee", "Petal Bee", "Bear Bee", "Hamster", "Blood Owl", "Cooked Owl", "Golden Bee", "Owl", "Firefly", "Chicken Zombie", ["Blood Kiwi"] = 2, ["Capybara"] = 4, ["Starfish"] = 2, ["Rooster"] = 2, ["Sunny-Side Chicken"] = 20 },
+    KEEP_PETS = { "Gnome", "Green Bean", "Apple Gazelle", "Lemon Lion", "Peach Wasp", "Griffin", "Golden Goose", "Golem", "Seedling", "Junkbot", "Lobster Thermidor", "French Fry Ferret", "Corrupted Kitsune", "Raiju", "Mizuchi", "Kitsune", "Koi", "Bald Eagle", "Ankylosaurus", "Spinosaurus", "Brontosaurus", "T-Rex", "Seal", "Fennec Fox", "Disco Bee", "Raccoon", "Queen Bee", "Night Owl", "Dragonfly", "Butterfly", "Mimic Octopus", "Red Fox", "Hyacinth Macaw", "Pack Bee", "Petal Bee", "Bear Bee", "Hamster", "Blood Owl", "Cooked Owl", "Golden Bee", "Owl", "Firefly", "Chicken Zombie", ["Blood Kiwi"] = 2, ["Capybara"] = 4, ["Starfish"] = 2, ["Rooster"] = 2, ["Sunny-Side Chicken"] = 20 },
     KEEP_PETS_WEIGHT = 7,
-    KEEP_PETS_AGE = 90,
 
     EQUIP_PETS = { ["Capybara"] = 1, "Starfish" },
     USE_PETS_FOR_UPGRADE_SLOT = { "Starfish" },
