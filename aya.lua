@@ -93,8 +93,8 @@ getgenv().ConfigsKaitun = {
 		},
 		Craft = {
 			"Anti Bee Egg",
+			"Skyroot Chest",
 			"Pet Shard GiantBean",
-			"Sprout Egg",
 		},
 		Start_Do_Honey = 2_000_000 -- start trade fruit for honey at money
 	},
@@ -122,6 +122,7 @@ getgenv().ConfigsKaitun = {
 	Eggs = {
 		Place = {
 			"Gourmet Egg",
+			"Sprout Egg",
 			"Zen Egg",
 			"Primal Egg",
 			"Dinosaur Egg",
@@ -200,6 +201,7 @@ getgenv().ConfigsKaitun = {
 			"Mimic Octopus",
 			"Red Fox",
 			"Blood Owl",
+			["Seal"] = 8,
 			["Starfish"] = 8,
 		},
 		LockPet_Weight = 5, -- if Weight >= 10 they will locked
