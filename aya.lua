@@ -86,6 +86,7 @@ getgenv().ConfigsKaitun = {
 			-- Friend Shop
 			"Skyroot Chest",
 			"Pet Shard GiantBean",
+			"Gnome",
 		},
 		["Traveling Shop"] = {
 			"Bee Egg",
@@ -94,7 +95,6 @@ getgenv().ConfigsKaitun = {
 		Craft = {
 			"Anti Bee Egg",
 			"Skyroot Chest",
-			"Pet Shard GiantBean",
 		},
 		Start_Do_Honey = 2_000_000 -- start trade fruit for honey at money
 	},
@@ -135,6 +135,7 @@ getgenv().ConfigsKaitun = {
 			"Rare Summer Egg",
 			"Mythical Egg",
 			"Legendary Egg",
+			"Rare Egg",
 		},
 		Buy = {
 			"Bee Egg",
@@ -163,7 +164,9 @@ getgenv().ConfigsKaitun = {
 			["Limit Upgrade"] = 2, -- max is 5 (more than or lower than 1 will do nothing)
 			["Equip When Done"] = {
 				["Capybara"] = { 1, 100 },
-                ["Starfish"] = { 8, 100 },
+				["Rooster"] = { 5, 100 },
+				["Sunny-Side Chicken"] = { 5, 100 },
+                ["Starfish"] = { 2, 100 },
 			},
 		},
 		Unfavorite_AllPet = false,
@@ -188,6 +191,7 @@ getgenv().ConfigsKaitun = {
 			["Capybara"] = 4,
 			"Chicken Zombie",
 			["Sunny-Side Chicken"] = 20,
+			["Rooster"] =  5,
 			"Spinosaurus",
 			"Bear Bee",
 			"T-Rex",
