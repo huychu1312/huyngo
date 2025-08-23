@@ -34,6 +34,7 @@ getgenv().ConfigsKaitun = {
             ["Mango"] = 15,
             ["Tomato"] = 20,
             ["Cactus"] = 15,
+            ["Beanstalk"] = 20,
 		}
 	},
 
