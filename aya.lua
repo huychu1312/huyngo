@@ -65,7 +65,7 @@ getgenv().ConfigsKaitun = {
 
 	["Seed Pack"] = {
 		Locked = {
-
+"Sprout Seed Pack",
 		}
 	},
 
