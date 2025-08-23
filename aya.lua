@@ -12,8 +12,8 @@ getgenv().ConfigsKaitun = {
 
 	["Rejoin When Update"] = false,
 	["Limit Tree"] = {
-		["Limit"] = 400,
-		["Destroy Until"] = 400,
+		["Limit"] = 250,
+		["Destroy Until"] = 225,
 
 		["Safe Tree"] = {
             "Moon Blossom",
@@ -25,6 +25,31 @@ getgenv().ConfigsKaitun = {
             "Elephant Ears",
             "Fossilight",
             "Princess Thorn",
+			"Pineapple",
+			"Spike Mango",
+			"Starfruit",
+			"Horned Dinoshroom",
+			"Celestiberry",
+			"Mango",
+			"Watermelon",
+			"Grape",
+			"Mapple Apple",
+			"Moon Blossom",
+			"Sugar Apple",
+			"Beanstalk",
+			"Cacao",
+			"Apple",
+			"Conocut",
+			"Dragon Fruit",
+			"Grand Tomato",
+			"Pricklefruit",
+			"Mandrake",
+			"Mangosteen",
+			"Princess Thorn",
+			"Ember Lily",
+			"Burning Bud",
+			"Pepper",
+			"Mushroom",
 			-- for the event
             ["Blueberry"] = 15,
             ["Strawberry"] = 15,
@@ -156,7 +181,7 @@ getgenv().ConfigsKaitun = {
 	Pets = {
 		["Auto Feed"] = true,
 
-		["Start Delete Pet At"] = 40,
+		["Start Delete Pet At"] = 45,
 		["Upgrade Slot"] = {
 			["Pet"] = {
 				["Starfish"] = { 5, 100, 1, true }, -- the "true" on the last is auto equip (use for like only need to use for upgrade pet)
