@@ -127,7 +127,7 @@ getgenv().ConfigsKaitun = {
 
 	["Seed Pack"] = {
 		Locked = {
-
+"Sprout Seed Pack",
 		}
 	},
 
@@ -135,7 +135,7 @@ getgenv().ConfigsKaitun = {
 		["Bean Event"] = {
 			Minimum_Money = 10_000_000, -- minimum money to start play this event
 		},
-		MaxMoney_Restocks = 100_000_000_000,
+		MaxMoney_Restocks = 500_000_000_000,
 		Shop = { -- delete -- to buy
 			"Sprout Seed Pack",
 			"Sprout Egg",
@@ -180,7 +180,6 @@ getgenv().ConfigsKaitun = {
 	Eggs = {
 		Place = {
 			"Gourmet Egg",
-			"Sprout Egg",
 			"Zen Egg",
 			"Primal Egg",
 			"Dinosaur Egg",
@@ -219,7 +218,6 @@ getgenv().ConfigsKaitun = {
             ["Limit Upgrade"] = 5,-- max is 5 (more than or lower than 1 will do nothing)
             ["Equip When Done"] = {
                 ["Capybara"] = { 1, 100 },
-                ["Sunny-Side Chicken"] = { 4, 100 },
                 ["Starfish"] = { 8, 100 },
             },
         },
@@ -237,7 +235,7 @@ getgenv().ConfigsKaitun = {
             "Corrupted Kitsune",
             "Nihonzaru",
             ["Starfish"] = 8,
-            ["Capybara"] = 1,
+            ["Capybara"] = 4,
             ["Tanchozuru"] = 1,
             ["Seal"] = 1,
             "Kitsune",
