@@ -1,4 +1,4 @@
-script_key="uaIFWztbwyLLkTXozuCbkvMJXXhdJHRi";
+script_key="vLWdbNreGgFPiqFULEltMypKsTMkYZnn";
 setfpscap(3)
 
 getgenv().gagConfig = {
@@ -48,4 +48,4 @@ getgenv().gagConfig = {
     SHOW_WEBHOOK_JOBID = true,
 }
 
-loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/a2234a9cfbe480dfed9eaf6c00a012ca.lua"))()
+loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/6cb882027ef5de19462b160764dcfb53.lua"))()
