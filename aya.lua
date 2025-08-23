@@ -5,7 +5,7 @@ getgenv().ConfigsKaitun = {
 
 	["Block Pet Gift"] = true,
 
-	Collect_Cooldown = 120, -- cooldown to collect fruit
+	Collect_Cooldown = 60, -- cooldown to collect fruit
 
 	["Low Cpu"] = true,
 	["Auto Rejoin"] = true,
@@ -78,10 +78,10 @@ getgenv().ConfigsKaitun = {
 			"Sprout Seed Pack",
 			"Sprout Egg",
 			-- "Mandrake",
-			"Silver Fertilizer",
+			-- "Silver Fertilizer",
 			-- "Canary Melon",
 			-- "Amberheart",
-			["Spriggan"] = 8,
+			-- ["Spriggan"] = 8,
 			-- Friend Shop
 			"Skyroot Chest",
 			"Pet Shard GiantBean",
