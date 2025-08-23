@@ -1,83 +1,47 @@
-wait(5)
 getgenv().ConfigsKaitun = {
 	Beta_Fix_Data_Sync = true,
 
 	NoDeletePlayer = false,
 
 	["Block Pet Gift"] = true,
- 
-	Collect_Cooldown = 60, -- cooldown to collect fruit
-	JustFuckingCollectAll = false, -- Collect all (fruit not wait mutation)
+
+	Collect_Cooldown = 120, -- cooldown to collect fruit
 
 	["Low Cpu"] = true,
-	["Auto Rejoin"] = false,
+	["Auto Rejoin"] = true,
 
 	["Rejoin When Update"] = false,
 	["Limit Tree"] = {
-		["Limit"] = 250,
-		["Destroy Untill"] = 225,
+		["Limit"] = 400,
+		["Destroy Until"] = 400,
 
 		["Safe Tree"] = {
-			"Tranquil Bloom",
-			"Bone Blossom",
-			"Fossilight",
-			"Sunflower",
-			"Dragon Pepper",
-			"Elephant Ears",
-			"Moon Melon",
-			"Moon Mango",
-			"Pineapple",
-			"Spike Mango",
-			"Starfruit",
-			"Horned Dinoshroom",
-			"Celestiberry",
-			"Mango",
-			"Watermelon",
-			"Grape",
-			"Mapple Apple",
-			"Moon Blossom",
-			"Sugar Apple",
-			"Beanstalk",
-			"Cacao",
-			"Apple",
-			"Conocut",
-			"Dragon Fruit",
-			"Grand Tomato",
-			"Pricklefruit",
-			"Mandrake",
-			"Mangosteen",
-			"Princess Thorn",
-			"Ember Lily",
-			"Burning Bud",
-			"Pepper",
-			"Mushroom",
-			"Strawberry",
-			"Blueberry",
-			"Tomato",
-
+            "Moon Blossom",
+            "Bone Blossom",
+            "Moon Melon",
+            "Maple Apple",
+            "Moon Mango",
+            "Dragon Pepper",
+            "Elephant Ears",
+            "Fossilight",
+            "Princess Thorn",
+			-- for the event
+            ["Blueberry"] = 15,
+            ["Strawberry"] = 15,
+            ["Apple"] = 15,
+            ["Coconut"] = 15,
+            ["Dragon Fruit"] = 15,
+            ["Mango"] = 15,
+            ["Tomato"] = 20,
+            ["Cactus"] = 15,
 		}
 	},
 
 	Seed = {
 		Buy = {
-			Mode = "Custom", -- Custom , Auto
-			Custom = {
-				"Tomato",
-				"Strawberry",
-				"Bell Pepper",
-				"Blood Banana",
-				"Onion",
-				"Pear",
-				"Grape",
-				"Mushroom",
-				"Pepper",
-				"Cacao",
-				"Beanstalk",
-				"Ember Lily",
-				"Sugar Apple",
-				"Burning Bud",
-				"Giant Pinecone",
-				"Elder Strawberry",
+			Mode = "Auto", -- Custom , Auto
+			Custom = { -- any fruit u need to place
+				"Carrot",
 			}
 		},
 		Place = {
@@ -86,48 +50,22 @@ getgenv().ConfigsKaitun = {
 				"Carrot"
 			},
 			Lock = {
+				"Maple Apple",
 				"Sunflower",
 				"Dragon Pepper",
 				"Elephant Ears",
 				"Moon Melon",
+				"Easter Egg",
 				"Moon Mango",
+				"Bone Blossom",
 				"Fossilight",
-				"Pineapple",
-				"Spike Mango",
-				"Starfruit",
-				"Horned Dinoshroom",
-				"Celestiberry",
-				"Mango",
-				"Watermelon",
-				"Grape",
-				"Mapple Apple",
-				"Moon Blossom",
-				"Sugar Apple",
-				"Beanstalk",
-				"Cacao",
-				"Apple",
-				"Conocut",
-				"Dragon Fruit",
-				"Grand Tomato",
-				"Pricklefruit",
-				"Mandrake",
-				"Mangosteen",
-				"Princess Thorn",
-				"Ember Lily",
-				"Burning Bud",
-				"Mushroom",
-				"Pepper",
-				"Strawberry",
-				"Blueberry",
-				"Tomato",
-
 			}
 		}
 	},
 
 	["Seed Pack"] = {
 		Locked = {
-"Sprout Seed Pack",
+
 		}
 	},
 
@@ -136,22 +74,25 @@ getgenv().ConfigsKaitun = {
 			Minimum_Money = 10_000_000, -- minimum money to start play this event
 		},
 		MaxMoney_Restocks = 500_000_000_000,
-		Shop = { -- delete -- to buy
+		Shop = { -- un comment to buy
 			"Sprout Seed Pack",
 			"Sprout Egg",
 			-- "Mandrake",
+			"Silver Fertilizer",
 			-- "Canary Melon",
 			-- "Amberheart",
-			-- "Spriggan",
+			["Spriggan"] = 8,
+			-- Friend Shop
+			"Skyroot Chest",
+			"Pet Shard GiantBean",
 		},
 		["Traveling Shop"] = {
 			"Bee Egg",
 		},
 		Craft = {
 			"Anti Bee Egg",
-		},
-		Shop = {
-			"Zen Egg",
+			"Pet Shard GiantBean",
+			"Sprout Egg",
 		},
 		Start_Do_Honey = 2_000_000 -- start trade fruit for honey at money
 	},
@@ -163,17 +104,16 @@ getgenv().ConfigsKaitun = {
 			"Advanced Sprinkler",
 			"Basic Sprinkler",
 			"Lightning Rod",
-			"Levelup Lollipop",
+			"Level Up Lollipop",
 			"Medium Treat",
 			"Medium Toy",
-			"Trading Ticket",
 		},
 		Lock = {
 			"Master Sprinkler",
 			"Godly Sprinkler",
+			"Advanced Sprinkler",
+			"Basic Sprinkler",
 			"Lightning Rod",
-			"Levelup Lollipop",
-			"Trading Ticket",
 		},
 	},
 
@@ -189,92 +129,114 @@ getgenv().ConfigsKaitun = {
 			"Bug Egg",
 			"Paradise Egg",
 			"Bee Egg",
-			"Mythical Egg",
 			"Rare Summer Egg",
-			"Common Summer Egg",
+			"Mythical Egg",
+			"Common Egg",
 		},
 		Buy = {
 			"Bee Egg",
-			"Sprout Egg",
 			"Oasis Egg",
 			"Paradise Egg",
 			"Anti Bee Egg",
 			"Night Egg",
-			["Rare Summer Egg"] = 20,
+			"Rare Summer Egg",
 			"Bug Egg",
 			"Mythical Egg",
-			"Common Summer Egg",
-			["Common Egg"] = 40,
-			"Zen Egg",
+			"Uncommon Egg",
+			"Common Egg",
 		}
 	},
 
-    Pets = {
-        ["Start Delete Pet At"] = 45,
-        ["Upgrade Slot"] = {
-            ["Pet"] = {
-                ["Starfish"] = { 4, 100, 1, true }, -- the "true" on the last is auto equip (use for like only need to use for upgrade pet)
-            },
-            ["Limit Upgrade"] = 5,-- max is 5 (more than or lower than 1 will do nothing)
-            ["Equip When Done"] = {
-                ["Capybara"] = { 1, 100 },
-                ["Starfish"] = { 8, 100 },
-            },
-        },
-        Favorite_LockedPet = true,
-        Locked_Pet_Age = 76, -- pet that age > 60 will lock
-        Locked = {
-			"Lobster Thermidor",
-			"Golem",
-			"Seedling",
-			"Golden Goose",
-        	["Sunny-Side Chicken"] = 20,
-            "French Fry Ferret",
-            "Kodama",
-            ["Dairy Cow"] = 8,
-            "Corrupted Kitsune",
-            "Nihonzaru",
-            ["Starfish"] = 8,
-            ["Capybara"] = 4,
-            ["Tanchozuru"] = 1,
-            ["Seal"] = 1,
-            "Kitsune",
-            "Blood Kiwi",
-            "Disco Bee",
-            "Raccoon",
-            "Queen Bee",
-            "Dragonfly",
-            "Butterfly",
-            "Mimic Octopus",
-            "Red Fox",
-        },
-        LockPet_Weight = 5, -- if Weight >= 10 they will locked
-    },
+	Pets = {
+		["Auto Feed"] = true,
 
-    Webhook = {
+		["Start Delete Pet At"] = 40,
+		["Upgrade Slot"] = {
+			["Pet"] = {
+				["Starfish"] = { 5, 100, 1, true }, -- the "true" on the last is auto equip (use for like only need to use for upgrade pet)
+			},
+			["Limit Upgrade"] = 2, -- max is 5 (more than or lower than 1 will do nothing)
+			["Equip When Done"] = {
+				["Capybara"] = { 1, 100 },
+                ["Starfish"] = { 8, 100 },
+			},
+		},
+		Unfavorite_AllPet = false,
+		Favorite_LockedPet = true,
+		Locked_Pet_Age = 60, -- pet that age > 60 will lock
+		Locked = {
+			"Griffin",
+			"Gnome",
+			"Green Bean", 
+			"Apple Gazelle", 
+			"Lemon Lion", 
+			"Peach Wasp",
+			"Golden Goose",
+			"Golem",
+			"French Fry Ferret",
+			"Spaghetti Sloth",
+			"Corrupted Kitsune",
+			"Raiju",
+			"Koi",
+			"Tanuki",
+			"Tanchozuru",
+			"Kappa",
+			"Kitsune",
+			"Dilophosaurus",
+			"Moon Cat",
+			["Capybara"] = 4,
+			"Chicken Zombie",
+			["Sunny-Side Chicken"] = 20
+			"Spinosaurus",
+			"Bear Bee",
+			"T-Rex",
+			"Brontosaurus",
+			"Disco Bee",
+			"Butterfly",
+			"Queen Bee",
+			"Dragonfly",
+			"Raccoon",
+			"Fennec Fox",
+			"Mimic Octopus",
+			"Red Fox",
+			"Blood Owl",
+			["Starfish"] = 8,
+		},
+		LockPet_Weight = 5, -- if Weight >= 10 they will locked
+	},
+
+	Webhook = {
 		UrlPet = "https://discord.com/api/webhooks/1394039615949639822/ru1nhLaHQ0YheuaUN238iKf337NATfBXg224aTMSInFTWhNg24i7aPpFSIy6NAUAfr3r",
-		UrlSeed = "XXX",
-		PcName = "DOICONCAK",
+		UrlSeed = "xxx",
+		PcName = "xxx",
+
+		Mention = "", -- discord id
 
 		Noti = {
 			Seeds = {
+				"Sunflower",
+				"Dragon Pepper",
+				"Elephant Ears",
 			},
 			SeedPack = {
 				"Idk"
 			},
 			Pets = {
+				"Golden Goose",
+				"Griffin",
 				"French Fry Ferret",
-                "Lobster Thermidor",
-                "Golden Goose",
+				"Corrupted Kitsune",
+				"Kitsune",
+				"Spinosaurus",
+				"T-Rex",
 				"Disco Bee",
-		        "Corrupted Kitsune",
 				"Butterfly",
 				"Mimic Octopus",
 				"Queen Bee",
-				"Dragonfly",
-				"Kitsune",
-				"Raccoon",
 				"Fennec Fox",
+				"Dragonfly",
+				"Raccoon",
+				"Red Fox",
 			},
 			Pet_Weight_Noti = true,
 		}
