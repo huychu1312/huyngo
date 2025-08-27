@@ -12,8 +12,8 @@ getgenv().ConfigsKaitun = {
 
 	["Rejoin When Update"] = false,
 	["Limit Tree"] = {
-		["Limit"] = 250,
-		["Destroy Until"] = 225,
+		["Limit"] = 400,
+		["Destroy Until"] = 375,
 
 		["Safe Tree"] = {
             "Moon Blossom",
@@ -25,31 +25,6 @@ getgenv().ConfigsKaitun = {
             "Elephant Ears",
             "Fossilight",
             "Princess Thorn",
-			"Pineapple",
-			"Spike Mango",
-			"Starfruit",
-			"Horned Dinoshroom",
-			"Celestiberry",
-			"Mango",
-			"Watermelon",
-			"Grape",
-			"Mapple Apple",
-			"Moon Blossom",
-			"Sugar Apple",
-			"Beanstalk",
-			"Cacao",
-			"Apple",
-			"Conocut",
-			"Dragon Fruit",
-			"Grand Tomato",
-			"Pricklefruit",
-			"Mandrake",
-			"Mangosteen",
-			"Princess Thorn",
-			"Ember Lily",
-			"Burning Bud",
-			"Pepper",
-			"Mushroom",
 			-- for the event
             ["Blueberry"] = 15,
             ["Strawberry"] = 15,
@@ -91,6 +66,7 @@ getgenv().ConfigsKaitun = {
 
 	["Seed Pack"] = {
 		Locked = {
+"Sprout Seed Pack",
 		}
 	},
 
@@ -98,7 +74,7 @@ getgenv().ConfigsKaitun = {
 		["Bean Event"] = {
 			Minimum_Money = 10_000_000, -- minimum money to start play this event
 		},
-		MaxMoney_Restocks = 500_000_000_000,
+		MaxMoney_Restocks = 1_000_000_000_000,
 		Shop = { -- un comment to buy
 			"Sprout Seed Pack",
 			"Sprout Egg",
@@ -119,6 +95,7 @@ getgenv().ConfigsKaitun = {
 		Craft = {
 			"Anti Bee Egg",
 			"Skyroot Chest",
+			"Sprout Egg",
 		},
 		Start_Do_Honey = 2_000_000 -- start trade fruit for honey at money
 	},
@@ -187,10 +164,11 @@ getgenv().ConfigsKaitun = {
 			},
 			["Limit Upgrade"] = 2, -- max is 5 (more than or lower than 1 will do nothing)
 			["Equip When Done"] = {
+				["Seal"] = { 8, 100 },
 				["Capybara"] = { 1, 100 },
 				["Rooster"] = { 5, 100 },
-				["Sunny-Side Chicken"] = { 5, 100 },
-                ["Starfish"] = { 2, 100 },
+                ["Starfish"] = { 1, 100 },
+                ["Sunny-Side Chicken"] = { 5, 100 },
 			},
 		},
 		Unfavorite_AllPet = false,
