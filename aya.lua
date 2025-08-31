@@ -221,12 +221,12 @@ getgenv().ConfigsKaitun = {
 			["Equip When Done"] = {
 				["Glimmering Sprite"] = { 8, 100 },
 				["Capybara"] = { 1, 100 },
-				["Rooster"] = { 5, 100 },
+                ["Sunny-Side Chicken"] = { 5, 100 },
                 ["Starfish"] = { 1, 100 },
                 ["Brown Mouse"] = { 1, 100 },
                 ["Squirrel"] = { 1, 100 }, 
                 ["Grey Mouse"] = { 1, 100 },
-                ["Sunny-Side Chicken"] = { 5, 100 },
+                ["Rooster"] = { 5, 100 },
 			},
 		},
 		Unfavorite_AllPet = false,
@@ -234,7 +234,7 @@ getgenv().ConfigsKaitun = {
 		Locked_Pet_Age = 60, -- pet that age > 60 will lock
 		Locked = {
 			"Griffin",
-			["Glimmering Sprite"] = 8,
+			"Glimmering Sprite",
 			"Cockatrice",
 			"Golem",
 			"Gnome",
