@@ -142,6 +142,7 @@ getgenv().ConfigsKaitun = {
 			"Wisp",
 			"Luminous Sprite",
 			"Wisp Well",
+			"Pet Shard Luminous",
 
 			"Sprout Seed Pack",
 			"Sprout Egg",
@@ -235,6 +236,7 @@ getgenv().ConfigsKaitun = {
 	Pets = {
 		["Auto Feed"] = true,
 		MutationPet = {
+			["Phoenix"] = { "Luminous" },
 			["Rooster"] = { "Glimmering" },
 			["Sunny-Side Chicken"] = { "Glimmering" },
 			["Glimmering Sprite"] = { "Glimmering" },
