@@ -353,9 +353,10 @@ loadstring(game:HttpGet('https://raw.githubusercontent.com/Real-Aya/Loader/main/
 
 
 wait(4)
--- 🌟 Auto Fairy Event Script (Simplified)
+-- 🌟 Auto Fairy Event Script (Switch by Score)
 local Players = game:GetService('Players')
 local Rep = game:GetService('ReplicatedStorage')
+local DataService = require(Rep.Modules.DataService)
 local localPlayer = Players.LocalPlayer
 
 -- 🔮 Các remote quan trọng
@@ -363,6 +364,15 @@ local FairyNetEvent = Rep.GameEvents.FairyNetActivated
 local FairyEventVisuals = require(Rep.Modules.FairyEventVisualsController)
 
 -- 🧰 Utility
+local function getFairyCount()
+    local data = DataService:GetData()
+    if data and data.FairyEvent then
+        return (data.FairyEvent.FairiesCapturedWithNetV1 or 0)
+            + (data.FairyEvent.FairiesCapturedWithNetV2 or 0)
+    end
+    return 0
+end
+
 local function equipItemContains(keyword)
     for _, tool in ipairs(localPlayer.Character:GetChildren()) do
         if tool:IsA('Tool') and string.find(tool.Name, keyword) then
@@ -405,9 +415,15 @@ local function collectNearbyFairies()
     end
 end
 
--- 🔄 Fake teleport tới fairy
-task.spawn(function()
+-- 🌌 Script 1: Fake teleport + FairyNet
+local function runNetMode()
     while task.wait(1) do
+        local score = getFairyCount()
+        if score < 900 then
+            print('🔁 Chuyển sang Auto Interact Mode!')
+            break -- thoát vòng loop này
+        end
+
         if equipItemContains('Fairy Net') then
             for i = 1, 10 do
                 local folder = workspace:FindFirstChild(tostring(i))
@@ -439,6 +455,47 @@ task.spawn(function()
                     end
                 end
             end
+        end
+    end
+end
+
+-- 🌌 Script 2: Auto interact fairy bằng prompt
+local function runInteractMode()
+    while task.wait(5) do
+        local score = getFairyCount()
+        if score > 900 then
+            print('🔁 Quay lại Net Mode!')
+            break
+        end
+
+        for i = 1, 10 do
+            local fairy = workspace:FindFirstChild(tostring(i))
+            if fairy then
+                local prompt =
+                    fairy:FindFirstChildWhichIsA('ProximityPrompt', true)
+                if prompt then
+                    fireproximityprompt(prompt)
+                    print('✨ Đã tương tác với Fairy:', fairy.Name)
+                end
+            end
+        end
+    end
+end
+
+-- 🔄 Vòng điều khiển chính
+task.spawn(function()
+    while task.wait(2) do
+        local score = getFairyCount()
+        if score < 900 then
+            print('📊 Điểm hiện tại:', score, '→ chạy Net Mode')
+            runNetMode()
+        else
+            print(
+                '📊 Điểm hiện tại:',
+                score,
+                '→ chạy Interact Mode'
+            )
+            runInteractMode()
         end
     end
 end)
@@ -510,3 +567,4 @@ task.spawn(function()
         end
     end
 end)
+        
