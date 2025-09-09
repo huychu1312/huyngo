@@ -141,7 +141,6 @@ getgenv().ConfigsKaitun = {
 			"Drake",
 			"Wisp",
 			"Luminous Sprite",
-			"Wisp Well",
 			"Pet Shard Luminous",
 
 			"Sprout Seed Pack",
