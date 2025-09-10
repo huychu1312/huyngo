@@ -454,7 +454,7 @@ end
 
 -- 🌌 Script 2: Auto interact fairy bằng prompt
 local function runInteractMode()
-    while task.wait(5) do
+    while task.wait(1) do
         local score = getFairyCount()
         if score > 900 then
             print('🔁 Quay lại Net Mode!')
@@ -477,7 +477,7 @@ end
 
 -- 🔄 Vòng điều khiển chính
 task.spawn(function()
-    while task.wait(2) do
+    while task.wait(1) do
         local score = getFairyCount()
         if score < 900 then
             print('📊 Điểm hiện tại:', score, '→ chạy Net Mode')
@@ -558,5 +558,91 @@ task.spawn(function()
                 end
             end
         end
+    end
+end)
+-- 🌟 Auto Equip Tools (Enchanted Chest + Fairy Power Extender)
+local Players = game:GetService('Players')
+local localPlayer = Players.LocalPlayer
+
+-- 🧰 Hàm trang bị Enchanted Chest
+local function equipEnchantedChest()
+    -- Nếu đã cầm trên tay rồi thì thôi
+    for _, tool in ipairs(localPlayer.Character:GetChildren()) do
+        if tool:IsA('Tool') and string.find(tool.Name, 'Fairy Summoner') then
+            return tool
+        end
+    end
+
+    -- Nếu còn trong Backpack thì auto equip
+    for _, tool in ipairs(localPlayer.Backpack:GetChildren()) do
+        if tool:IsA('Tool') and string.find(tool.Name, 'Fairy Summoner') then
+            tool.Parent = localPlayer.Character
+            print('📦 Đã auto cầm Enchanted Chest!')
+            return tool
+        end
+    end
+end
+
+-- 🧰 Hàm trang bị Fairy Power Extender
+local function equipFairyPowerExtender()
+    -- Nếu đã cầm trên tay rồi thì thôi
+    for _, tool in ipairs(localPlayer.Character:GetChildren()) do
+        if
+            tool:IsA('Tool') and string.find(tool.Name, 'Fairy Power Extender')
+        then
+            return tool
+        end
+    end
+
+    -- Nếu còn trong Backpack thì auto equip
+    for _, tool in ipairs(localPlayer.Backpack:GetChildren()) do
+        if
+            tool:IsA('Tool') and string.find(tool.Name, 'Fairy Power Extender')
+        then
+            tool.Parent = localPlayer.Character
+            print('📦 Đã auto cầm Fairy Power Extender!')
+            return tool
+        end
+    end
+end
+
+-- 🧚 Hàm gọi Fairy Summoner skill
+local function fairySummoner()
+    local args = {
+        [1] = true,
+        [2] = CFrame.new(-9.378669738769531, 0, -49.54979705810547)
+            * CFrame.Angles(
+                -1.340797781944275,
+                1.1134178638458252,
+                1.3155239820480347
+            ),
+    }
+
+    local char = localPlayer.Character
+    if
+        char
+        and char:FindFirstChild('InputGateway')
+        and char.InputGateway:FindFirstChild('Activation')
+    then
+        char.InputGateway.Activation:FireServer(unpack(args))
+        print('✨ Fairy Summoner skill đã được kích hoạt!')
+    else
+        warn('⚠️ Không tìm thấy Activation trong InputGateway')
+    end
+end
+
+-- 🔄 Luôn giữ trên tay & dùng skill (mỗi 10s)
+task.spawn(function()
+    while task.wait(10) do
+        equipEnchantedChest()
+        fairySummoner()
+    end
+end)
+wait(3)
+-- 🔄 Luôn giữ trên tay & dùng skill (mỗi 10s)
+task.spawn(function()
+    while task.wait(10) do
+        equipFairyPowerExtender()
+        fairySummoner()
     end
 end)
