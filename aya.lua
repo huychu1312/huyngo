@@ -155,7 +155,6 @@ getgenv().ConfigsKaitun = {
 			"Enchanted Chest",
 			"Enchanted Egg",
 			"Anti Bee Egg",
-			"Sprout Egg",
 		},
 		["Traveling Shop"] = {
 			"Bee Egg",
