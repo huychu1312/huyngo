@@ -24,8 +24,8 @@ getgenv().ConfigsKaitun = {
 	},
 
 	["Limit Tree"] = {
-		["Limit"] = 345,
-		["Destroy Until"] = 321,
+		["Limit"] = 350,
+		["Destroy Until"] = 300,
 
 		["Safe Tree"] = {
 	"Moon Blossom",
@@ -136,12 +136,9 @@ getgenv().ConfigsKaitun = {
 		Shop = { -- un comment to buy
 			"Enchanted Chest",
 			"Enchanted Egg",
-			"Enchanted Seed Pack",
-			"Mutation Spray Glimmering",
 			"Drake",
 			"Wisp",
 			"Luminous Sprite",
-			"Pet Shard Luminous",
 
 			"Sprout Seed Pack",
 			"Sprout Egg",
