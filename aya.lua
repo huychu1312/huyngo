@@ -182,6 +182,7 @@ getgenv().ConfigsKaitun = {
 		},
 		Lock = {
 			"Grandmaster Sprinkler",
+			"Master Sprinkler",
 			"Godly Sprinkler",
 			"Lightning Rod",
 			"Harvest Tool",
