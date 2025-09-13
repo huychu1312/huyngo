@@ -506,9 +506,6 @@ task.spawn(function()
         local targetPos = npcPos + Vector3.new(0, 6, 0)
         hrp.CFrame = CFrame.lookAt(targetPos, npcPos, Vector3.new(0, 1, 0))
 
-        Rep.GameEvents.FairyService.FairySubmitAllJar:FireServer()
-        print('📦 FairySubmitAllJar đã gửi!')
-
         local args1 = { 'Enchanted Chest', 2 }
         Rep.GameEvents.BuyEventShopStock:FireServer(unpack(args1))
         print('💎 Đã mua Enchanted Chest x2!')
@@ -646,3 +643,68 @@ task.spawn(function()
         fairySummoner()
     end
 end)
+local Players = game:GetService('Players')
+local Rep = game:GetService('ReplicatedStorage')
+local CollectionService = game:GetService('CollectionService')
+
+local localPlayer = Players.LocalPlayer
+local DataService = require(Rep.Modules.DataService)
+local CollectRemote = Rep.GameEvents.Crops.Collect
+local SubmitFairy = Rep.GameEvents.FairyService.SubmitFairyFountainAllPlants
+
+-- Config
+local INTERVAL = 5 -- giây giữa mỗi vòng quét
+local LIMIT = 5 -- số trái tối đa mỗi vòng
+local FIRE_DELAY = 0.05 -- delay giữa các lần thu
+
+-- Hàm lấy tier hiện tại
+local function getCurrentTier()
+    local data = DataService:GetData()
+    if not data or not data.FairyQuests then
+        return 0
+    end
+    return data.FairyQuests.WishLevel
+end
+
+-- Kiểm tra CollectPrompt tag
+local function hasCollectTag(obj)
+    if type(obj.HasTag) == 'function' then
+        local ok, res = pcall(function()
+            return obj:HasTag('CollectPrompt')
+        end)
+        if ok then
+            return res
+        end
+    end
+    return CollectionService:HasTag(obj, 'CollectPrompt')
+end
+
+-- Hàm thu hoạch Glimmering
+local function harvestGlimmering(limit)
+    local collected = 0
+    for _, inst in ipairs(workspace:GetDescendants()) do
+        if inst:IsA('ProximityPrompt') and hasCollectTag(inst) then
+            local crop = inst.Parent and inst.Parent.Parent
+            if crop and crop:GetAttribute('Glimmering') then
+                CollectRemote:FireServer({ crop })
+                task.wait(FIRE_DELAY)
+                SubmitFairy:FireServer() -- submit ngay sau mỗi trái
+                collected += 1
+                if collected >= limit then
+                    break
+                end
+            end
+        end
+    end
+    return collected
+end
+
+-- Main loop
+while task.wait(INTERVAL) do
+    local tier = getCurrentTier()
+
+    if tier < 8 then
+        harvestGlimmering(LIMIT)
+    else
+    end
+end
