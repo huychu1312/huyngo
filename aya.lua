@@ -197,7 +197,6 @@ getgenv().ConfigsKaitun = {
 			"Oasis Egg",
 			"Anti Bee Egg",
 			"Night Egg",
-			"Bug Egg",
 			"Paradise Egg",
 			"Rare Egg",
 		},
@@ -241,12 +240,13 @@ getgenv().ConfigsKaitun = {
 			["Limit Upgrade"] = 5, -- max is 5 (more than or lower than 1 will do nothing)
 			["Equip When Done"] = {
 			["Capybara"] = { 1, 100 },
-			["Rooster"] = { 5, 100, 1 },
+			["Rooster"] = { 5, 100, 2 },
             ["Starfish"] = { 1, 100 },
+			["Barn Owl"] = { 5, 100, 1 },
             ["Brown Mouse"] = { 1, 100 },
             ["Squirrel"] = { 1, 100 }, 
             ["Grey Mouse"] = { 1, 100 },
-            ["Sunny-Side Chicken"] = { 5, 100, 1 },
+            ["Sunny-Side Chicken"] = { 5, 100, 2 },
 			},
 		},
 		Unfavorite_AllPet = false,
