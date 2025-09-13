@@ -190,7 +190,6 @@ getgenv().ConfigsKaitun = {
 		Place = {
 			"Fall Egg",
 			"Gourmet Egg",
-			"Enchanted Egg",
 			"Sprout Egg",
 			"Zen Egg",
 			"Primal Egg",
@@ -242,12 +241,12 @@ getgenv().ConfigsKaitun = {
 			["Limit Upgrade"] = 5, -- max is 5 (more than or lower than 1 will do nothing)
 			["Equip When Done"] = {
 			["Capybara"] = { 1, 100 },
-			["Rooster"] = { 5, 100, 2 },
+			["Rooster"] = { 5, 100, 1 },
             ["Starfish"] = { 1, 100 },
             ["Brown Mouse"] = { 1, 100 },
             ["Squirrel"] = { 1, 100 }, 
             ["Grey Mouse"] = { 1, 100 },
-            ["Sunny-Side Chicken"] = { 5, 100, 2 },
+            ["Sunny-Side Chicken"] = { 5, 100, 1 },
 			},
 		},
 		Unfavorite_AllPet = false,
@@ -433,10 +432,10 @@ end
 
 -- 🌱 Thu hoạch và nộp ngay sau mỗi lần
 local function harvestAndSubmit()
-    local descendants = USE_FARMONLY and farmFolder:GetDescendants()
+    local descendants = USE_FARM_ONLY and farmFolder:GetDescendants()
         or workspace:GetDescendants()
 
-    for , inst in ipairs(descendants) do
+    for _, inst in ipairs(descendants) do
         if inst:IsA('ProximityPrompt') and hasCollectTag(inst) then
             local crop = inst.Parent and inst.Parent.Parent
             if crop and targetCrops[crop.Name] then
