@@ -137,6 +137,7 @@ getgenv().ConfigsKaitun = {
 		},
 		MaxMoney_Restocks = 5_000_000_000_000,
 		Shop = { -- un comment to buy
+			"Golden Acorn",
 			"Enchanted Chest",
 			"Enchanted Egg",
 			"Luminous Sprite",
@@ -151,6 +152,7 @@ getgenv().ConfigsKaitun = {
 			"Anti Bee Egg",
 		},
 		["Traveling Shop"] = {
+			"Honey Sprinkler",
 			"Bee Egg",
 			"Paradise Egg",
 			"Rare Summer Egg", 
@@ -164,6 +166,8 @@ getgenv().ConfigsKaitun = {
 
 	Gear = {
 		Buy = { 
+			"Golden Acorn",
+			"Cleansing Pet Shard",
 			"Master Sprinkler",
 			"Godly Sprinkler",
 			"Grandmaster Sprinkler",
@@ -175,6 +179,8 @@ getgenv().ConfigsKaitun = {
 			"Medium Toy",
 		},
 		Lock = {
+			"Golden Acorn",
+			"Cleansing Pet Shard",
 			"Grandmaster Sprinkler",
 			"Master Sprinkler",
 			"Godly Sprinkler",
@@ -221,13 +227,6 @@ getgenv().ConfigsKaitun = {
 	Pets = {
 		["Auto Feed"] = true,
 		MutationPet = {
-			["Phoenix"] = { "Luminous" },
-			["Rooster"] = { "Glimmering" },
-			["Sunny-Side Chicken"] = { "Glimmering" },
-			["Glimmering Sprite"] = { "Glimmering" },
-			["Brown Mouse"] = { "Glimmering" },
-			["Grey Mouse"] = { "Glimmering" },
-			["Squirrel"] = { "Glimmering" },
 		},
 		["Start Delete Pet At"] = 40,
 		["Upgrade Slot"] = {
@@ -239,14 +238,18 @@ getgenv().ConfigsKaitun = {
 			},
 			["Limit Upgrade"] = 5, -- max is 5 (more than or lower than 1 will do nothing)
 			["Equip When Done"] = {
-			["Capybara"] = { 1, 100 },
-			["Rooster"] = { 5, 100, 2 },
-            ["Starfish"] = { 1, 100 },
-			["Barn Owl"] = { 5, 100, 1 },
-            ["Brown Mouse"] = { 1, 100 },
-            ["Squirrel"] = { 1, 100 }, 
-            ["Grey Mouse"] = { 1, 100 },
-            ["Sunny-Side Chicken"] = { 5, 100, 2 },
+				["Bee"] = { 5, 100, 1 },
+				["Honey Bee"] = { 5, 100, 2 },
+				["Bear Bee"] = { 5, 100, 3 },
+				["Petal Bee"] = { 5, 100, 4 },
+				["Wasp"] = { 5, 100, 5 },
+				["Tarantula Hawk"] = { 5, 100, 6 },
+				["Barn Owl"] = { 2, 100, 8 },
+                ["Sunny-Side Chicken"] = { 5, 100, 7 },
+                ["Starfish"] = { 5, 100, 10 },
+            	["Brown Mouse"] = { 3, 100, 11 },
+                ["Grey Mouse"] = { 3, 100, 12 },
+                ["Rooster"] = { 4, 100, 13 },
 			},
 		},
 		Unfavorite_AllPet = false,
@@ -299,6 +302,12 @@ getgenv().ConfigsKaitun = {
 			"Blood Owl",
 			["Seal"] = 8,
 			["Starfish"] = 8,
+			"Bee",
+			"Honey Bee",
+			"Bear Bee",
+			"Petal Bee",
+			"Wasp",
+			"Tarantula Hawk",
 		},
 		LockPet_Weight = 5, -- if Weight >= 10 they will locked
 	},
