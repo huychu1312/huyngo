@@ -71,7 +71,7 @@ getgenv().ConfigsKaitun = {
 			["Carnival Pumpkin"] = 10,
 			["Kniphofia"] = 10,
 			["Golden Peach"] = 10,
-			["Maple Resin"] = 10,
+			["Maple Resin"] = 50,
 		}
 	},
 
@@ -138,6 +138,8 @@ getgenv().ConfigsKaitun = {
 		MaxMoney_Restocks = 5_000_000_000_000,
 		Shop = { -- un comment to buy
 			"Golden Acorn",
+			"Maple Resin",
+			"Fall Fountain",
 			"Enchanted Chest",
 			"Enchanted Egg",
 			"Luminous Sprite",
