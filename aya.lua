@@ -266,7 +266,6 @@ getgenv().ConfigsKaitun = {
 			["Shroomie"] = 8,
 			"Luminous Sprite",
 			"Phoenix",
-			["Glimmering Sprite"] = 8,
 			"Cockatrice",
 			"Drake",
 			"Gnome",
