@@ -24,8 +24,8 @@ getgenv().ConfigsKaitun = {
 	},
 
 	["Limit Tree"] = {
-		["Limit"] = 350,
-		["Destroy Until"] = 300,
+		["Limit"] = 250,
+		["Destroy Until"] = 250,
 
 		["Safe Tree"] = {
 	"Moon Blossom",
@@ -258,13 +258,13 @@ getgenv().ConfigsKaitun = {
 			},
 			["Limit Upgrade"] = 5, -- max is 5 (more than or lower than 1 will do nothing)
 			["Equip When Done"] = {
-				["Bee"] = { 5, 100, 1 },
+				["Bee"] = { 5, 100, 2 },
 				["Honey Bee"] = { 5, 100, 2 },
 				["Bear Bee"] = { 5, 100, 3 },
 				["Petal Bee"] = { 5, 100, 4 },
 				["Wasp"] = { 5, 100, 5 },
 				["Tarantula Hawk"] = { 5, 100, 6 },
-				["Barn Owl"] = { 2, 100, 8 },
+				["Barn Owl"] = { 8, 100, 1 },
                 ["Sunny-Side Chicken"] = { 5, 100, 7 },
                 ["Starfish"] = { 5, 100, 10 },
             	["Brown Mouse"] = { 3, 100, 11 },
