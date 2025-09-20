@@ -275,7 +275,7 @@ getgenv().ConfigsKaitun = {
 		Locked_Pet_Age = 60, -- pet that age > 60 will lock
 		Locked = {
 			"Griffin",
-			"Space Squirrel",
+			["Space Squirrel"] = 25,
 			"Barn Owl",
 			"Swan",
 			"Wisp",
@@ -322,7 +322,7 @@ getgenv().ConfigsKaitun = {
 			"Wasp",
 			"Tarantula Hawk",
 		},
-		LockPet_Weight = 5, -- if Weight >= 10 they will locked
+		LockPet_Weight = 3, -- if Weight >= 10 they will locked
 	},
 
 	Webhook = {
