@@ -136,6 +136,7 @@ getgenv().ConfigsKaitun = {
 		},
 		MaxMoney_Restocks = 5_000_000_000_000,
 		Shop = { -- un comment to buy
+			"Space Squirrel",
 			"Red Panda",
 			"Super Leaf Blower",
 			"Super Watering Can",
@@ -301,7 +302,7 @@ getgenv().ConfigsKaitun = {
 		Locked = {
 			"Griffin",
 			["Red Pandal"] = 10,
-			["Space Squirrel"] = 15,
+			["Space Squirrel"] = 20,
 			"Barn Owl",
 			"Swan",
 			"Wisp",
