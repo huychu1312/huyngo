@@ -24,11 +24,11 @@ getgenv().ConfigsKaitun = {
 	},
 
 	["Limit Tree"] = {
-		["Limit"] = 250,
-		["Destroy Until"] = 250,
+		["Limit"] = 350,
+		["Destroy Until"] = 300,
 
 		["Safe Tree"] = {
-	"Moon Blossom",
+		"Moon Blossom",
 			"Bone Blossom",
 			"Moon Melon",
 			"Maple Apple",
@@ -104,6 +104,7 @@ getgenv().ConfigsKaitun = {
 
 	["Seed Pack"] = {
 		Locked = {
+				"Enchanted Seed Pack",
 		}
 	},
 
@@ -127,7 +128,7 @@ getgenv().ConfigsKaitun = {
 					"Fairy Event Duration",
 				},
 				Limit = {
-					["Glimmer Multiplier"] = 1, -- max 10
+					["Glimmer Multiplier"] = 8, -- max 10
 					["Loose Fairy Spawn Amount"] = 10, -- max 10
 					["Fairy Event Duration"] = 10, -- max 10
 					["Fairy Spawn Amount"] = 9, -- max 9
@@ -167,16 +168,11 @@ getgenv().ConfigsKaitun = {
 			"Flying Kite",
 			"Maple Resin",
 			"Fall Fountain",
-			"Enchanted Chest",
-			"Enchanted Egg",
-			"Luminous Sprite",
-			"Wisp",
 		},
 		Craft = {
 			"Anti Bee Egg",
 		},
 		["Traveling Shop"] = {
-			"Honey Sprinkler",
 			"Bee Egg",
 			"Paradise Egg",
 			"Rare Summer Egg", 
@@ -274,28 +270,32 @@ getgenv().ConfigsKaitun = {
 		["Auto Feed"] = true,
 		MutationPet = {
 		},
-		["Start Delete Pet At"] = 60,
+		["Start Delete Pet At"] = 40,
 		["Upgrade Slot"] = {
 			["Pet"] = {
+				["Barn Owl"] = { 3, 100, true },
+                ["Brown Mouse"] = { 3, 100, 4, true },
+                ["Grey Mouse"] = { 3, 100, 5, true },
 				["Starfish"] = { 5, 100, 1, true }, -- the "true" on the last is auto equip (use for like only need to use for upgrade pet)
-				["Brown Mouse"] = { 1, 100 },
-				["Squirrel"] = { 1, 100 }, 
-				["Grey Mouse"] = { 1, 100 },
 			},
 			["Limit Upgrade"] = 5, -- max is 5 (more than or lower than 1 will do nothing)
 			["Equip When Done"] = {
-				["Barn Owl"] = { 3, 100, 2 },
-                ["Sunny-Side Chicken"] = { 5, 100, 1 },
-                ["Rooster"] = { 5, 100, 3 },
+				["Wasp"] = { 1, 100, 1 },
+				["Tarantula Hawk"] = { 1, 100, 2 },
+				["Barn Owl"] = { 1, 100, 4 },
+                ["Sunny-Side Chicken"] = { 5, 100, 3 },
+                ["Rooster"] = { 4, 100, 5 },
+				"Bear Bee",
+			 	"Petal Bee",
 			},
 		},
 		Unfavorite_AllPet = false,
 		Favorite_LockedPet = false,
 		Locked_Pet_Age = 60, -- pet that age > 60 will lock
 		Locked = {
-			"Griffin",
-			["Red Pandal"] = 15,
-			["Space Squirrel"] = 20,
+           "Griffin",
+			["Red Pandal"] = 25,
+			["Space Squirrel"] = 10,
 			"Barn Owl",
 			"Swan",
 			"Wisp",
@@ -344,40 +344,34 @@ getgenv().ConfigsKaitun = {
 		},
 		LockPet_Weight = 3, -- if Weight >= 10 they will locked
 	},
-
-	Webhook = {
+    Webhook = {
 		UrlPet = "https://discord.com/api/webhooks/1394039615949639822/ru1nhLaHQ0YheuaUN238iKf337NATfBXg224aTMSInFTWhNg24i7aPpFSIy6NAUAfr3r",
-		UrlSeed = "xxx",
-		PcName = "nycaya",
-
-		Mention = "993062998652493824", -- discord id
+		UrlSeed = "XXX",
+		PcName = "LUCKY-AYAYA",
 
 		Noti = {
 			Seeds = {
-				"Sunflower",
-				"Dragon Pepper",
-				"Elephant Ears",
 			},
 			SeedPack = {
 				"Idk"
 			},
 			Pets = {
-			    "Swan",
-				"Phoenix",
+				"Swan",
 				"Golden Goose",
-				"French Fry Ferret",
+				"Phoenix",
 				"Cockatrice",
-				"Kitsune",
-				"Spinosaurus",
-				"T-Rex",
+				"Griffin",
+				"French Fry Ferret",
+                "Lobster Thermidor",
 				"Disco Bee",
+		        "Corrupted Kitsune",
 				"Butterfly",
 				"Mimic Octopus",
 				"Queen Bee",
-				"Fennec Fox",
 				"Dragonfly",
+				"Kitsune",
 				"Raccoon",
-				"Red Fox",
+				"Fennec Fox",
 			},
 			Pet_Weight_Noti = true,
 		}
@@ -408,11 +402,6 @@ task.spawn(function()
         local args2 = { "Mallard", 3 }
         game:GetService("ReplicatedStorage"):WaitForChild("GameEvents"):WaitForChild("BuyEventShopStock"):FireServer(unpack(args2))
         print("🛒 Đã mua:", args2[1])
-
-        -- Mua Red Panda
-        local args3 = { "Red Panda", 3 }
-        game:GetService("ReplicatedStorage"):WaitForChild("GameEvents"):WaitForChild("BuyEventShopStock"):FireServer(unpack(args3))
-        print("🛒 Đã mua:", args3[1])
     end
 end)
 
