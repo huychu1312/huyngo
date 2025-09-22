@@ -270,7 +270,7 @@ getgenv().ConfigsKaitun = {
 		["Auto Feed"] = true,
 		MutationPet = {
 		},
-		["Start Delete Pet At"] = 40,
+		["Start Delete Pet At"] = 55,
 		["Upgrade Slot"] = {
 			["Pet"] = {
 				["Barn Owl"] = { 3, 100, true },
@@ -294,8 +294,8 @@ getgenv().ConfigsKaitun = {
 		Locked_Pet_Age = 60, -- pet that age > 60 will lock
 		Locked = {
            "Griffin",
-			["Red Panda"] = 25,
-			["Space Squirrel"] = 10,
+			["Red Panda"] = 20,
+			["Space Squirrel"] = 15,
 			"Barn Owl",
 			"Swan",
 			"Wisp",
