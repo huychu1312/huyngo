@@ -1,3 +1,4 @@
+script_key = '4FyiEhHd9lqmED'
 getgenv().Config = {
     SERVER_HOP = false, -- true: bật hop server, false: tắt hop server
     DPS_THRESHOLDS = {
@@ -36,5 +37,4 @@ getgenv().Config = {
         URL = 'https://discord.com/api/webhooks/1394039615949639822/ru1nhLaHQ0YheuaUN238iKf337NATfBXg224aTMSInFTWhNg24i7aPpFSIy6NAUAfr3r', -- URL webhook private
     },
 }
-script_key="eGEOMpTjUBVMhPotNRVqgftShyrVexZL";
-loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/b9b3f5defc507615a3da8cb6e859d3cd.lua"))()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/xitrumhub/sucacheo-hub/refs/heads/main/SUCACHEO%20HUB'))()
