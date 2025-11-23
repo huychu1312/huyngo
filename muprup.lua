@@ -34,7 +34,7 @@ getgenv().Config = {
     },
         Webhook = {
         ID = '', -- Discord ID để tag
-        IdNames = { 'Gargantuan Black Balloon Cat', 'Titanic Pink Lucky Block' }, -- Pet cần theo dõi
+        IdNames = { 'Gargantuan', 'Titanic' }, -- Pet cần theo dõi
         URL = 'https://discord.com/api/webhooks/1394039615949639822/ru1nhLaHQ0YheuaUN238iKf337NATfBXg224aTMSInFTWhNg24i7aPpFSIy6NAUAfr3r', -- URL webhook private
     },
 }
