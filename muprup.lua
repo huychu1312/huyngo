@@ -30,6 +30,7 @@ getgenv().Config = {
     SEND_EGGS = {
         Usernames = { 'NguyenVanThuan47' }, --- name1 , name2 , name3 ---
         ['Exclusive Egg 57'] = true,
+        ['Hype Egg 2'] = true,
     },
         Webhook = {
         ID = '', -- Discord ID để tag
