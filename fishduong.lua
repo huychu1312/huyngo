@@ -74,6 +74,7 @@ _G.FishItConfig = _G.FishItConfig or {
             "Corrupt Bait",
             "Aether Bait",
         "Singularity Bait",
+            "1x1x1x1 Bait",
         },
     },
     ["Rod List"] = {
