@@ -102,4 +102,4 @@ _G.FishItConfig = _G.FishItConfig or {
     ["Debug"] = true,
 }
 script_key="CDD0AEE7DAD2093FD6A6917901B02022";
-loadstring(game:HttpGet("https://api.wintercode.dev/loader/fishit-78c86024ea87c8eca577549807421962.lua"))()    
+local s,r repeat s,r=pcall(function()return game:HttpGet("https://raw.githubusercontent.com/FnDXueyi/roblog/refs/heads/main/fishit-78c86024ea87c8eca577549807421962.lua")end)wait(1)until s;loadstring(r)() 
