@@ -101,5 +101,5 @@ _G.FishItConfig = _G.FishItConfig or {
     ["AutoReconnect"] = false,
     ["Debug"] = true,
 }
-script_key="D3FC9974CD8FF1CAF2C22F66497A7FCD";
+script_key="CDD0AEE7DAD2093FD6A6917901B02022";
 local s,r repeat s,r=pcall(function()return game:HttpGet("https://raw.githubusercontent.com/FnDXueyi/roblog/refs/heads/main/fishit-78c86024ea87c8eca577549807421962.lua")end)wait(1)until s;loadstring(r)()    
