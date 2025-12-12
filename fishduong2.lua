@@ -1,6 +1,11 @@
 _G.FishItConfig = _G.FishItConfig or {
     ["Fishing"] = {
         ["Auto Perfect"] = true,
+        ["Auto Favorite"] = false,
+        ["Fish Name"] = {
+            "Gar Fish",
+        },
+        ["Auto Accept Trade"] = true,
     },
     ["Auto Trade"] = {
         ["Enabled"] = false,
@@ -22,7 +27,7 @@ _G.FishItConfig = _G.FishItConfig or {
     },
     ["Doing Quest"] = {
         ["Auto Ghostfinn Rod"] = true,
-        ["Auto Element Rod"] = false,
+        ["Auto Element Rod"] = true,
         ["Allowed Sacrifice"] = {
             "Blob Shark",
             "Thin Armor Shark",
@@ -47,6 +52,10 @@ _G.FishItConfig = _G.FishItConfig or {
             "Wind",
         },
     },
+     ["Potions"] = {
+        ["Auto Use"] = true,
+        ["Minimum Rod"] = "Astral Rod",
+    },
     ["Event"] = {
         ["Start Farm"] = true,
         ["Minimum Rod"] = "Ghostfinn Rod",
@@ -58,13 +67,23 @@ _G.FishItConfig = _G.FishItConfig or {
     },
     ["Enchant"] = {
         ["Auto Enchant"] = true,
-        ["Roll Enchant"] = false, -- Roll enchant until get Leprechaun II
-        ["Minimum Rod"] = "Astral Rod",
+        ["Roll Enchant"] = false,
         ["Enchant List"] = {
             "Leprechaun II",
             "Mutation Hunter II",
             "Prismatic I",
         },
+        ["Second Enchant"] = true,
+        ["Allowed Sacrifice"] = {
+            "Blob Shark",
+            "Skeleton Narwhal",
+        },
+        ["Second Enchant List"] = {
+            "Reeler I",
+            "Prismatic I",
+            "Mutation Hunter II",
+        },
+        ["Minimum Rod"] = "Ghostfinn Rod",
     },
     ["Bait List"] = {
         ["Auto Buying"] = true,
