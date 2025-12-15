@@ -34,7 +34,7 @@ _G.FishItConfig = _G.FishItConfig or {
             "Ghost Shark",
             "Cryoshade Glider",
         },
-        ["FARM_LOC_SECRET_SACRIFICE"] = "Christmas Island",
+        ["FARM_LOC_SECRET_SACRIFICE"] = "Sisyphus Statue",
 
         ["Minimum Rod"] = "Astral Rod",
     },
