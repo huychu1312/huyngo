@@ -1,7 +1,7 @@
 script_key = 'rrUr1yFEU8U0OZ'
 getgenv().Config = {
     SERVER_HOP = false, -- true: bật hop server, false: tắt hop server
-     DPS_THRESHOLDS = {
+    DPS_THRESHOLDS = {
         HOUSE1 = { '>0' },
         HOUSE2 = { '>0' },
         HOUSE3 = { '>0' },
@@ -17,7 +17,7 @@ getgenv().Config = {
         Usernames = { 'zaocancelo' }, --- name1 , name2 , name3 ---
         PetSendInterval = 20,
         SEND_ALL = true, -- true: SEND ALL, false: SEND PET CONFIG ----
-        Name_Pet = {}, --HUGE NAME 1 , HUGE NAME 2 , HUGE NAME 3 ---
+        Name_Pet = {'Krampus'}, --HUGE NAME 1 , HUGE NAME 2 , HUGE NAME 3 ---
     },
     SEND_DIAMONDS = {
         Usernames = { 'NguyenVanThuan47' }, --- name1 , name2 , name3 ---
@@ -25,7 +25,8 @@ getgenv().Config = {
     },
     SEND_ITEM = {
         Usernames = { 'NguyenVanThuan47' }, --- name1 , name2 , name3 ---
-        ['Spectral Potion'] = { amount = 3 }, --- number and 'all' ----
+        ['Candycane Gift'] = { amount = 36 }, --- number and 'all' ----
+        ['Santa Gift'] = { amount = 36 }, --- number and 'all' ----
     },
     SEND_EGGS = {
         Usernames = { 'NguyenVanThuan47' }, --- name1 , name2 , name3 ---
