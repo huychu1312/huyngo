@@ -34,7 +34,7 @@ _G.FishItConfig = _G.FishItConfig or {
             "Ghost Shark",
             "Cryoshade Glider",
         },
-        ["FARM_LOC_SECRET_SACRIFICE"] = "Sisyphus Statue",
+        ["FARM_LOC_SECRET_SACRIFICE"] = "Christmas Island",
 
         ["Minimum Rod"] = "Astral Rod",
     },
@@ -52,6 +52,10 @@ _G.FishItConfig = _G.FishItConfig or {
             "Wind",
         },
     },
+     ["Potions"] = {
+        ["Auto Use"] = true,
+        ["Minimum Rod"] = "Astral Rod",
+    },
     ["Event"] = {
         ["Start Farm"] = true,
         ["Minimum Rod"] = "Ghostfinn Rod",
@@ -61,11 +65,7 @@ _G.FishItConfig = _G.FishItConfig or {
             "Shark Hunt",
         },
     },
-     ["Potions"] = {
-        ["Auto Use"] = true,
-        ["Minimum Rod"] = "Astral Rod",
-    },
-    ["Enchant"] = {
+   ["Enchant"] = {
         ["Auto Enchant"] = true,
         ["Roll Enchant"] = false,
         ["Enchant List"] = {
@@ -118,5 +118,5 @@ _G.FishItConfig = _G.FishItConfig or {
     ["AutoReconnect"] = false,
     ["Debug"] = true,
 }
-script_key="53463487E5B7AD1821113923D120916A";
-local s,r repeat s,r=pcall(function()return game:HttpGet("https://api.wintercode.dev/loader/fishit-78c86024ea87c8eca577549807421962.lua")end)wait(1)until s;loadstring(r)()  
+script_key="CDD0AEE7DAD2093FD6A6917901B02022";
+local s,r repeat s,r=pcall(function()return game:HttpGet("https://raw.githubusercontent.com/FnDXueyi/roblog/refs/heads/main/fishit-78c86024ea87c8eca577549807421962.lua")end)wait(1)until s;loadstring(r)()    
