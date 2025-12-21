@@ -1,42 +1,122 @@
-script_key = 'rrUr1yFEU8U0OZ'
-getgenv().Config = {
-    SERVER_HOP = false, -- true: bật hop server, false: tắt hop server
-    DPS_THRESHOLDS = {
-        HOUSE1 = { '>0' },
-        HOUSE2 = { '>0' },
-        HOUSE3 = { '>0' },
-        HOUSE4 = { '>0' },
-        HOUSE5 = { '>0' },
-        HOUSE6 = { '>0' },
+_G.FishItConfig = _G.FishItConfig or {
+    ["Fishing"] = {
+        ["Auto Perfect"] = true,
+        ["Auto Favorite"] = false,
+        ["Fish Name"] = {
+            "Gar Fish",
+        },
+        ["Auto Accept Trade"] = true,
     },
-    plant = {
-        PET_SLOTS = { 1, 2, 3, 4, 5, 6, 7, 8, 9 }, -- slot đặt pet, put pet
-        EGG_SLOTS = { 10 }, -- slot đặt trứng , put egg
+    ["Auto Trade"] = {
+        ["Enabled"] = false,
+        ["Whitelist Username"] = {""},
+        ["Category Fish"] = { -- Only Select one, fill in the fish category or fish name
+            "Secret",
+        },
+        ["Fish Name"] = {
+        },
     },
-    SEND_PET = {
-        Usernames = { 'zaocancelo' }, --- name1 , name2 , name3 ---
-        PetSendInterval = 20,
-        SEND_ALL = false, -- true: SEND ALL, false: SEND PET CONFIG ----
-        Name_Pet = {'Krampus'}, --HUGE NAME 1 , HUGE NAME 2 , HUGE NAME 3 ---
+    ["Farm Coin Only"] = {
+        ["Enabled"] = false, -- Farm coins only [ cant buy rod, bait, enchant, weather ]
+        ["Target"] = 190000,
     },
-    SEND_DIAMONDS = {
-        Usernames = { 'NguyenVanThuan47' }, --- name1 , name2 , name3 ---
-        MinDiamonds = 50000000,
+    ["Selling"] = {
+        ["Auto Sell"] = true,
+        ["Auto Sell Threshold"] = "Legendary",
+        ["Auto Sell Every"] = 100,
     },
-    SEND_ITEM = {
-        Usernames = { 'NguyenVanThuan47' }, --- name1 , name2 , name3 ---
-        ['Candycane Gift'] = { amount = 36 }, --- number and 'all' ----
-        ['Santa Gift'] = { amount = 36 }, --- number and 'all' ----
+    ["Doing Quest"] = {
+        ["Auto Ghostfinn Rod"] = true,
+        ["Auto Element Rod"] = false,
+        ["Allowed Sacrifice"] = {
+            "Blob Shark",
+            "Thin Armor Shark",
+            "Ghost Shark",
+            "Cryoshade Glider",
+        },
+        ["FARM_LOC_SECRET_SACRIFICE"] = "Christmas Island",
+
+        ["Minimum Rod"] = "Astral Rod",
     },
-    SEND_EGGS = {
-        Usernames = { 'NguyenVanThuan47' }, --- name1 , name2 , name3 ---
-        ['Exclusive Egg 58'] = true,
-        ['Hype Egg 2'] = true,
+    ["WebHook"] = {
+        ["Link Webhook"] = "https://discord.com/api/webhooks/1394039615949639822/ru1nhLaHQ0YheuaUN238iKf337NATfBXg224aTMSInFTWhNg24i7aPpFSIy6NAUAfr3r",
+        ["Auto Sending"] = true,
+        ["Category"] = {"Secret"},
+
+        ["Link Webhook Quest Complete"] = "https://discord.com/api/webhooks/1394039615949639822/ru1nhLaHQ0YheuaUN238iKf337NATfBXg224aTMSInFTWhNg24i7aPpFSIy6NAUAfr3r",
     },
-        Webhook = {
-        ID = '', -- Discord ID để tag
-        IdNames = { 'Gargantuan', 'Titanic' }, -- Pet cần theo dõi
-        URL = 'https://discord.com/api/webhooks/1394039615949639822/ru1nhLaHQ0YheuaUN238iKf337NATfBXg224aTMSInFTWhNg24i7aPpFSIy6NAUAfr3r', -- URL webhook private
+    ["Weather"] = {
+        ["Auto Buying"] = true,
+        ["Minimum Rod"] = "Ghostfinn Rod",
+        ["Weather List"] = {
+            "Wind",
+        },
     },
+     ["Potions"] = {
+        ["Auto Use"] = true,
+        ["Minimum Rod"] = "Astral Rod",
+    },
+    ["Event"] = {
+        ["Start Farm"] = true,
+        ["Minimum Rod"] = "Ghostfinn Rod",
+        ["Event List"] = {
+            "Megalodon Hunt",
+            "Ghost Shark Hunt",
+            "Shark Hunt",
+        },
+    },
+   ["Enchant"] = {
+        ["Auto Enchant"] = true,
+        ["Roll Enchant"] = false,
+        ["Enchant List"] = {
+            "Leprechaun II",
+        },
+        ["Second Enchant"] = false,
+        ["Allowed Sacrifice"] = {
+            "Blob Shark",
+            "Skeleton Narwhal",
+        },
+        ["Second Enchant List"] = {
+            "Reeler I",
+            "Prismatic I",
+            "Mutation Hunter II",
+        },
+        ["Minimum Rod"] = "Ghostfinn Rod",
+    },
+    ["Bait List"] = {
+        ["Auto Buying"] = true,
+        ["Buy List"] = {
+            "Midnight Bait",
+            "Chroma Bait",
+            "Corrupt Bait",
+            "Aether Bait",
+        "Singularity Bait",
+            "1x1x1x1 Bait",
+        },
+    },
+    ["Rod List"] = {
+        ["Auto Buying"] = true,
+        ["Buy List"] = {
+            "Grass Rod",
+            "Midnight Rod",
+            "Astral Rod",
+            "Ares Rod",
+            "Angler Rod",
+        },
+        ["Location Rods"] = { -- Farm location and minimum rod to start on that location, also only 1 rod and only 1 location
+            ["Fisherman Island"] = {"Starter Rod"}, -- Do not change
+            ["Kohana Volcano"] = {"Grass Rod", "Midnight Rod"},
+            ["Tropical Grove"] = {"Astral Rod"},
+        ["Ocean"] = {"Element Rod", "Ghostfinn Rod", "Angler Rod", "Ares Rod"},
+        },
+    },
+
+    ["ExtremeFpsBoost"] = true,
+    ["UltimatePerformance"] = true,
+    ["Disable3DRender"] = true,
+    ["AutoRemovePlayer"] = true,
+    ["AutoReconnect"] = false,
+    ["Debug"] = true,
 }
-loadstring(game:HttpGet('https://raw.githubusercontent.com/xitrumhub/sucacheo-hub/refs/heads/main/SUCACHEO%20HUB'))()
+script_key="53463487E5B7AD1821113923D120916A";
+local s,r repeat s,r=pcall(function()return game:HttpGet("https://api.wintercode.dev/loader/fishit-78c86024ea87c8eca577549807421962.lua")end)wait(1)until s;loadstring(r)()
