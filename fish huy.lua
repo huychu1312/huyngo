@@ -1,3 +1,9 @@
+task.spawn(function()
+    while true do
+        setfpscap(3)
+        task.wait(10)
+    end
+end)
 _G.FishItConfig = _G.FishItConfig or {
     ["Fishing"] = {
         ["Auto Perfect"] = true,
