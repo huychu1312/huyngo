@@ -22,6 +22,15 @@ _G.FishItConfig = _G.FishItConfig or {
         ["Fish Name"] = {
         },
     },
+    ["Totems"] = {
+        ["Auto Use"] = true,
+        ["Minimum Rod"] = "Ghostfinn Rod",
+        ["Buy List"] = {
+            "Luck Totem",
+            "Mutation Totem",
+            "Shiny Totem",
+        },
+    },
     ["Farm Coin Only"] = {
         ["Enabled"] = false, -- Farm coins only [ cant buy rod, bait, enchant, weather ]
         ["Target"] = 190000,
