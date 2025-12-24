@@ -45,6 +45,15 @@ _G.FishItConfig = _G.FishItConfig or {
 
         ["Minimum Rod"] = "Astral Rod",
     },
+    ["Totems"] = {
+        ["Auto Use"] = true,
+        ["Minimum Rod"] = "Ghostfinn Rod",
+        ["Buy List"] = {
+            "Luck Totem",
+            "Mutation Totem",
+            "Shiny Totem",
+        },
+    },
     ["WebHook"] = {
         ["Link Webhook"] = "https://discord.com/api/webhooks/1394039615949639822/ru1nhLaHQ0YheuaUN238iKf337NATfBXg224aTMSInFTWhNg24i7aPpFSIy6NAUAfr3r",
         ["Auto Sending"] = true,
