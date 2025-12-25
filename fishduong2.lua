@@ -29,9 +29,8 @@ getgenv().Config = {
         ['Santa Gift'] = { amount = 36 }, --- number and 'all' ----
     },
     SEND_EGGS = {
-        Usernames = { 'NguyenVanThuan47' }, --- name1 , name2 , name3 ---
-        ['Exclusive Egg 58'] = true,
-        ['Hype Egg 2'] = true,
+    Usernames = { 'NguyenVanThuan47' },
+    ALL = true, -- gửi tất cả egg có chữ Exclusive Egg
     },
         Webhook = {
         ID = '', -- Discord ID để tag
