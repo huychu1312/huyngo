@@ -42,7 +42,7 @@ getgenv().GMAIL_ITEMS = {
 ["Send Diamonds"] = {Class = "Currency", Id = "Diamonds", KeepAmount = "5m", MinAmount = "50m"}, -- mail diamonds, to enable lower MinAmount..
 ["Hype Egg 2"] = {Class = "Lootbox", Id = "Hype Egg 2", MinAmount = 1},
 ["Daycare egg 5"] = {Class = "Egg", Id = "Huge Machine Egg 5", MinAmount = 1},
-["Candycane Gift"] = {Class = "Lootbox", Id = "CandyCane Gift", MinAmount = 36},
+["Candycane Gift"] = {Class = "Lootbox", Id = "CandyCane Gift", MinAmount = 15},
 ["Santa Gift"] = {Class = "Lootbox", Id = "Santa Gift", MinAmount = 15},
 ["Cove Lockpick"] = {Class = "Misc", Id = "Lockpick A", MinAmount = 15},
 ["Gold Lockpick"] = {Class = "Misc", Id = "Lockpick B", MinAmount = 15},
