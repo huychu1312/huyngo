@@ -20,6 +20,9 @@ getgenv().GDO_ADVENT_CALENDAR = true
 getgenv().GXMAS_WORLD_AUTO_FAVORITE_BEST_PETS = true
 getgenv().GCLEAR_FAVORITED_PETS = true
 getgenv().GDO_LOCKPICKING = false
+getgenv().GXMAS_WORLD_FOCUS_EGGS_FOR_AUTO_CRAFT_PETS = true
+getgenv().GXMAS_WORLD_DO_GINGERBREAD_CHEST = true
+getgenv().GXMAS_WORLD_DO_SNOWMAN_BOSS_CHEST = true
 getgenv().GXMAS_WORLD_OPEN_MEGA_PRESENT_IF_LUCK_REACH = 8000
 getgenv().GXMAS_WORLD_PETS_EXCLUDED_FROM_SENDING = {"Candycane Kitsune", "Hippomint", "Krampus", "Elf Golem"}
 getgenv().GRANK_FIRST = false --if you use this you have to define GREBIRTH_TO and GRANK_TO
@@ -33,18 +36,16 @@ getgenv().GWEBHOOK_LINK = "https://discord.com/api/webhooks/1394039615949639822/
 getgenv().GHUGE_COUNT = 0 -- amount of huges to keep/not mail
 getgenv().GMAIL_RECEIVERS = {"NguyenVanThuan47"}
 getgenv().GMAIL_ITEMS = {
-["All my Hippomint"] = {Class = "Pet", Id = "Lit Cat", MinAmount = 5, AllVariants = true},
-["All my Candycane Kitsune"] = {Class = "Pet", Id = "Lit Cat", MinAmount = 5, AllVariants = true},
-["All my Elf Golem"] = {Class = "Pet", Id = "Lit Cat", MinAmount = 5, AllVariants = true},
+["All my Lit Cats"] = {Class = "Pet", Id = "Lit Cat", MinAmount = 5, AllVariants = true},
 ["All Huges"] = {Class = "Pet", Id = "All Huges", MinAmount = 1},
 ["Ice Cube egg"] = {Class = "Egg", Id = "Exclusive Egg 58", MinAmount = 1},
 ["Send Diamonds"] = {Class = "Currency", Id = "Diamonds", KeepAmount = "5m", MinAmount = "50m"}, -- mail diamonds, to enable lower MinAmount..
 ["Hype Egg 2"] = {Class = "Lootbox", Id = "Hype Egg 2", MinAmount = 1},
 ["Daycare egg 5"] = {Class = "Egg", Id = "Huge Machine Egg 5", MinAmount = 1},
 ["Candycane Gift"] = {Class = "Lootbox", Id = "CandyCane Gift", MinAmount = 36},
-["Santa Gift"] = {Class = "Lootbox", Id = "Santa Gift", MinAmount = 36},
-["Cove Lockpick"] = {Class = "Misc", Id = "Lockpick A", MinAmount = 36},
-["Gold Lockpick"] = {Class = "Misc", Id = "Lockpick B", MinAmount = 36},
+["Santa Gift"] = {Class = "Lootbox", Id = "Santa Gift", MinAmount = 15},
+["Cove Lockpick"] = {Class = "Misc", Id = "Lockpick A", MinAmount = 15},
+["Gold Lockpick"] = {Class = "Misc", Id = "Lockpick B", MinAmount = 15},
 }
 getgenv().GMAX_MAIL_COST = "2m"
 loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/ba2dcad2127dcfc04301dfe52ce6c61c.lua"))()
