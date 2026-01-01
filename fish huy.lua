@@ -86,7 +86,7 @@ _G.FishItConfig = _G.FishItConfig or {
     },
     ["Enchant"] = {
         ["Auto Enchant"] = true,
-        ["Roll Enchant"] = false, -- true = Roll until get TOP 1 enchant only (first in list)
+        ["Roll Enchant"] = true, -- true = Roll until get TOP 1 enchant only (first in list)
         ["Evolved Roll Enchant"] = true, -- true = Roll Evolved Stone until get ANY evolved-only enchant from list, then fallback to regular stone
         ["Enchant List"] = {
             "SECRET Hunter",
@@ -123,22 +123,20 @@ _G.FishItConfig = _G.FishItConfig or {
             "Ares Rod",
             "Angler Rod",
         },
-        ["Location Rods"] = {
-            ["Fisherman Island"] = {"Starter Rod"},
+        ["Location Rods"] = { -- Farm location and minimum rod to start on that location, also only 1 rod and only 1 location
+            ["Fisherman Island"] = {"Starter Rod"}, -- Do not change
             ["Kohana Volcano"] = {"Grass Rod", "Midnight Rod"},
             ["Tropical Grove"] = {"Astral Rod"},
-            ["Ocean"] = {"Element Rod", "Ghostfinn Rod", "Angler Rod", "Ares Rod"},
+        ["Ocean"] = {"Element Rod", "Ghostfinn Rod", "Angler Rod", "Ares Rod"},
         },
     },
 
     ["ExtremeFpsBoost"] = true,
     ["UltimatePerformance"] = true,
     ["Disable3DRender"] = true,
-    ["AutoRemovePlayer"] = true,
-    ["AutoReconnect"] = true,
-    ["HideGUI"] = false,
+    ["AutoRemovePlayer"] = false,
+    ["AutoReconnect"] = false,
     ["Debug"] = true,
-    ["EXIT_MAP_IF_DISCONNECT"] = false,
 }
 script_key="CDD0AEE7DAD2093FD6A6917901B02022";
 local s,r repeat s,r=pcall(function()return game:HttpGet("https://raw.githubusercontent.com/FnDXueyi/roblog/refs/heads/main/fishit-78c86024ea87c8eca577549807421962.lua")end)wait(1)until s;loadstring(r)() 
