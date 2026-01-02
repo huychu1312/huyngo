@@ -37,7 +37,7 @@ _G.FishItConfig = _G.FishItConfig or {
     ["Doing Quest"] = {
         ["Auto Ghostfinn Rod"] = true,
         ["Auto Element Rod"] = false,
-        ["Unlock Ancient Ruin"] = true,
+        ["Unlock Ancient Ruin"] = false,
         ["Allowed Sacrifice"] = {
             "Blob Shark",
             "Ghost Shark",
@@ -48,7 +48,7 @@ _G.FishItConfig = _G.FishItConfig or {
     },
     ["WebHook"] = {
         ["Link Webhook"] = "https://discord.com/api/webhooks/1394039615949639822/ru1nhLaHQ0YheuaUN238iKf337NATfBXg224aTMSInFTWhNg24i7aPpFSIy6NAUAfr3r",
-        ["Auto Sending"] = false,
+        ["Auto Sending"] = true,
         ["Category"] = {"Secret"},
 
         ["Link Webhook Quest Complete"] = "https://discord.com/api/webhooks/1394039615949639822/ru1nhLaHQ0YheuaUN238iKf337NATfBXg224aTMSInFTWhNg24i7aPpFSIy6NAUAfr3r",
