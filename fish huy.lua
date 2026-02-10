@@ -65,4 +65,12 @@ getgenv().tapSimConfig = {
     SHOW_PUBLIC_DISCORD_ID = true,
     SHOW_WEBHOOK_USERNAME = true,
     SHOW_WEBHOOK_JOBID = true,
+    -- Autotrade
+    TRADE_PET_NAME = {},
+    TRADE_PET_RARITY = {},
+    TRADE_USERNAME = {},
+    KICK_IF_NO_TRADE_PET = false,
+    AUTO_ACCEPT_TRADE = false,  -- if true, leave all trade config above empty/default (this is for receiver account)
+}
+
 loadstring(game:HttpGet("https://api.luarmor.net/files/v4/loaders/ffab66f7d96a48c13b12e526b19b37d4.lua"))()
