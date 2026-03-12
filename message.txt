@@ -1,122 +1,79 @@
-_G.FishItConfig = _G.FishItConfig or {
-    ["Fishing"] = {
-        ["Auto Perfect"] = true,
-        ["Auto Favorite"] = false,
-        ["Fish Name"] = {
-            "Gar Fish",
+getgenv().Config = {
+        BabyFarm = true, -- Does baby farm
+            PetFarm = {
+            Enabled = true, -- Enables the Pet Farm
+            FarmEggs = false, -- If true, equips eggs to hatch them. If false, equips regular pets
+            BuyEggs = false, -- If FarmEggs is true and no eggs in inventory, buy eggs automatically
+            EggTypes = {}, -- Which eggs to equip ({} = any egg, or {"cracked_egg", "royal_egg"} for specific)
+            BuyEggType = "any", -- Which egg to buy when BuyEggs is true ("any" or specific egg ID)
+            MaxPets = 1, -- How many pets to equip at once (1 = free, 2 = requires Robux gamepass)
+            FarmUntilFullGrown = true, -- If true, selects pets that aren't full grown first
+            PrioritizeFriendship = false, -- If true, selects pets with higher friendship level first
+            SelectiveFarm = false, -- If true, only farm pets in SelectedPetTypes list
+            SelectedPetTypes = {}, -- Pet IDs to farm when SelectiveFarm is true (e.g., {"dog", "cat"})
         },
-        ["Auto Accept Trade"] = true,
-    },
-    ["Auto Trade"] = {
-        ["Enabled"] = false,
-        ["Whitelist Username"] = {""},
-        ["Category Fish"] = { -- Only Select one, fill in the fish category or fish name
-            "Secret",
+        AutoNeon = {
+            Enabled = true, -- Enable auto neon/mega fusion
+            MakeMega = true, -- Fuse neons into mega neons
+            NeonAll = true, -- Neon everything possible
+            SelectedPets = {}, -- {} when NeonAll = true, otherwise {"dog", "cat"} etc
+            MaxPerType = {}, -- {} = unlimited, {dog = 2, cat = 1} = limits per pet type
         },
-        ["Fish Name"] = {
+        Settings = {
+            ShowOverlay = true, -- Show stats overlay (disables 3D rendering)
+            ReduceGraphics = true, -- Reduce graphics quality to minimum
+            FPSCap = 3, -- FPS cap option (0 = uncapped)
+            LureId = "ice_dimension_2025_ice_soup_bait" -- what lure to use for example: "ice_dimension_2025_ice_soup_bait"
         },
-    },
-    ["Farm Coin Only"] = {
-        ["Enabled"] = false, -- Farm coins only [ cant buy rod, bait, enchant, weather ]
-        ["Target"] = 190000,
-    },
-    ["Selling"] = {
-        ["Auto Sell"] = true,
-        ["Auto Sell Threshold"] = "Legendary",
-        ["Auto Sell Every"] = 100,
-    },
-    ["Doing Quest"] = {
-        ["Auto Ghostfinn Rod"] = true,
-        ["Auto Element Rod"] = false,
-        ["Allowed Sacrifice"] = {
-            "Blob Shark",
-            "Thin Armor Shark",
-            "Ghost Shark",
-            "Cryoshade Glider",
+        AutoBuy = {
+            Enabled = true, -- Automatically buy items from shops
+            SelectedItems = {"camping_2025_muskrat"}, -- Item IDs to buy
+            BuyAmounts = {}, -- How many of each item to buy. Example: {5, 10} buys 5 cracked_eggs and 10 sandwiches. Empty {} buys infinite of each item. If there are more items than amounts, remaining items default to infinite.
         },
-        ["FARM_LOC_SECRET_SACRIFICE"] = "Christmas Island",
+        AutoOpen = {
+            Enabled = false, -- Open gift boxes automatically
+            Items = {}, -- Item IDs to auto open (e.g., {"winter_2025_angus_box"})
+        },
+        AutoPotion = {
+            Enabled = true, -- Use age potions on pets to level them up
+            SelectedPets = {"camping_2025_muskrat"}, -- Pet IDs to use potions on (empty = does nothing)
+        },
+        AutoRecycle = {
+            Enabled = false, -- Toggle auto recycling on/off
+            RarityFilter = {
+                -- Each rarity maps to a list of versions to recycle
+                -- Versions: "regular", "neon", "mega"
+                -- If a rarity is not listed or empty, pets of that rarity will NOT be recycled
+                -- If a rarity has versions listed, ONLY those versions will be recycled
 
-        ["Minimum Rod"] = "Astral Rod",
-    },
-    ["WebHook"] = {
-        ["Link Webhook"] = "https://discord.com/api/webhooks/1394039615949639822/ru1nhLaHQ0YheuaUN238iKf337NATfBXg224aTMSInFTWhNg24i7aPpFSIy6NAUAfr3r",
-        ["Auto Sending"] = true,
-        ["Category"] = {"Secret"},
-
-        ["Link Webhook Quest Complete"] = "https://discord.com/api/webhooks/1394039615949639822/ru1nhLaHQ0YheuaUN238iKf337NATfBXg224aTMSInFTWhNg24i7aPpFSIy6NAUAfr3r",
-    },
-    ["Weather"] = {
-        ["Auto Buying"] = true,
-        ["Minimum Rod"] = "Ghostfinn Rod",
-        ["Weather List"] = {
-            "Wind",
+                -- common = {"regular", "neon", "mega"},  -- Recycle all common versions
+                -- uncommon = {"neon"},                    -- Only recycle neon uncommons
+                -- rare = {"regular", "neon", "mega"},     -- Recycle all rare versions
+                -- ultra_rare = {"regular", "neon", "mega"}, -- Recycle all ultra rare versions
+                -- legendary = {"mega"},                   -- Only recycle mega legendaries
+            },
+            AgeFilter = {}, -- Empty = all ages, or specific ages e.g. {1, 2, 3, 4, 5, 6} (1=Newborn, 6=Full Grown)
+            ExcludedPets = {}, -- Pet IDs to never recycle e.g. {"dog", "cat", "shadow_dragon"}
         },
-    },
-     ["Potions"] = {
-        ["Auto Use"] = true,
-        ["Minimum Rod"] = "Astral Rod",
-    },
-    ["Event"] = {
-        ["Start Farm"] = true,
-        ["Minimum Rod"] = "Ghostfinn Rod",
-        ["Event List"] = {
-            "Megalodon Hunt",
-            "Ghost Shark Hunt",
-            "Shark Hunt",
+        IdleProgression = {
+            Enabled = true, -- Put pets in pet pen for idle leveling
+            SelectedPets = {"camping_2025_muskrat"}, -- Pet IDs to put in pet pen (empty = use all)
+            ExcludedPets = {}, -- Pet IDs to never put in pet pen
+            PriorityOrder = {}, -- Order: first = highest priority for pen slots (e.g. {"neon", "regular", "mega"})
         },
-    },
-   ["Enchant"] = {
-        ["Auto Enchant"] = true,
-        ["Roll Enchant"] = false,
-        ["Enchant List"] = {
-            "Leprechaun II",
+        Webhook = {
+            Enabled = false, -- Send webhook notifications to Discord
+            URL = "https://discord.com/api/webhooks/1394039615949639822/ru1nhLaHQ0YheuaUN238iKf337NATfBXg224aTMSInFTWhNg24i7aPpFSIy6NAUAfr3r", -- Discord webhook URL for notifications
+            PetUnlock = {
+                Enabled = false, -- Send webhook when hatching/unlocking a pet
+                URL = "https://discord.com/api/webhooks/1394039615949639822/ru1nhLaHQ0YheuaUN238iKf337NATfBXg224aTMSInFTWhNg24i7aPpFSIy6NAUAfr3r", -- Webhook URL for pet unlocks
+                FilterRarities = {"legendary", "ultra_rare"}, -- Only send for these rarities
+            },
         },
-        ["Second Enchant"] = false,
-        ["Allowed Sacrifice"] = {
-            "Blob Shark",
-            "Skeleton Narwhal",
+        TaskExclusion = {
+            Enabled = false, -- Skip certain farming tasks
+            ExcludedTasks = {}, -- Task IDs to skip (e.g., {"buccaneer_band", "summerfest_bonfire"})
         },
-        ["Second Enchant List"] = {
-            "Reeler I",
-            "Prismatic I",
-            "Mutation Hunter II",
-        },
-        ["Minimum Rod"] = "Ghostfinn Rod",
-    },
-    ["Bait List"] = {
-        ["Auto Buying"] = true,
-        ["Buy List"] = {
-            "Midnight Bait",
-            "Chroma Bait",
-            "Corrupt Bait",
-            "Aether Bait",
-        "Singularity Bait",
-            "1x1x1x1 Bait",
-        },
-    },
-    ["Rod List"] = {
-        ["Auto Buying"] = true,
-        ["Buy List"] = {
-            "Grass Rod",
-            "Midnight Rod",
-            "Astral Rod",
-            "Ares Rod",
-            "Angler Rod",
-        },
-        ["Location Rods"] = { -- Farm location and minimum rod to start on that location, also only 1 rod and only 1 location
-            ["Fisherman Island"] = {"Starter Rod"}, -- Do not change
-            ["Kohana Volcano"] = {"Grass Rod", "Midnight Rod"},
-            ["Tropical Grove"] = {"Astral Rod"},
-        ["Ocean"] = {"Element Rod", "Ghostfinn Rod", "Angler Rod", "Ares Rod"},
-        },
-    },
-
-    ["ExtremeFpsBoost"] = true,
-    ["UltimatePerformance"] = true,
-    ["Disable3DRender"] = true,
-    ["AutoRemovePlayer"] = true,
-    ["AutoReconnect"] = false,
-    ["Debug"] = true,
-}
-script_key="CDD0AEE7DAD2093FD6A6917901B02022";
-local s,r repeat s,r=pcall(function()return game:HttpGet("https://raw.githubusercontent.com/FnDXueyi/roblog/refs/heads/main/fishit-78c86024ea87c8eca577549807421962.lua")end)wait(1)until s;loadstring(r)()    
+    };
+getgenv().scriptkey="MwllwpliPCZJKqKjagccxTbDiZeCQCxZ"
+loadstring(game:HttpGet("https://zekehub.com/scripts/AdoptMe/Lite.lua"))()
