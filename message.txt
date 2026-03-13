@@ -1,11 +1,4 @@
 getgenv().Config = {
-        Dashboard = {
-            Enabled = true, -- Connect to Adopt Me dashboard To Control Script/View Stats (https://zekehub.com/dashboard/adoptme)
-            GroupName = "vps1", -- Group name for organizing accounts on dashboard
-        },
-        EventFarm = {
-            CandyCliff = true, -- Automatically complete Candy Cliff event tasks and buys a chissle
-        },
         BabyFarm = true, -- Does baby farm
             PetFarm = {
             Enabled = true, -- Enables the Pet Farm
@@ -18,6 +11,9 @@ getgenv().Config = {
             PrioritizeFriendship = false, -- If true, selects pets with higher friendship level first
             SelectiveFarm = false, -- If true, only farm pets in SelectedPetTypes list
             SelectedPetTypes = {}, -- Pet IDs to farm when SelectiveFarm is true (e.g., {"dog", "cat"})
+        },
+        EventFarm = {
+            CandyCliff = true, -- Automatically complete Candy Cliff event tasks and buys a chissle
         },
         AutoNeon = {
             Enabled = true, -- Enable auto neon/mega fusion
@@ -34,7 +30,7 @@ getgenv().Config = {
         },
         AutoBuy = {
             Enabled = true, -- Automatically buy items from shops
-            SelectedItems = {"camping_2025_muskrat"}, -- Item IDs to buy
+            SelectedItems = {"camping_2025_muskrat", "sugarfest_2026_cocoadile"}, -- Item IDs to buy
             BuyAmounts = {}, -- How many of each item to buy. Example: {5, 10} buys 5 cracked_eggs and 10 sandwiches. Empty {} buys infinite of each item. If there are more items than amounts, remaining items default to infinite.
         },
         AutoOpen = {
