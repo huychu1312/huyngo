@@ -14,6 +14,7 @@ getgenv().Config = {
         },
         EventFarm = {
             CandyCliff = true, -- Automatically complete Candy Cliff event tasks and buys a chissle
+            MochiNail = true, -- Automatically complete Mochi Nail event and buys the tool needed
         },
         AutoNeon = {
             Enabled = true, -- Enable auto neon/mega fusion
