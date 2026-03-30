@@ -1,62 +1,83 @@
-script_key = "kCmNvkSOUWyAEAGmervqcDKtcVcByvcI";
-task.wait(60) -- DO NOT remove this wait, it's against double counts.
-getgenv().GGFX_MODE = 1 --1 = REMOVE_TEXTURES : more stable! but no visuals, 2: see some stuff, 3: see all
-getgenv().GRANK_FIRST = false --if you use this you have to define GREBIRTH_TO and GRANK_TO
-getgenv().GZONE_TO = 1 -- to enter event from W1 put 1, from W2 put 100, from W3 200, from W4 240
-getgenv().GDO_LUCKY_WORLD_EVENT = true
-getgenv().GMAKE_HORSESHOE_GIFTS = true
-getgenv().GLIMIT_HORSESHOE_GIFTS = 99999 -- choose yourself, don't set it lower than your MinAmount in your Horseshoe Gift mailrule!
-getgenv().GDO_BOSSES = {1,2,3}
-getgenv().GHEROIC_BOSSES  = {1,2,3}
-getgenv().GMYTHIC_BOSSES  = {1,2}
-getgenv().GSKIP_RAID_EGG = false
-getgenv().GMINUTE_HATCH_RAID_EGG = true
-getgenv().GAUTO_UPGRADE_PETS = true
-getgenv().GDISABLE_MINUTE_HATCH = false
-getgenv().GEVENT_FPS  = 5
-getgenv().GUSE_BOOSTS = true
-getgenv().GRAID_TIMEOUT_MINUTES = 15
---getgenv().GRAID_MAX_BREAKABLE_HEALTH = "10t" -- watch out only use when really needed
-getgenv().GAUTO_RAID = true
-getgenv().GHATCH_LOBBY = true
-getgenv().GUSE_LEPRECHAUN_KEYS = false
-getgenv().GMAX_RAID_LEVEL = 50000
-getgenv().GMIN_MULTIPLIER = 200 -- min required multiplier of raid egg to hatch
-getgenv().GRAID_MAX_HATCH_MINUTES = 5 -- abort hatching after 5 min
-getgenv().GRESET_UPGRADES = false -- only do true when you actually need a reset
-getgenv().GEVENT_UPGRADES = {
-    { Id = "LuckyRaidDamage", MaxTier = 100 },
-    { Id = "LuckyRaidAttackSpeed", MaxTier = 100 },
-    { Id = "LuckyRaidPets", MaxTier = 100 },
-    { Id = "LuckyRaidEggCost", MaxTier = 100 },
-    { Id = "LuckyRaidMoreCurrency", MaxTier = 5 },
-    { Id = "LuckyRaidBetterLoot", MaxTier = 100 },
-    { Id = "LuckyRaidTitanicChest", MaxTier = 100 },
-    { Id = "LuckyRaidHugeChest", MaxTier = 5 },
-    { Id = "LuckyRaidXP", MaxTier = 100 },
-    { Id = "LuckyRaidPetSpeed", MaxTier = 0 },
-    { Id = "LuckyRaidKeyDrops", MaxTier = 5 },
-    { Id = "LuckyRaidBossHugeChances", MaxTier = 0 },
-    { Id = "LuckyRaidBossTitanicChances", MaxTier = 100 },
-}
---getgenv().GLOOTBOXES = {"Locked Hype Egg","Horseshoe Gift"}
-getgenv().GHOP_ON_STAFF = true
-getgenv().GCLEAR_FAVORITE_PETS = true
---getgenv().GENCHANTS = {"Strong Pets","Criticals","Strong Pets","Strong Pets","Coins","Treasure Hunter","Tap Power"}
---getgenv().GMAX_POWER_FOR_PET_MASTERY_VIA_FUSING = "240t"
-getgenv().GPOTIONS_MAX_TIER = 99
-getgenv().GWEBHOOK_USERID = "993062998652493824"
-getgenv().GWEBHOOK_LINK = "https://discord.com/api/webhooks/1394039615949639822/ru1nhLaHQ0YheuaUN238iKf337NATfBXg224aTMSInFTWhNg24i7aPpFSIy6NAUAfr3r"
-getgenv().GHUGE_COUNT = 0 -- amount of huges to keep/not mail
-getgenv().GMAIL_RECEIVERS = {"NguyenVanThuan47"}
-getgenv().GMAIL_ITEMS = {
-["All Huges"] = {Class = "Pet", Id = "All Huges", MinAmount = 1},
-["Harvest egg"] = {Class = "Egg", Id = "Exclusive Egg 59", MinAmount = 1},
-["Send Diamonds"] = {Class = "Currency", Id = "Diamonds", KeepAmount = "5m", MinAmount = "50m"}, -- mail diamonds, to enable lower MinAmount..
-["Hype Egg 2"] = {Class = "Lootbox", Id = "Hype Egg 2", MinAmount = 1},
-["Leprechaun Key"] = {Class = "Lootbox", Id = "Leprechaun Key", MinAmount = 5},
-["Daycare egg 5"] = {Class = "Egg", Id = "Huge Machine Egg 5", MinAmount = 1},
-["Horseshoe Gift"] = {Class = "Lootbox", Id = "Horseshoe Gift", MinAmount = 100},
-}
-getgenv().GMAX_MAIL_COST = "1m"
-loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/ba2dcad2127dcfc04301dfe52ce6c61c.lua"))()
+getgenv().Config = {
+        BabyFarm = true, -- Does baby farm
+            PetFarm = {
+            Enabled = true, -- Enables the Pet Farm
+            FarmEggs = false, -- If true, equips eggs to hatch them. If false, equips regular pets
+            BuyEggs = false, -- If FarmEggs is true and no eggs in inventory, buy eggs automatically
+            EggTypes = {}, -- Which eggs to equip ({} = any egg, or {"cracked_egg", "royal_egg"} for specific)
+            BuyEggType = "any", -- Which egg to buy when BuyEggs is true ("any" or specific egg ID)
+            MaxPets = 1, -- How many pets to equip at once (1 = free, 2 = requires Robux gamepass)
+            FarmUntilFullGrown = true, -- If true, selects pets that aren't full grown first
+            PrioritizeFriendship = false, -- If true, selects pets with higher friendship level first
+            SelectiveFarm = false, -- If true, only farm pets in SelectedPetTypes list
+            SelectedPetTypes = {}, -- Pet IDs to farm when SelectiveFarm is true (e.g., {"dog", "cat"})
+        },
+        EventFarm = {
+            CandyCliff = false, -- Automatically complete Candy Cliff event tasks and buys a chissle
+            MochiNail = true, -- Automatically complete Mochi Nail event and buys the tool needed
+        },
+        AutoNeon = {
+            Enabled = true, -- Enable auto neon/mega fusion
+            MakeMega = true, -- Fuse neons into mega neons
+            NeonAll = true, -- Neon everything possible
+            SelectedPets = {}, -- {} when NeonAll = true, otherwise {"dog", "cat"} etc
+            MaxPerType = {}, -- {} = unlimited, {dog = 2, cat = 1} = limits per pet type
+        },
+        Settings = {
+            ShowOverlay = true, -- Show stats overlay (disables 3D rendering)
+            ReduceGraphics = true, -- Reduce graphics quality to minimum
+            FPSCap = 3, -- FPS cap option (0 = uncapped)
+            LureId = "ice_dimension_2025_ice_soup_bait" -- what lure to use for example: "ice_dimension_2025_ice_soup_bait"
+        },
+        AutoBuy = {
+            Enabled = true, -- Automatically buy items from shops
+            SelectedItems = {"camping_2025_muskrat", "sugarfest_2026_cocoadile"}, -- Item IDs to buy
+            BuyAmounts = {}, -- How many of each item to buy. Example: {5, 10} buys 5 cracked_eggs and 10 sandwiches. Empty {} buys infinite of each item. If there are more items than amounts, remaining items default to infinite.
+        },
+        AutoOpen = {
+            Enabled = false, -- Open gift boxes automatically
+            Items = {}, -- Item IDs to auto open (e.g., {"winter_2025_angus_box"})
+        },
+        AutoPotion = {
+            Enabled = true, -- Use age potions on pets to level them up
+            SelectedPets = {"camping_2025_muskrat"}, -- Pet IDs to use potions on (empty = does nothing)
+        },
+        AutoRecycle = {
+            Enabled = false, -- Toggle auto recycling on/off
+            RarityFilter = {
+                -- Each rarity maps to a list of versions to recycle
+                -- Versions: "regular", "neon", "mega"
+                -- If a rarity is not listed or empty, pets of that rarity will NOT be recycled
+                -- If a rarity has versions listed, ONLY those versions will be recycled
+
+                -- common = {"regular", "neon", "mega"},  -- Recycle all common versions
+                -- uncommon = {"neon"},                    -- Only recycle neon uncommons
+                -- rare = {"regular", "neon", "mega"},     -- Recycle all rare versions
+                -- ultra_rare = {"regular", "neon", "mega"}, -- Recycle all ultra rare versions
+                -- legendary = {"mega"},                   -- Only recycle mega legendaries
+            },
+            AgeFilter = {}, -- Empty = all ages, or specific ages e.g. {1, 2, 3, 4, 5, 6} (1=Newborn, 6=Full Grown)
+            ExcludedPets = {}, -- Pet IDs to never recycle e.g. {"dog", "cat", "shadow_dragon"}
+        },
+        IdleProgression = {
+            Enabled = true, -- Put pets in pet pen for idle leveling
+            SelectedPets = {"camping_2025_muskrat"}, -- Pet IDs to put in pet pen (empty = use all)
+            ExcludedPets = {}, -- Pet IDs to never put in pet pen
+            PriorityOrder = {}, -- Order: first = highest priority for pen slots (e.g. {"neon", "regular", "mega"})
+        },
+        Webhook = {
+            Enabled = false, -- Send webhook notifications to Discord
+            URL = "https://discord.com/api/webhooks/1394039615949639822/ru1nhLaHQ0YheuaUN238iKf337NATfBXg224aTMSInFTWhNg24i7aPpFSIy6NAUAfr3r", -- Discord webhook URL for notifications
+            PetUnlock = {
+                Enabled = false, -- Send webhook when hatching/unlocking a pet
+                URL = "https://discord.com/api/webhooks/1394039615949639822/ru1nhLaHQ0YheuaUN238iKf337NATfBXg224aTMSInFTWhNg24i7aPpFSIy6NAUAfr3r", -- Webhook URL for pet unlocks
+                FilterRarities = {"legendary", "ultra_rare"}, -- Only send for these rarities
+            },
+        },
+        TaskExclusion = {
+            Enabled = false, -- Skip certain farming tasks
+            ExcludedTasks = {}, -- Task IDs to skip (e.g., {"buccaneer_band", "summerfest_bonfire"})
+        },
+    };
+getgenv().scriptkey="MwllwpliPCZJKqKjagccxTbDiZeCQCxZ"
+loadstring(game:HttpGet("https://zekehub.com/scripts/AdoptMe/Lite.lua"))()
