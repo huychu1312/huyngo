@@ -69,7 +69,7 @@ getgenv().Config = {
             Enabled = true, -- Send webhook notifications to Discord
             URL = "https://discord.com/api/webhooks/1394039615949639822/ru1nhLaHQ0YheuaUN238iKf337NATfBXg224aTMSInFTWhNg24i7aPpFSIy6NAUAfr3r", -- Discord webhook URL for notifications
             PetUnlock = {
-                Enabled = true, -- Send webhook when hatching/unlocking a pet
+                Enabled = false, -- Send webhook when hatching/unlocking a pet
                 URL = "https://discord.com/api/webhooks/1394039615949639822/ru1nhLaHQ0YheuaUN238iKf337NATfBXg224aTMSInFTWhNg24i7aPpFSIy6NAUAfr3r", -- Webhook URL for pet unlocks
                 FilterRarities = {"legendary"}, -- Only send for these rarities
             },
