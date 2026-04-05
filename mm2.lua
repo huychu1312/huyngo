@@ -1,83 +1,26 @@
+wait(5)
 getgenv().Config = {
-        BabyFarm = true, -- Does baby farm
-            PetFarm = {
-            Enabled = true, -- Enables the Pet Farm
-            FarmEggs = true, -- If true, equips eggs to hatch them. If false, equips regular pets
-            BuyEggs = true, -- If FarmEggs is true and no eggs in inventory, buy eggs automatically
-            EggTypes = {"Crystal Egg"}, -- Which eggs to equip ({} = any egg, or {"cracked_egg", "royal_egg"} for specific)
-            BuyEggType = "pet_recycler_2025_crystal_egg", -- Which egg to buy when BuyEggs is true ("any" or specific egg ID)
-            MaxPets = 1, -- How many pets to equip at once (1 = free, 2 = requires Robux gamepass)
-            FarmUntilFullGrown = true, -- If true, selects pets that aren't full grown first
-            PrioritizeFriendship = false, -- If true, selects pets with higher friendship level first
-            SelectiveFarm = false, -- If true, only farm pets in SelectedPetTypes list
-            SelectedPetTypes = {}, -- Pet IDs to farm when SelectiveFarm is true (e.g., {"dog", "cat"})
+    ["PetPen"] = {
+        ["EggToBuy"] = "Cracked Egg",
+        ["RaritiesToKeep"] = {"common"}
+    },
+    ["PetReleaser"] = {
+        ["RaritiesToMakeNeon"] = {"common"}
+    },
+    ["AutoTrade"] = {
+        ["TradeUsers"] = {
         },
-        EventFarm = {
-            CandyCliff = false, -- Automatically complete Candy Cliff event tasks and buys a chissle
-            MochiNail = false, -- Automatically complete Mochi Nail event and buys the tool needed
-        },
-        AutoNeon = {
-            Enabled = true, -- Enable auto neon/mega fusion
-            MakeMega = false, -- Fuse neons into mega neons
-            NeonAll = true, -- Neon everything possible
-            SelectedPets = {}, -- {} when NeonAll = true, otherwise {"dog", "cat"} etc
-            MaxPerType = {}, -- {} = unlimited, {dog = 2, cat = 1} = limits per pet type
-        },
-        Settings = {
-            ShowOverlay = true, -- Show stats overlay (disables 3D rendering)
-            ReduceGraphics = true, -- Reduce graphics quality to minimum
-            FPSCap = 3, -- FPS cap option (0 = uncapped)
-            LureId = "ice_dimension_2025_ice_soup_bait" -- what lure to use for example: "ice_dimension_2025_ice_soup_bait"
-        },
-        AutoBuy = {
-            Enabled = true, -- Automatically buy items from shops
-            SelectedItems = {"camping_2025_muskrat", "sugarfest_2026_cocoadile"}, -- Item IDs to buy
-            BuyAmounts = {}, -- How many of each item to buy. Example: {5, 10} buys 5 cracked_eggs and 10 sandwiches. Empty {} buys infinite of each item. If there are more items than amounts, remaining items default to infinite.
-        },
-        AutoOpen = {
-            Enabled = false, -- Open gift boxes automatically
-            Items = {}, -- Item IDs to auto open (e.g., {"winter_2025_angus_box"})
-        },
-        AutoPotion = {
-            Enabled = false, -- Use age potions on pets to level them up
-            SelectedPets = {"camping_2025_muskrat"}, -- Pet IDs to use potions on (empty = does nothing)
-        },
-        AutoRecycle = {
-            Enabled = false, -- Toggle auto recycling on/off
-            RarityFilter = {
-                -- Each rarity maps to a list of versions to recycle
-                -- Versions: "regular", "neon", "mega"
-                -- If a rarity is not listed or empty, pets of that rarity will NOT be recycled
-                -- If a rarity has versions listed, ONLY those versions will be recycled
-
-                -- common = {"regular", "neon", "mega"},  -- Recycle all common versions
-                -- uncommon = {"neon"},                    -- Only recycle neon uncommons
-                -- rare = {"regular", "neon", "mega"},     -- Recycle all rare versions
-                -- ultra_rare = {"regular", "neon", "mega"}, -- Recycle all ultra rare versions
-                -- legendary = {"mega"},                   -- Only recycle mega legendaries
-            },
-            AgeFilter = {}, -- Empty = all ages, or specific ages e.g. {1, 2, 3, 4, 5, 6} (1=Newborn, 6=Full Grown)
-            ExcludedPets = {}, -- Pet IDs to never recycle e.g. {"dog", "cat", "shadow_dragon"}
-        },
-        IdleProgression = {
-            Enabled = true, -- Put pets in pet pen for idle leveling
-            SelectedPets = {"camping_2025_muskrat"}, -- Pet IDs to put in pet pen (empty = use all)
-            ExcludedPets = {}, -- Pet IDs to never put in pet pen
-            PriorityOrder = {}, -- Order: first = highest priority for pen slots (e.g. {"neon", "regular", "mega"})
-        },
-        Webhook = {
-            Enabled = true, -- Send webhook notifications to Discord
-            URL = "https://discord.com/api/webhooks/1394039615949639822/ru1nhLaHQ0YheuaUN238iKf337NATfBXg224aTMSInFTWhNg24i7aPpFSIy6NAUAfr3r", -- Discord webhook URL for notifications
-            PetUnlock = {
-                Enabled = false, -- Send webhook when hatching/unlocking a pet
-                URL = "https://discord.com/api/webhooks/1394039615949639822/ru1nhLaHQ0YheuaUN238iKf337NATfBXg224aTMSInFTWhNg24i7aPpFSIy6NAUAfr3r", -- Webhook URL for pet unlocks
-                FilterRarities = {"legendary"}, -- Only send for these rarities
-            },
-        },
-        TaskExclusion = {
-            Enabled = false, -- Skip certain farming tasks
-            ExcludedTasks = {}, -- Task IDs to skip (e.g., {"buccaneer_band", "summerfest_bonfire"})
-        },
-    };
-getgenv().scriptkey="MwllwpliPCZJKqKjagccxTbDiZeCQCxZ"
-loadstring(game:HttpGet("https://zekehub.com/scripts/AdoptMe/Lite.lua"))()
+        ["Pets"] = {"Giant Panda", "Dango Penguins", "Dragonfruit Fox", "Emberlight", "Frostbite Bear", "Diamond Unicorn", "Silverback Gorilla", "Blue Whale", "Sea Turtle", "Dragonfly", "Ancient Dragon", "Alicorn", "Admin Abuse Egg", "Gumball Caterpillar", "Mochi Meow"}
+    },
+    ["AutoChangeConfig"] = {
+        ["CrystalEggAmount"] = 100,
+        ["TradeablePets"] = 100,
+        ["CollectServers"] = {
+            "",
+                     
+        }
+    },
+    ["OpenCrystalEggs"] = true,
+    ["WebhookURL"] = "https://discord.com/api/webhooks/1394039615949639822/ru1nhLaHQ0YheuaUN238iKf337NATfBXg224aTMSInFTWhNg24i7aPpFSIy6NAUAfr3r",
+}
+loadstring(game:HttpGet("https://api.luarmor.net/files/v4/loaders/59f971a53399e1698668b38616a7c9d5.lua"))()
