@@ -7,7 +7,7 @@ getgenv().Config = {
         AutoCertificate = false, -- Auto use Pet Handler Pro Certificate when less than 30 days remaining
         PetFarm = {
             Enabled = true, -- Enables the Pet Farm
-            FarmEggs = true, -- If true, equips eggs to hatch them. If false, equips regular pets
+            FarmEggs = false, -- If true, equips eggs to hatch them. If false, equips regular pets
             BuyEggs = true, -- If FarmEggs is true and no eggs in inventory, buy eggs automatically
             EggTypes = {"pet_recycler_2025_crystal_egg"}, -- Which eggs to equip ({} = any egg, or {"cracked_egg", "royal_egg"} for specific)
             BuyEggType = "any", -- Which egg to buy when BuyEggs is true ("any" or specific egg ID)
@@ -15,7 +15,7 @@ getgenv().Config = {
             FarmUntilFullGrown = true, -- If true, selects pets that aren't full grown first
             PrioritizeFriendship = false, -- If true, selects pets with higher friendship level first
             SelectiveFarm = true, -- If true, only farm pets in SelecatedPetTypes list
-            SelectedPetTypes = {"sugarfest_2026_jiggly_jerboa", "sugarfest_2026_dark_choccybunny", "sugarfest_2026_milk_choccybunny", "sugarfest_2026_white_choccybunny"}, -- Pet IDs to farm when SelectiveFarm is true (e.g., {"dog", "cat"})
+            SelectedPetTypes = {"sugarfest_2026_dark_choccybunny", "sugarfest_2026_milk_choccybunny", "sugarfest_2026_white_choccybunny"}, -- Pet IDs to farm when SelectiveFarm is true (e.g., {"dog", "cat"})
         },
         EventFarm = {
             CandyCliff = false, -- Automatically complete Candy Cliff event tasks and buys a chissle
@@ -62,7 +62,7 @@ getgenv().Config = {
         },
         AutoPotion = {
             Enabled = true, -- Use age potions on pets to level them up
-            SelectedPets = {"sugarfest_2026_jiggly_jerboa", "sugarfest_2026_dark_choccybunny", "sugarfest_2026_milk_choccybunny", "sugarfest_2026_white_choccybunny"}, -- Pet IDs to use potions on (empty = does nothing)
+            SelectedPets = {"sugarfest_2026_dark_choccybunny", "sugarfest_2026_milk_choccybunny", "sugarfest_2026_white_choccybunny"}, -- Pet IDs to use potions on (empty = does nothing)
             PotionVersionFilter = {}, -- Per-pet version filter e.g. {dog = {"neon"}, cat = {"regular", "neon"}} - empty = all versions
         },
         AutoBuy = {
@@ -79,7 +79,7 @@ getgenv().Config = {
             Items = {"sugarfest_2026_choccybunny_box", "pet_recycler_2025_crystal_egg"}, -- Item IDs to auto open
         },
         AutoRecycle = {
-            Enabled = true, -- Toggle auto recycling on/off
+            Enabled = false, -- Toggle auto recycling on/off
             RarityFilter = {
                 -- Each rarity maps to a list of versions to recycle
                 -- Versions: "regular", "neon", "mega"
@@ -96,7 +96,7 @@ getgenv().Config = {
         },
         IdleProgression = {
             Enabled = true, -- Put pets in pet pen for idle leveling
-            SelectedPets = {"sugarfest_2026_jiggly_jerboa", "sugarfest_2026_dark_choccybunny", "sugarfest_2026_milk_choccybunny", "sugarfest_2026_white_choccybunny"}, -- Pet IDs to put in pet pen (empty = use all)
+            SelectedPets = {"sugarfest_2026_dark_choccybunny", "sugarfest_2026_milk_choccybunny", "sugarfest_2026_white_choccybunny"}, -- Pet IDs to put in pet pen (empty = use all)
             ExcludedPets = {}, -- Pet IDs to never put in pet pen
             PriorityOrder = {}, -- Order: first = highest priority for pen slots (e.g. {"neon", "regular", "mega"})
             PenVersionFilter = {}, -- Per-pet version filter e.g. {dog = {"neon"}, cat = {"regular"}} - empty = all versions
@@ -130,7 +130,7 @@ getgenv().Config = {
             LureId = "ice_dimension_2025_ice_soup_bait" -- what lure to use for example: "ice_dimension_2025_ice_soup_bait"
         },
         Webhook = {
-            Enabled = true, -- Send webhook notifications to Discord
+            Enabled = false, -- Send webhook notifications to Discord
             URL = "https://discord.com/api/webhooks/1394039615949639822/ru1nhLaHQ0YheuaUN238iKf337NATfBXg224aTMSInFTWhNg24i7aPpFSIy6NAUAfr3r", -- Discord webhook URL for notifications
             PetUnlock = {
                 Enabled = false, -- Send webhook when hatching/unlocking a pet
