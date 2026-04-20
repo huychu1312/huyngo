@@ -59,7 +59,7 @@
         },
         AutoPotion = {
             Enabled = true, -- Use age potions on pets to level them up
-            SelectedPets = {"camping_2025_muskrat"}, -- Pet IDs to use potions on (empty = does nothing)
+            SelectedPets = {"camping_2025_muskrat", "sugarfest_2026_minigame_jerboa", "sugarfest_2026_jiggly_jerboa"}, -- Pet IDs to use potions on (empty = does nothing)
             PotionVersionFilter = {}, -- Per-pet version filter e.g. {dog = {"neon"}, cat = {"regular", "neon"}} - empty = all versions
         },
         AutoBuy = {
