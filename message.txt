@@ -10,13 +10,13 @@
             Enabled = true, -- Enables the Pet Farm
             FarmEggs = true, -- If true, equips eggs to hatch them. If false, equips regular pets
             BuyEggs = true, -- If FarmEggs is true and no eggs in inventory, buy eggs automatically
-            EggTypes = {"cracked_egg", "endangered_2026_endangered_egg", "admin_abuse_egg_2026_egg"}, -- Which eggs to equip ({} = any egg, or {"cracked_egg", "royal_egg"} for specific)
-            BuyEggType = "cracked_egg", -- Which egg to buy when BuyEggs is true ("any" or specific egg ID)
+            EggTypes = {"pet_recycler_2025_crystal_egg", "cracked_egg", "endangered_2026_endangered_egg", "admin_abuse_egg_2026_egg"}, -- Which eggs to equip ({} = any egg, or {"cracked_egg", "royal_egg"} for specific)
+            BuyEggType = "any", -- Which egg to buy when BuyEggs is true ("any" or specific egg ID)
             MaxPets = 1, -- How many pets to equip at once (1 = free, 2 = requires Robux gamepass)
             FarmUntilFullGrown = false, -- If true, selects pets that aren't full grown first
             PrioritizeFriendship = false, -- If true, selects pets with higher friendship level first
             SelectiveFarm = false, -- If true, only farm pets in SelecatedPetTypes list
-            SelectedPetTypes = {"camping_2025_muskrat", "sugarfest_2026_minigame_jerboa", "sugarfest_2026_jiggly_jerboa"}, -- Pet IDs to farm when SelectiveFarm is true (e.g., {"dog", "cat"})
+            SelectedPetTypes = {}, -- Pet IDs to farm when SelectiveFarm is true (e.g., {"dog", "cat"})
         },
         AutoTrade = {
             Enabled = false, -- Enable auto trading
@@ -83,19 +83,19 @@
                 -- If a rarity is not listed or empty, pets of that rarity will NOT be recycled
                 -- If a rarity has versions listed, ONLY those versions will be recycled
 
-                common = {"regular", "neon", "mega"},  -- Recycle all common versions
-                uncommon = {"regular", "neon", "mega"},                    -- Only recycle neon uncommons
-                rare = {"regular", "neon", "mega"},     -- Recycle all rare versions
-                ultra_rare = {"regular", "neon", "mega"}, -- Recycle all ultra rare versions
-                legendary = {"mega"},                   -- Only recycle mega legendaries
+                common = {"neon", "mega"},  -- Recycle all common versions
+                uncommon = {"neon", "mega"},                    -- Only recycle neon uncommons
+                rare = {"neon", "mega"},     -- Recycle all rare versions
+                ultra_rare = {"neon", "mega"}, -- Recycle all ultra rare versions
+                legendary = {"regular", "neon", "mega"},                   -- Only recycle mega legendaries
             },
             AgeFilter = {}, -- Empty = all ages, or specific ages e.g. {1, 2, 3, 4, 5, 6} (1=Newborn, 6=Full Grown)
-            ExcludedPets = {"basic_egg_2022_alicorn", "endangered_2026_blue_whale", "endangered_2026_sea_turtle", "penguins_2025_dango_penguins", "food_pets_2026_dragonfruit_fox", "pet_recycler_2025_emberlight", "ice_dimension_2025_frostbite_bear", "endangered_2026_silverback_gorilla", "camping_2025_muskrat", "sugarfest_2026_minigame_jerboa", "sugarfest_2026_jiggly_jerboa"}, -- Pet IDs to never recycle e.g. {"dog", "cat", "shadow_dragon"}
+            ExcludedPets = {"basic_egg_2022_alicorn", "endangered_2026_blue_whale", "endangered_2026_sea_turtle", "penguins_2025_dango_penguins", "food_pets_2026_dragonfruit_fox", "pet_recycler_2025_emberlight", "ice_dimension_2025_frostbite_bear", "endangered_2026_silverback_gorilla"}, -- Pet IDs to never recycle e.g. {"dog", "cat", "shadow_dragon"}
         },
         IdleProgression = {
             Enabled = true, -- Put pets in pet pen for idle leveling
             SelectedPets = {"camping_2025_muskrat", "sugarfest_2026_minigame_jerboa", "sugarfest_2026_jiggly_jerboa"}, -- Pet IDs to put in pet pen (empty = use all)
-            ExcludedPets = {"cracked_egg", "pet_recycler_2025_crystal_egg"}, -- Pet IDs to never put in pet pen
+            ExcludedPets = {}, -- Pet IDs to never put in pet pen
             PriorityOrder = {"neon", "regular"}, -- Order: first = highest priority for pen slots (e.g. {"neon", "regular", "mega"})
             PenVersionFilter = {}, -- Per-pet version filter e.g. {dog = {"neon"}, cat = {"regular"}} - empty = all versions
         },
