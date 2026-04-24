@@ -28,7 +28,7 @@ getgenv().Config = {
     ["AutoBuyMochi"] = true,
     ["UseAgeUpPotions"] = true,
     ["OpenAdminAbuseEggs"] = true,
-    ["KeepTickets"] = true,
+    ["KeepTickets"] = false,
 
     ["WebhookURL"] = "https://discord.com/api/webhooks/1394039615949639822/ru1nhLaHQ0YheuaUN238iKf337NATfBXg224aTMSInFTWhNg24i7aPpFSIy6NAUAfr3r",
 }
