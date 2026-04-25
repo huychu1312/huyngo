@@ -4,7 +4,7 @@ getgenv().Config = {
     },
     ["PetReleaser"] = {
         ["RaritiesToMakeNeon"] = {"common", "uncommon", "rare", "ultra_rare", "legendary"},
-        ["RaritiesToMakeMega"] = {},
+        ["RaritiesToMakeMega"] = {"common", "uncommon", "rare", "ultra_rare", "legendary"},
 
         ["RaritiesToRelease"] = {"common", "uncommon", "rare", "ultra_rare", "legendary"}
     },
