@@ -1,45 +1,35 @@
-local Players = game:GetService('Players')
-local LocalPlayer = Players.LocalPlayer
-local VirtualUser = game:GetService('VirtualUser')
-local VirtualInputManager = game:GetService('VirtualInputManager')
+getgenv().Config = {
+    ["PetPen"] = {
+        ["EggToBuy"] = "Cracked Egg",
+    },
+    ["PetReleaser"] = {
+        ["RaritiesToMakeNeon"] = {"common", "uncommon", "rare", "ultra_rare", "legendary"},
+        ["RaritiesToMakeMega"] = {"common", "uncommon", "rare", "ultra_rare", "legendary"},
 
-LocalPlayer.Idled:Connect(function()
-    VirtualUser:CaptureController()
-    VirtualUser:Button2Down(Vector2.new(0, 0), workspace.CurrentCamera.CFrame)
-    task.wait(1)
-    VirtualUser:Button2Up(Vector2.new(0, 0), workspace.CurrentCamera.CFrame)
-end)
-
-local function randomWait(base)
-    local variation = math.random(-30, 30)
-    return math.max(60, base + variation)
-end
-
--- jump
-task.spawn(function()
-    while task.wait(randomWait(300)) do
-        VirtualUser:CaptureController()
-        VirtualUser:SetKeyDown('0x20') -- phím Space
-        task.wait(0.5)
-        VirtualUser:SetKeyUp('0x20')
-    end
-end)
-
-function AFK()
-    while task.wait(randomWait(300)) do
-        VirtualInputManager:SendKeyEvent(true, 'Space', false, game)
-        task.wait(0.5)
-        VirtualInputManager:SendKeyEvent(false, 'Space', false, game)
-        print('[Anti-AFK] Jumped using VirtualInputManager.')
-    end
-end
-
-spawn(AFK)
-
--- Tắt Idle Tracking
-pcall(function()
-    game.ReplicatedStorage.Network['Idle Tracking: Stop Timer']:FireServer()
-    local scripts = LocalPlayer.PlayerScripts.Scripts.Core
-    scripts['Idle Tracking'].Enabled = false
-    scripts['Server Closing'].Enabled = false
-end)
+        ["RaritiesToRelease"] = {"common", "uncommon", "rare", "ultra_rare", "legendary"}
+    },
+    ["AutoTrade"] = {
+        ["TradeUsers"] = {
+            ""
+        },
+        ["Pets"] = {
+             "Silverback Gorilla","Balloon Unicorn","Purrowl", "Dragonfruit Fox", "Dango Penguins", "Emberlight", "Frostbite Bear", "Diamond Unicorn", "Sea Turtle", "Glormy Crab"
+        }
+    },
+    ["AutoChangeConfig"] = {
+        ["CrystalEggAmount"] = 1000000000,
+        ["TradeablePets"] = 1000000000,
+        ["CollectServers"] = {
+            "",
+        }
+    },
+    ["BuyItemWithTickets"] = "Crystal Egg",
+    ["OpenCrystalEggs"] = true,
+    ["AutoBuyJiggly"] = true,
+    ["AutoBuyMochi"] = true,
+    ["UseAgeUpPotions"] = true,
+    ["OpenAdminAbuseEggs"] = true,
+    ["KeepTickets"] = false,
+    ["WebhookURL"] = "https://discord.com/api/webhooks/1394039615949639822/ru1nhLaHQ0YheuaUN238iKf337NATfBXg224aTMSInFTWhNg24i7aPpFSIy6NAUAfr3r",
+}
+loadstring(game:HttpGet("https://api.luarmor.net/files/v4/loaders/9af1f22af0378cb275bfeac9c6971ba5.lua"))()
