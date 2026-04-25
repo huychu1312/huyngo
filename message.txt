@@ -13,7 +13,7 @@ getgenv().Config = {
             ""
         },
         ["Pets"] = {
-             "Silverback Gorilla","Balloon Unicorn","Purrowl", "Dragonfruit Fox", "Dango Penguins", "Emberlight", "Frostbite Bear", "Diamond Unicorn", "Sea Turtle", "Glormy Crab"
+             "Silverback Gorilla", "Balloon Unicorn", "Purrowl", "Dragonfruit Fox", "Dango Penguins", "Emberlight", "Frostbite Bear", "Diamond Unicorn", "Sea Turtle", "Glormy Crab"
         }
     },
     ["AutoChangeConfig"] = {
