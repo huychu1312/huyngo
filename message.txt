@@ -23,7 +23,7 @@ getgenv().Config = {
             "",
         }
     },
-    ["BuyItemWithTickets"] = "Crystal Egg",
+    ["BuyItemWithTickets"] = {"Crystal Egg", "Glormy Crab"},
     ["OpenCrystalEggs"] = true,
     ["AutoBuyJiggly"] = true,
     ["AutoBuyMochi"] = true,
