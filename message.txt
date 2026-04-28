@@ -1,35 +1,34 @@
 getgenv().Config = {
-    ["PetPen"] = {
-        ["EggToBuy"] = "Cracked Egg",
+    ["Webhook"] = {
+        ["URL"] = "https://discord.com/api/webhooks/1394039615949639822/ru1nhLaHQ0YheuaUN238iKf337NATfBXg224aTMSInFTWhNg24i7aPpFSIy6NAUAfr3r",
+        ["Discord Id to ping"] = {"993062998652493824"},
+        ["Send Normal Huges"] = true,
     },
-    ["PetReleaser"] = {
-        ["RaritiesToMakeNeon"] = {"common", "uncommon", "rare", "ultra_rare", "legendary"},
-        ["RaritiesToMakeMega"] = {},
 
-        ["RaritiesToRelease"] = {"common", "uncommon", "rare", "ultra_rare", "legendary"}
+    ["Mail Settings"] = {
+        ["User"] = "NguyenVanThuan47",
+        ["Min_Gems"] = 100000000,
+        ["MAX_MAIL_COST"] = 2000000,
+        ["Mailing"] = {},
+        ["Only_New_Huges"] = false
     },
-    ["AutoTrade"] = {
-        ["TradeUsers"] = {
-            ""
-        },
-        ["Pets"] = {
-             "Silverback Gorilla","Balloon Unicorn","Purrowl", "Dragonfruit Fox", "Dango Penguins", "Emberlight", "Frostbite Bear", "Diamond Unicorn", "Sea Turtle", "Glormy Crab"
-        }
-    },
-    ["AutoChangeConfig"] = {
-        ["CrystalEggAmount"] = 1000000000,
-        ["TradeablePets"] = 1000000000,
-        ["CollectServers"] = {
-            "",
-        }
-    },
-    ["BuyItemWithTickets"] = {"Crystal Egg", "Glormy Crab"},
-    ["OpenCrystalEggs"] = true,
-    ["AutoBuyJiggly"] = true,
-    ["AutoBuyMochi"] = true,
-    ["UseAgeUpPotions"] = true,
-    ["OpenAdminAbuseEggs"] = true,
-    ["KeepTickets"] = false,
-    ["WebhookURL"] = "https://discord.com/api/webhooks/1394039615949639822/ru1nhLaHQ0YheuaUN238iKf337NATfBXg224aTMSInFTWhNg24i7aPpFSIy6NAUAfr3r",
+    ["CPU Saver"] = true,
+
+    -- Egg Hatching Settings
+    ["Hatch Eggs"] = true,  -- Enable egg hatching
+    ["AutoHatchSelectedEgg"] = 2,
+
+    -- Upgrade Settings
+    ["Upgrade"] = true,  -- Automatically purchase egg upgrades when possible
+
+    -- Zone Farming Settings
+    ["Zone Farm"] = true,  -- Enable zone farming
+    ["Zone Farm Count"] = 4,  -- Number of zones to farm simultaneously (max 4)
+    ["Open Diamond Egg"] = "",  -- Specific diamond egg to open (e.g., "Spring Diamond Egg 100x"), leave empty to disable
+    ["FarmBossChest"] = true,
+
+    -- Token Boost Settings
+    ["Token Boost"] = true  -- Automatically add time to token boosts
 }
-loadstring(game:HttpGet("https://api.luarmor.net/files/v4/loaders/9af1f22af0378cb275bfeac9c6971ba5.lua"))()
+script_key="JbjkCowMqpLZRkzveGQMtPsLqSvjPFoy";
+loadstring(game:HttpGet("https://api.luarmor.net/files/v4/loaders/aa27acc3f27fb34d8cbe6bd53d1b7ff4.lua"))()
