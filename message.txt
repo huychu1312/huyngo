@@ -1,10 +1,10 @@
-getgenv().Config = {
+getgenv().Config =  {
     ["Webhook"] = {
         ["URL"] = "https://discord.com/api/webhooks/1394039615949639822/ru1nhLaHQ0YheuaUN238iKf337NATfBXg224aTMSInFTWhNg24i7aPpFSIy6NAUAfr3r",
-        ["Discord Id to ping"] = {"993062998652493824"},
+        ["Discord Id to ping"] = {""},
         ["Send Normal Huges"] = true,
 
-        ["Rank Updates"] = ""
+        ["Rank Updates"] = "https://discord.com/api/webhooks/1394039615949639822/ru1nhLaHQ0YheuaUN238iKf337NATfBXg224aTMSInFTWhNg24i7aPpFSIy6NAUAfr3r"
     },
     ["Mail Settings"] = {
         ["User"] = "",
@@ -13,16 +13,21 @@ getgenv().Config = {
         ["Mailing"] = {},
         ["Only_New_Huges"] = false,
     },
-    ["Auto Enchant"] = {"Criticals", "Tap Power", "Tap Power", "Strong Pets", "Coins"},
-    ["Ignore Do Ranks"] = false,
+    ["Auto Enchant"] = {"Treasure Hunter", "Coins", "Diamonds", "Criticals", "Strong Pets"},
     ["Time Trial"] = {
-        ["Disabled"] = false,
+        ["Disabled"] = true,
         ["Open Chest"] = 3, -- 1,2,3 or do false to not open
     },
-    ["CPU Saver"] = true,
-    ["CPU Saver2"] = false,
 
-    ["MaxEggSlots"] = 50,
-    ["MaxPetSlots"] = 40,
+    ["CPU Saver"] = true,
+
+    ["MaxEggSlots"] = 84,
+    ["MaxPetSlots"] = 84,
+
+    ["Ignore Do Ranks"] = false,
+    ["Fast Rankup"] = true,
+    ["UltraMastery"] = {"Economy", "Eggs", "Potions", "Enchants", "Fruits"},
+
+    ["StarterPets"] = true,
 }
 loadstring(game:HttpGet("https://api.luarmor.net/files/v4/loaders/cd6279ef22ef689bec5cd78c7cd2f0a1.lua"))()
