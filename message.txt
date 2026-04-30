@@ -21,8 +21,8 @@ getgenv().Config =  {
 
     ["CPU Saver"] = true,
 
-    ["MaxEggSlots"] = 84,
-    ["MaxPetSlots"] = 84,
+    ["MaxEggSlots"] = 99,
+    ["MaxPetSlots"] = 99,
 
     ["Ignore Do Ranks"] = false,
     ["Fast Rankup"] = true,
