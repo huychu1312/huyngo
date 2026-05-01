@@ -26,6 +26,7 @@ getgenv().Config =  {
 
     ["Ignore Do Ranks"] = false,
     ["Fast Rankup"] = true,
+    ["Fast Rankup to"] = 20,
     ["UltraMastery"] = {"Economy", "Eggs", "Potions", "Enchants", "Fruits"},
 
     ["StarterPets"] = true,
