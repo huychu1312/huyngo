@@ -6,14 +6,19 @@ getgenv().Config = {
     },
 
     ["Mail Settings"] = {
-        ["User"] = "",
-        ["Min_Gems"] = 100000000,
-        ["MAX_MAIL_COST"] = 2000000,
-        ["Mailing"] = {},
-        ["Only_New_Huges"] = false
-    },
+            ["User"] = "NguyenVanThuan47",
+            ["Min_Gems"] = 999999999999999,
+            ["MAX_MAIL_COST"] = 9999999999,
+            ["Only_New_Huges"] = true,
+            ["Mailing"] = {
+                ["Spring Pink Rose Token"] = {Class = "Misc", MinAmount = 30000000},
+                ["Spring Yellow Sunflower Token"] = {Class = "Misc", MinAmount = 30000000},
+                ["Spring Red Tulip Token"] = {Class = "Misc", MinAmount = 30000000},
+                ["Spring Bluebell Token"] = {Class = "Misc", MinAmount = 30000000},
+            },
+        },
     ["CPU Saver"] = true,
-    ["Auto Enchant"] = {"Treasure Hunter", "Coins", "Diamonds", "Criticals", "Strong Pets"},
+    ["Auto Enchant"] = {"Walkspeed", "HappyPets", "Treasure Hunter", "Coins", "Diamonds", "Criticals", "Strong Pets"},
     -- Egg Hatching Settings
     ["Hatch Eggs"] = true,  -- Enable egg hatching
     ["AutoHatchSelectedEgg"] = 8,
