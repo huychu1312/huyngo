@@ -4,21 +4,27 @@ getgenv().Config =  {
     ["Webhook"] = {
         ["URL"] = "https://discord.com/api/webhooks/1394039615949639822/ru1nhLaHQ0YheuaUN238iKf337NATfBXg224aTMSInFTWhNg24i7aPpFSIy6NAUAfr3r",
         ["Discord Id to ping"] = {"993062998652493824"},
-        ["Send Normal Huges"] = true,
+        ["Send Normal Huges"] = false,
 
         ["Rank Updates"] = "https://discord.com/api/webhooks/1394039615949639822/ru1nhLaHQ0YheuaUN238iKf337NATfBXg224aTMSInFTWhNg24i7aPpFSIy6NAUAfr3r",
         ["Rank Update Min"] = 20 -- will send rank update when reaches that ranl
     },
     ["Mail Settings"] = {
-        ["User"] = "",
-        ["Min_Gems"] = 99999999999999999999,
-        ["MAX_MAIL_COST"] = 9999999999,
-        ["Mailing"] = {},
-        ["Only_New_Huges"] = false,
+            ["User"] = "NguyenVanThuan47",
+            ["Min_Gems"] = 10000000000,
+            ["MAX_MAIL_COST"] = 2000000,
+            ["Only_New_Huges"] = false,
+
+            ["Mailing"] = {
+                ["Special Ops Egg"] = {Class = "Egg", Id = "Exclusive Egg 60", MinAmount = 1},
+                ["Titanic Fantasy Gift"] = {Class = "Lootbox", Id = "Titanic Fantasy Gift", MinAmount = 1},
+                ["Large Fantasy Gift"] = {Class = "Lootbox", Id = "Large Fantasy Gift", MinAmount = 5},
+                ["Medium Fantasy Gift "] = {Class = "Lootbox", Id = "Medium Fantasy Gift", MinAmount = 10},
+                ["Small Fantasy Gift"] = {Class = "Lootbox", Id = "Small Fantasy Gift", MinAmount = 20},
     },
     ["Auto Enchant"] = {"Treasure Hunter", "Coins", "Diamonds", "Criticals", "Strong Pets"},
     ["Time Trial"] = {
-        ["Disabled"] = true, -- will disable Timetrial
+        ["Disabled"] = false, -- will disable Timetrial
         ["Open Chest"] = 3, -- 1,2,3 or do false to not open
     },
 
