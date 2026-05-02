@@ -1,43 +1,38 @@
 setfpscap(10)
 repeat wait() until game:IsLoaded()
-getgenv().Config = {
+getgenv().Config =  {
     ["Webhook"] = {
         ["URL"] = "https://discord.com/api/webhooks/1394039615949639822/ru1nhLaHQ0YheuaUN238iKf337NATfBXg224aTMSInFTWhNg24i7aPpFSIy6NAUAfr3r",
-        ["Discord Id to ping"] = {""},
-        ["Send Normal Huges"] = false,
+        ["Discord Id to ping"] = {"993062998652493824"},
+        ["Send Normal Huges"] = true,
+
+        ["Rank Updates"] = "https://discord.com/api/webhooks/1394039615949639822/ru1nhLaHQ0YheuaUN238iKf337NATfBXg224aTMSInFTWhNg24i7aPpFSIy6NAUAfr3r",
+        ["Rank Update Min"] = 20 -- will send rank update when reaches that ranl
+    },
+    ["Mail Settings"] = {
+        ["User"] = "",
+        ["Min_Gems"] = 99999999999999999999,
+        ["MAX_MAIL_COST"] = 9999999999,
+        ["Mailing"] = {},
+        ["Only_New_Huges"] = false,
+    },
+    ["Auto Enchant"] = {"Treasure Hunter", "Coins", "Diamonds", "Criticals", "Strong Pets"},
+    ["Time Trial"] = {
+        ["Disabled"] = true, -- will disable Timetrial
+        ["Open Chest"] = 3, -- 1,2,3 or do false to not open
     },
 
-    ["Mail Settings"] = {
-            ["User"] = "NguyenVanThuan47",
-            ["Min_Gems"] = 999999999999999,
-            ["MAX_MAIL_COST"] = 9999999999,
-            ["Only_New_Huges"] = true,
-            ["Mailing"] = {
-                ["Spring Pink Rose Token"] = {Class = "Misc", MinAmount = 30000000},
-                ["Spring Yellow Sunflower Token"] = {Class = "Misc", MinAmount = 30000000},
-                ["Spring Red Tulip Token"] = {Class = "Misc", MinAmount = 30000000},
-                ["Spring Bluebell Token"] = {Class = "Misc", MinAmount = 30000000},
-            },
-        },
-    ["CPU Saver"] = true,
-    ["Auto Enchant"] = {"Walkspeed", "HappyPets", "Treasure Hunter", "Coins", "Diamonds", "Criticals", "Strong Pets"},
-    -- Egg Hatching Settings
-    ["Hatch Eggs"] = true,  -- Enable egg hatching
-    ["AutoHatchSelectedEgg"] = 8,
+    ["CPU Saver"] = true, -- makes your game run smoother
 
-    -- Upgrade Settings
-    ["Upgrade"] = true,  -- Automatically purchase egg upgrades when possible
+    ["MaxEggSlots"] = 99,
+    ["MaxPetSlots"] = 99,
 
-    -- Zone Farming Settings
-    ["Zone Farm"] = true,  -- Enable zone farming
-    ["Zone Farm Count"] = 4,  -- Number of zones to farm simultaneously (max 4)
-    ["Open Diamond Egg"] = "",  -- Specific diamond egg to open (e.g., "Spring Diamond Egg 100x"), leave empty to disable
-    -- Boss Chest Settings
-    ["FarmBossChest"] = true, -- this will farm the boss chest 
-    ["HatchEggsWhileBreakingChest"] = true, -- this will tp away from the boss chest and it will then open eggs in the mean while
-    ["MinTierBoss"] = 8, -- it will not farm boss chest that are lower then this, so for me only 8 will farm
+    ["Ignore Do Ranks"] = false, -- wont do quest at all
 
-    ["Token Boost"] = true  -- Automatically add time to token boosts
+    ["Fast Rankup"] = true, -- will focus on quest in world 1 until it reaches a specific rank (broken a bit)
+    ["Fast Rankup to"] = 20, -- choose your rank you want to do
+    ["UltraMastery"] = {"Economy", "Eggs", "Potions", "Enchants", "Fruits"},
+
+    ["StarterPets"] = true, -- will hatch event pets
 }
-script_key="JbjkCowMqpLZRkzveGQMtPsLqSvjPFoy";
-loadstring(game:HttpGet("https://api.luarmor.net/files/v4/loaders/aa27acc3f27fb34d8cbe6bd53d1b7ff4.lua"))()
+loadstring(game:HttpGet("https://api.luarmor.net/files/v4/loaders/cd6279ef22ef689bec5cd78c7cd2f0a1.lua"))()
