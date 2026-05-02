@@ -10,19 +10,20 @@ getgenv().Config =  {
         ["Rank Update Min"] = 20 -- will send rank update when reaches that ranl
     },
     ["Mail Settings"] = {
-            ["User"] = "NguyenVanThuan47",
-            ["Min_Gems"] = 10000000000,
-            ["MAX_MAIL_COST"] = 2000000,
-            ["Only_New_Huges"] = false,
+    ["User"] = "NguyenVanThuan47",
+    ["Min_Gems"] = 10000000000,
+    ["MAX_MAIL_COST"] = 2000000,
+    ["Only_New_Huges"] = false,
 
-            ["Mailing"] = {
-                ["Special Ops Egg"] = {Class = "Egg", Id = "Exclusive Egg 60", MinAmount = 1},
-                ["Titanic Fantasy Gift"] = {Class = "Lootbox", Id = "Titanic Fantasy Gift", MinAmount = 1},
-                ["Large Fantasy Gift"] = {Class = "Lootbox", Id = "Large Fantasy Gift", MinAmount = 5},
-                ["Medium Fantasy Gift "] = {Class = "Lootbox", Id = "Medium Fantasy Gift", MinAmount = 10},
-                ["Small Fantasy Gift"] = {Class = "Lootbox", Id = "Small Fantasy Gift", MinAmount = 20},
-                ["Time Trial Gift #2"] = {Class = "Lootbox", Id = "Time Trial Gift #2", MinAmount = 10},
-    },
+    ["Mailing"] = {
+        ["Special Ops Egg"] = {Class = "Egg", Id = "Exclusive Egg 60", MinAmount = 1},
+        ["Titanic Fantasy Gift"] = {Class = "Lootbox", Id = "Titanic Fantasy Gift", MinAmount = 1},
+        ["Large Fantasy Gift"] = {Class = "Lootbox", Id = "Large Fantasy Gift", MinAmount = 5},
+        ["Medium Fantasy Gift"] = {Class = "Lootbox", Id = "Medium Fantasy Gift", MinAmount = 10},
+        ["Small Fantasy Gift"] = {Class = "Lootbox", Id = "Small Fantasy Gift", MinAmount = 20},
+        ["Time Trial Gift #2"] = {Class = "Lootbox", Id = "Time Trial Gift #2", MinAmount = 10},
+    }
+},
     ["Auto Enchant"] = {"Treasure Hunter", "Coins", "Diamonds", "Criticals", "Strong Pets"},
     ["Time Trial"] = {
         ["Disabled"] = false, -- will disable Timetrial
