@@ -21,6 +21,7 @@ getgenv().Config =  {
                 ["Large Fantasy Gift"] = {Class = "Lootbox", Id = "Large Fantasy Gift", MinAmount = 5},
                 ["Medium Fantasy Gift "] = {Class = "Lootbox", Id = "Medium Fantasy Gift", MinAmount = 10},
                 ["Small Fantasy Gift"] = {Class = "Lootbox", Id = "Small Fantasy Gift", MinAmount = 20},
+                ["Time Trial Gift #2"] = {Class = "Lootbox", Id = "Time Trial Gift #2", MinAmount = 10},
     },
     ["Auto Enchant"] = {"Treasure Hunter", "Coins", "Diamonds", "Criticals", "Strong Pets"},
     ["Time Trial"] = {
