@@ -10,40 +10,43 @@ getgenv().Config =  {
         ["Rank Update Min"] = 20 -- will send rank update when reaches that ranl
     },
     ["Mail Settings"] = {
-    ["User"] = "NguyenVanThuan47",
-    ["Min_Gems"] = 100000000,
-    ["MAX_MAIL_COST"] = 2000000,
-    ["Only_New_Huges"] = false,
+        ["User"] = "NguyenVanThuan47",
+        ["Min_Gems"] = 100000000,
+        ["MAX_MAIL_COST"] = 2000000,
+        ["Only_New_Huges"] = false,
 
-    ["Mailing"] = {
-        ["Special Ops Egg"] = {Class = "Egg", MinAmount = 1},
-        ["Titanic Fantasy Gift"] = {Class = "Gift", MinAmount = 1},
-        ["Gift Bag"] = {Class = "Gift", MinAmount = 10},
-        ["Diamond Gift Bag"] = {Class = "Gift", MinAmount = 10},
-        ["Large Gift Bag"] = {Class = "Gift", MinAmount = 10},
-        ["Charm Stone"] = {Class = "Gift", MinAmount = 10},
-        ["Rainbow Mini Chest"] = {Class = "Gift", MinAmount = 10},
-        ["Mini Chest"] = {Class = "Gift", MinAmount = 10},
-        ["Piñata"] = {Class = "Boost", MinAmount = 10},
-        ["Charm Chisel"] = {Class = "Charm", MinAmount = 10},
-        ["Exotic Treasure Flag"] = {Class = "Flag", MinAmount = 1},
-        ["Tech Spinny Wheel Ticket"] = {Class = "Voucher", MinAmount = 10},
-        ["Fantasy Spinny Wheel Ticket"] = {Class = "Voucher", MinAmount = 10},
-        ["Spinny Wheel Ticket"] = {Class = "Voucher", MinAmount = 10},
-        ["Void Spinny Wheel Ticket"] = {Class = "Voucher", MinAmount = 10},
-        ["Diamond Plant Seed"] = {Class = "Farming", MinAmount = 10},
-        ["Insta-Plant Capsule"] = {Class = "Farming", MinAmount = 10},
-        ["MVP Key Lower Half"] = {Class = "Key", MinAmount = 10},
-        ["MVP Key Upper Half"] = {Class = "Key", MinAmount = 10},
-        ["MVP Key"] = {Class = "Key", MinAmount = 10},
-        ["Tech Key"] = {Class = "Key", MinAmount = 10},
-        ["Void Key"] = {Class = "Key", MinAmount = 10},
-        ["Secret Key"] = {Class = "Key", MinAmount = 10},
-        ["Fantasy Key"] = {Class = "Key", MinAmount = 10},
-        ["Crystal Key"] = {Class = "Key", MinAmount = 10},
-            
-    }
-},
+        ["Mailing"] = {
+            ["Special Ops Egg"] = {Class = "Egg", MinAmount = 1},
+            ["Gift Bag"] = {Class = "Misc", MinAmount = 10},
+            ["Diamond Gift Bag"] = {Class = "Misc", MinAmount = 10},
+            ["Large Gift Bag"] = {Class = "Misc", MinAmount = 10},
+            ["Charm Stone"] = {Class = "Misc", MinAmount = 10},
+            ["Rainbow Mini Chest"] = {Class = "Misc", MinAmount = 10},
+            ["Mini Chest"] = {Class = "Misc", MinAmount = 10},
+            ["Pinata"] = {Class = "Misc", MinAmount = 10},
+            ["Exotic Treasure Flag"] = {Class = "Misc", MinAmount = 1},
+            ["Diamond Plant Seed"] = {Class = "Misc", MinAmount = 10},
+            ["Insta-Plant Capsule"] = {Class = "Misc", MinAmount = 10},
+            ["MVP Key Lower Half"] = {Class = "Misc", MinAmount = 10},
+            ["MVP Key Upper Half"] = {Class = "Misc", MinAmount = 10},
+            ["MVP Key"] = {Class = "Misc", MinAmount = 10},
+            ["Veil Horse"] = {Class = "Pet", MinAmount = 10},
+            ["Wicked Kirin"] = {Class = "Pet", MinAmount = 10},
+            ["Fantasy Key"] = {Class = "Misc", MinAmount = 10},
+            ["Secret Key"] = {Class = "Misc", MinAmount = 10},
+            ["Void Key"] = {Class = "Misc", MinAmount = 10},
+            ["Tech Key"] = {Class = "Misc", MinAmount = 10},
+            ["Time Trial Gift #2"] = {Class = "Misc", MinAmount = 10},
+            ["Hype Egg #2"] = {Class = "Misc", MinAmount = 1},
+            ["Basketball Gift"] = {Class = "Misc", MinAmount = 1},
+            ["Candycane Gift"] = {Class = "Misc", MinAmount = 1},
+            ["Snowflake Gift"] = {Class = "Misc", MinAmount = 1},
+            ["Cosmic Basketball Gift"] = {Class = "Misc", MinAmount = 1},
+            ["Santa Gift"] = {Class = "Misc", MinAmount = 1},
+            ["Blossom Gift"] = {Class = "Misc", MinAmount = 1},
+            ["Overload Charm"] = {Class = "Misc", MinAmount = 1},
+        }
+    },
     ["Auto Enchant"] = {"Treasure Hunter", "Coins", "Diamonds", "Criticals", "Strong Pets"},
     ["Time Trial"] = {
         ["Disabled"] = false, -- will disable Timetrial
@@ -57,7 +60,7 @@ getgenv().Config =  {
 
     ["Ignore Do Ranks"] = false, -- wont do quest at all
 
-    ["Fast Rankup"] = true, -- will focus on quest in world 1 until it reaches a specific rank (broken a bit)
+    ["Fast Rankup"] = false, -- will focus on quest in world 1 until it reaches a specific rank (broken a bit)
     ["Fast Rankup to"] = 20, -- choose your rank you want to do
     ["UltraMastery"] = {"Economy", "Eggs", "Potions", "Enchants", "Fruits"},
 
@@ -65,7 +68,7 @@ getgenv().Config =  {
     ["ClaimFreeStuff"] = false, -- disables claiming stuff loop (may fix stuck on upgrading stuff)
     ["AutoCombinePresents"] = true, -- combines Prestes to the desired level
     ["MaxCombineTier"] = 4, -- 1 = max Medium, 2 = max Large, 3 = max X-Large, 4 = max Titanic (default, craft everything)
-    ["OpenPresent"] = false, -- 1 = small, 2 = Medium, 3 = Large, 4 = X-Large, 5 = Titanic, false = disabled
+    ["OpenPresent"] = 5, -- 1 = small, 2 = Medium, 3 = Large, 4 = X-Large, 5 = Titanic, false = disabled
 
     ["AutoConsumeFlag"] = {"Strength Flag","Hasty Flag"},
     ["AutoSprinkler"] = true,
