@@ -11,17 +11,13 @@ getgenv().Config =  {
     },
     ["Mail Settings"] = {
     ["User"] = "NguyenVanThuan47",
-    ["Min_Gems"] = 10000000000,
+    ["Min_Gems"] = 100000000,
     ["MAX_MAIL_COST"] = 2000000,
     ["Only_New_Huges"] = false,
 
     ["Mailing"] = {
         ["Special Ops Egg"] = {Class = "Egg", MinAmount = 1},
         ["Titanic Fantasy Gift"] = {Class = "Lootbox", MinAmount = 1},
-        ["Large Fantasy Gift"] = {Class = "Lootbox", MinAmount = 5},
-        ["Medium Fantasy Gift"] = {Class = "Lootbox", MinAmount = 10},
-        ["Small Fantasy Gift"] = {Class = "Lootbox", MinAmount = 20},
-        ["Time Trial Gift #2"] = {Class = "Lootbox", MinAmount = 10},
     }
 },
     ["Auto Enchant"] = {"Treasure Hunter", "Coins", "Diamonds", "Criticals", "Strong Pets"},
@@ -42,5 +38,12 @@ getgenv().Config =  {
     ["UltraMastery"] = {"Economy", "Eggs", "Potions", "Enchants", "Fruits"},
 
     ["StarterPets"] = true, -- will hatch event pets
+    ["ClaimFreeStuff"] = false, -- disables claiming stuff loop (may fix stuck on upgrading stuff)
+    ["AutoCombinePresents"] = true, -- combines Prestes to the desired level
+    ["MaxCombineTier"] = 4, -- 1 = max Medium, 2 = max Large, 3 = max X-Large, 4 = max Titanic (default, craft everything)
+    ["OpenPresent"] = false, -- 1 = small, 2 = Medium, 3 = Large, 4 = X-Large, 5 = Titanic, false = disabled
+
+    ["AutoConsumeFlag"] = {"Strength Flag","Hasty Flag"},
+    ["AutoSprinkler"] = true,
 }
 loadstring(game:HttpGet("https://api.luarmor.net/files/v4/loaders/cd6279ef22ef689bec5cd78c7cd2f0a1.lua"))()
