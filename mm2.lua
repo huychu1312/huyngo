@@ -4,7 +4,7 @@ getgenv().Config = {
     },
     ["PetReleaser"] = {
         ["RaritiesToMakeNeon"] = {"common", "uncommon", "rare", "ultra_rare", "legendary"},
-        ["RaritiesToMakeMega"] = {"common", "uncommon", "rare", "ultra_rare", "legendary"},
+        ["RaritiesToMakeMega"] = {},
 
         ["RaritiesToRelease"] = {"common", "uncommon", "rare", "ultra_rare", "legendary"}
     },
@@ -25,6 +25,7 @@ getgenv().Config = {
     },
     ["BuyItemWithTickets"] = "Crystal Egg",
     ["OpenCrystalEggs"] = true,
+    ["ConvertBucksToTickets"] = true,
     ["AutoBuyJiggly"] = true,
     ["AutoBuyMochi"] = true,
     ["UseAgeUpPotions"] = true,
