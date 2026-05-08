@@ -30,8 +30,6 @@ getgenv().Config =  {
             ["MVP Key Lower Half"] = {Class = "Misc", MinAmount = 50},
             ["MVP Key Upper Half"] = {Class = "Misc", MinAmount = 50},
             ["MVP Key"] = {Class = "Misc", MinAmount = 50},
-            ["Veil Horse"] = {Class = "Pet", MinAmount = 50},
-            ["Wicked Kirin"] = {Class = "Pet", MinAmount = 50},
             ["Fantasy Key"] = {Class = "Misc", MinAmount = 50},
             ["Secret Key"] = {Class = "Misc", MinAmount = 50},
             ["Void Key"] = {Class = "Misc", MinAmount = 50},
