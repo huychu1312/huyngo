@@ -1,4 +1,4 @@
-setfpscap(10)
+setfpscap(5)
 repeat wait() until game:IsLoaded()
 getgenv().Config =  {
     ["Webhook"] = {
