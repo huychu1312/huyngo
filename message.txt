@@ -4,7 +4,7 @@ getgenv().Config =  {
     ["Webhook"] = {
         ["URL"] = "https://discord.com/api/webhooks/1394039615949639822/ru1nhLaHQ0YheuaUN238iKf337NATfBXg224aTMSInFTWhNg24i7aPpFSIy6NAUAfr3r",
         ["Discord Id to ping"] = {"993062998652493824"},
-       ["Send Normal Huges"] = true,
+        ["Send Normal Huges"] = true,
 
         ["Rank Updates"] = "https://discord.com/api/webhooks/1394039615949639822/ru1nhLaHQ0YheuaUN238iKf337NATfBXg224aTMSInFTWhNg24i7aPpFSIy6NAUAfr3r",
         ["Rank Update Min"] = 20 -- will send rank update when reaches that ranl
@@ -16,8 +16,8 @@ getgenv().Config =  {
         ["Only_New_Huges"] = false,
 
         ["Mailing"] = {
-            ["Exclusive Special Ops Egg"] = {Class = "Misc", MinAmount = 1},
-            ["Exclusive Origami Egg"] = {Class = "Misc", MinAmount = 1},
+            ["Exclusive Special Ops Egg"] = {Class = "Egg", MinAmount = 1},
+            ["Exclusive Origami Egg"] = {Class = "Egg", MinAmount = 1},
             ["Gift Bag"] = {Class = "Misc", MinAmount = 99},
             ["Diamond Gift Bag"] = {Class = "Misc", MinAmount = 99},
             ["Large Gift Bag"] = {Class = "Misc", MinAmount = 99},
@@ -36,8 +36,8 @@ getgenv().Config =  {
             ["Void Key"] = {Class = "Misc", MinAmount = 50},
             ["Tech Key"] = {Class = "Misc", MinAmount = 50},
             ["Time Trial Gift #2"] = {Class = "Misc", MinAmount = 10},
-            ["Exclusive Raffle Ticket"] = {Class = "Misc", MinAmount = 1},
             ["Hype Egg #2"] = {Class = "Misc", MinAmount = 1},
+            ["Exclusive Raffle Ticket"] = {Class = "Misc", MinAmount = 1},
             ["Basketball Gift"] = {Class = "Misc", MinAmount = 50},
             ["Candycane Gift"] = {Class = "Misc", MinAmount = 50},
             ["Snowflake Gift"] = {Class = "Misc", MinAmount = 50},
