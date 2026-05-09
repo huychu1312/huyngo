@@ -15,6 +15,8 @@ getgenv().Config =  {
         ["Mailing"] = {
             ["Exclusive Special Ops Egg"] = {Class = "Egg", MinAmount = 1},
             ["Exclusive Origami Egg"] = {Class = "Egg", MinAmount = 1},
+            ["Mystical Kitsune"] = {Class = "Pet", MinAmount = 1},
+            ["Wisp Owl"] = {Class = "Pet", MinAmount = 1},
             ["Gift Bag"] = {Class = "Misc", MinAmount = 99},
             ["Diamond Gift Bag"] = {Class = "Misc", MinAmount = 99},
             ["Large Gift Bag"] = {Class = "Misc", MinAmount = 99},
