@@ -36,6 +36,7 @@ getgenv().Config =  {
             ["Tech Key"] = {Class = "Misc", MinAmount = 50},
             ["Time Trial Gift #2"] = {Class = "Misc", MinAmount = 10},
             ["Hype Egg #2"] = {Class = "Misc", MinAmount = 1},
+            ["Exclusive Raffle Ticket"] = {Class = "Misc", MinAmount = 1},
             ["Basketball Gift"] = {Class = "Misc", MinAmount = 50},
             ["Candycane Gift"] = {Class = "Misc", MinAmount = 50},
             ["Snowflake Gift"] = {Class = "Misc", MinAmount = 50},
