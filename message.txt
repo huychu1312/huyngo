@@ -48,6 +48,7 @@ getgenv().Config =  {
     },
     ["CPU Saver"] = true,
     ["AutoUseDice"] = {"Mega Lucky Dice V2"},
+    ["SyncOnWeather"] = true,
     ["PetsToSell"] = {"Sand Turtle", "Sprout Stag", "Blossom Fox", "Honey Bee", "Chamelon", "Tiedye Elephant", "Surge Wolf", "Starry Eye Wolf", "Bubble Bunny", "Sapphire Dragon", "Wisp Owl", "Mystical Kitsune"},
 }
 loadstring(game:HttpGet("https://api.luarmor.net/files/v4/loaders/9f9b656e577ba1b9d87d4c855e7ac1a4.lua"))()
