@@ -59,7 +59,7 @@ getgenv().Configuration = {
     },
 },
 
-    ["Dice On Bonus Only"] = false,  -- true = only on bonus roll  |  false = always keep buff active
+    ["Dice On Bonus Only"] = true,  -- true = only on bonus roll  |  false = always keep buff active
     ["Craft Dice"]         = "Mega Lucky Dice II V2",
     ["Use Dice"]           = true,  -- Auto-use dice listed in Craft Dice
     ['Upgrades']           = true,
