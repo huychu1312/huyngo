@@ -65,15 +65,8 @@ getgenv().Configuration = {
     ['Upgrades']           = true,
     ['Sell Pets'] = { -- Ids of pets to sell
         ["Sand Turtle"] = true,
-        ["Bubble Bunny"] = true,
-        ["Surge Wolf"] = true,
-        ["Tiedye Elephant"] = true,
-        ["Chameleon"] = true,
-        ["Honey Bee"] = true,
-        ["Blossom Fox"] = true,
         ["Sprout Stag"] = true,
-    },
-
+    }, 
     ['Potions']           = {},
     ['Enchants']          = {},
     ['Fruits']            = {},
