@@ -1,3 +1,5 @@
+wait(5)
+setfpscap(10)
 getgenv().Configuration = {
     ["Webhook"] = {
         ["UserID"] = "993062998652493824",
@@ -65,8 +67,18 @@ getgenv().Configuration = {
     ['Upgrades']           = true,
     ['Sell Pets'] = { -- Ids of pets to sell
         ["Sand Turtle"] = true,
+        ["Mystical Kitsune"] = false,
+        ["Wisp Owl"] = false,
+        ["Sapphire Dragon"] = false,
+        ["Bubble Bunny"] = false,
+        ["Starry Eye Wolf"] = false,
+        ["Surge Wolf"] = false,
+        ["Tiedye Elephant"] = false,
+        ["Chameleon"] = false,
+        ["Honey Bee"] = true,
+        ["Blossom Fox"] = true,
         ["Sprout Stag"] = true,
-    }, 
+    },
     ['Potions']           = {},
     ['Enchants']          = {},
     ['Fruits']            = {},
