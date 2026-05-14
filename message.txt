@@ -1,92 +1,36 @@
-wait(5)
-setfpscap(10)
-getgenv().Configuration = {
-    ["Webhook"] = {
-        ["UserID"] = "993062998652493824",
-        ["WebhookURL"] = "https://discord.com/api/webhooks/1394039615949639822/ru1nhLaHQ0YheuaUN238iKf337NATfBXg224aTMSInFTWhNg24i7aPpFSIy6NAUAfr3r",
+getgenv().Config = {
+    ["PetPen"] = {
+        ["EggToBuy"] = "Cracked Egg",
     },
+    ["PetReleaser"] = {
+        ["RaritiesToMakeNeon"] = {"common", "uncommon", "rare", "ultra_rare", "legendary"},
+        ["RaritiesToMakeMega"] = {},
 
-['Mail'] = {
-    ['Usernames'] = {"NguyenVanThuan47"},
-    ['Mail All Huges'] = true,
-    ['Items'] = {
-        ['Gift'] = {
-            "Rainbow Mini Chest",
-            "Large Gift Bag",
-            "Diamond Gift Bag",
-            "Gift Bag",
-            "Blossom Gift",
-            "Santa Gift",
-            "Cosmic Basketball Gift",
-            "Snowflake Gift",
-            "Candycane Gift",
-            "Basketball Gift",
-            "Mini Chest",
-            "Time Trial Gift #2",
-            "Hype Egg #2",
-            "Charm Stone"
+        ["RaritiesToRelease"] = {"common", "uncommon", "rare", "ultra_rare", "legendary"}
+    },
+    ["AutoTrade"] = {
+        ["TradeUsers"] = {
+            ""
         },
-
-        ['Egg'] = {
-            "Exclusive Origami Egg",
-            "Exclusive Special Ops Egg"
-        },
-
-        ['Flag'] = {
-            "Exotic Treasure Flag"
-        },
-
-        ['Key'] = {
-            "Tech Key",
-            "Void Key",
-            "Secret Key",
-            "Fantasy Key",
-            "MVP Key",
-            "MVP Key Lower Half",
-            "MVP Key Upper Half"
-        },
-
-        ['Voucher'] = {
-            "Exclusive Raffle Ticket"
-        },
-
-        ['Farming'] = {
-            "Diamond Plant Seed",
-            "Insta-Plant Capsule"
-        },
-
-        ['Charm'] = {
-            "Overload Charm"
+        ["Pets"] = {
+             "Silverback Gorilla","Balloon Unicorn","Purrowl", "Dragonfruit Fox", "Dango Penguins", "Emberlight", "Frostbite Bear", "Diamond Unicorn", "Sea Turtle", "Glormy Crab"
         }
     },
-},
-
-    ["Dice On Bonus Only"] = true,  -- true = only on bonus roll  |  false = always keep buff active
-    ["Craft Dice"]         = "Mega Lucky Dice II V2",
-    ["Use Dice"]           = true,  -- Auto-use dice listed in Craft Dice
-    ['Upgrades']           = true,
-    ['Sell Pets'] = { -- Ids of pets to sell
-        ["Sand Turtle"] = true,
-        ["Mystical Kitsune"] = false,
-        ["Wisp Owl"] = false,
-        ["Sapphire Dragon"] = false,
-        ["Bubble Bunny"] = false,
-        ["Starry Eye Wolf"] = false,
-        ["Surge Wolf"] = false,
-        ["Tiedye Elephant"] = false,
-        ["Chameleon"] = false,
-        ["Honey Bee"] = true,
-        ["Blossom Fox"] = true,
-        ["Sprout Stag"] = true,
+    ["AutoChangeConfig"] = {
+        ["CrystalEggAmount"] = 1000000000,
+        ["TradeablePets"] = 1000000000,
+        ["CollectServers"] = {
+            "",
+        }
     },
-    ['Potions']           = {},
-    ['Enchants']          = {},
-    ['Fruits']            = {},
-
-    -- Optional (Will use Defaults if not)
-    --['ROLL_DELAY']        = nil,   -- Default computed value
-    --['DAYCARE']           = true, -- Default true
-    --['BREAK_CHEST']       = true, -- Default true
-    --["RNG_EGG_KEY"]       = "First",
+    ["BuyItemWithTickets"] = "Crystal Egg",
+    ["OpenCrystalEggs"] = true,
+    ["ConvertBucksToTickets"] = true,
+    ["AutoBuyJiggly"] = true,
+    ["AutoBuyMochi"] = true,
+    ["UseAgeUpPotions"] = true,
+    ["OpenAdminAbuseEggs"] = true,
+    ["KeepTickets"] = false,
+    ["WebhookURL"] = "https://discord.com/api/webhooks/1394039615949639822/ru1nhLaHQ0YheuaUN238iKf337NATfBXg224aTMSInFTWhNg24i7aPpFSIy6NAUAfr3r",
 }
-loadstring(game:HttpGet("https://api.luarmor.net/files/v4/loaders/8e09351860576c626242d87609b01594.lua"))()
+loadstring(game:HttpGet("https://api.luarmor.net/files/v4/loaders/9af1f22af0378cb275bfeac9c6971ba5.lua"))()
