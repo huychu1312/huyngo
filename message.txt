@@ -23,6 +23,7 @@ getgenv().Config = {
             "Silverback Gorilla",
             "Balloon Unicorn",
             "Purrowl",
+            "Sushi Penguin",
             "Dragonfruit Fox",
             "Dango Penguins",
             "Emberlight",
