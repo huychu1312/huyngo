@@ -1,30 +1,57 @@
 pcall(function()
-    setfpscap(15)
+    setfpscap(3)
 end)
 
 task.wait(30)
-getgenv().Configuration = {
-    ["Webhook"] = {
-        ["UserID"]    = "993062998652493824",
-        ["WebhookURL"] = "https://discord.com/api/webhooks/1394039615949639822/ru1nhLaHQ0YheuaUN238iKf337NATfBXg224aTMSInFTWhNg24i7aPpFSIy6NAUAfr3r",
-        ['Ping Global'] = true, -- wont ping but it will show discord
-    },
-    ['Mail'] = {
-        ['Usernames']      = {""},
-        ['Mail All Huges'] = true,
-        ['Items']          = {},
+
+getgenv().Config = {
+    ["PetPen"] = {
+        ["EggToBuy"] = "Cracked Egg",
     },
 
-    ["Dice On Bonus Only"] = true,
-    ['Fire On Weather Only'] = true,
+    ["PetReleaser"] = {
+        ["RaritiesToMakeNeon"] = {"common", "uncommon", "rare", "ultra_rare", "legendary"},
+        ["RaritiesToMakeMega"] = {},
+        ["RaritiesToRelease"] = {"common", "uncommon", "rare", "ultra_rare", "legendary"}
+    },
 
-    ["Craft Dice"]  = "Mega Lucky Dice II V2",
-    ["Use Dice"]    = true,
-    ['Upgrades']    = true,
-    ['Sell Pets']   = {},
+    ["AutoTrade"] = {
+        ["TradeUsers"] = {
+            ""
+        },
+        ["Pets"] = {
+            "Silverback Gorilla",
+            "Balloon Unicorn",
+            "Purrowl",
+            "Sushi Penguin",
+            "Dragonfruit Fox",
+            "Dango Penguins",
+            "Emberlight",
+            "Frostbite Bear",
+            "Diamond Unicorn",
+            "Sea Turtle",
+            "Glormy Crab"
+        }
+    },
 
-    ['Potions']  = { "Lucky Eggs", "Damage Potion", "Treasure Hunter" },
-    ['Enchants'] = { "Criticals", "Criticals", "Lucky Eggs", "Lucky Eggs", "Lucky Eggs" },
-    ['Fruits']   = { "Rainbow Fruit", "Orange", "Watermelon", "Apple", "Banana", "Pineapple" },
+    ["AutoChangeConfig"] = {
+        ["CrystalEggAmount"] = 1000000000,
+        ["TradeablePets"] = 1000000000,
+        ["CollectServers"] = {
+            "",
+        }
+    },
+
+    ["BuyItemWithTickets"] = "Crystal Egg",
+    ["OpenCrystalEggs"] = true,
+    ["ConvertBucksToTickets"] = true,
+    ["AutoBuyJiggly"] = true,
+    ["AutoBuyMochi"] = true,
+    ["UseAgeUpPotions"] = true,
+    ["OpenAdminAbuseEggs"] = true,
+    ["KeepTickets"] = false,
+
+    ["WebhookURL"] = "https://discord.com/api/webhooks/1394039615949639822/ru1nhLaHQ0YheuaUN238iKf337NATfBXg224aTMSInFTWhNg24i7aPpFSIy6NAUAfr3r",
 }
-loadstring(game:HttpGet("https://api.luarmor.net/files/v4/loaders/8e09351860576c626242d87609b01594.lua"))()
+
+loadstring(game:HttpGet("https://api.luarmor.net/files/v4/loaders/9af1f22af0378cb275bfeac9c6971ba5.lua"))()
