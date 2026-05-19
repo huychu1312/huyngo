@@ -1,5 +1,5 @@
 pcall(function()
-    setfpscap(15)
+    setfpscap(10)
 end)
 
 task.wait(30)
