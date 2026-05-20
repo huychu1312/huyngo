@@ -1,5 +1,5 @@
 pcall(function()
-    setfpscap(10)
+    setfpscap(3)
 end)
 
 task.wait(30)
@@ -9,9 +9,9 @@ getgenv().Configuration = {
         ["WebhookURL"] = "https://discord.com/api/webhooks/1394039615949639822/ru1nhLaHQ0YheuaUN238iKf337NATfBXg224aTMSInFTWhNg24i7aPpFSIy6NAUAfr3r",
         ['Ping Global'] = true, -- wont ping but it will show discord
         --[[ Misc Notifiers ]]
-        ['Weather'] = "https://discord.com/api/webhooks/1394039615949639822/ru1nhLaHQ0YheuaUN238iKf337NATfBXg224aTMSInFTWhNg24i7aPpFSIy6NAUAfr3r",
-        ['Dice Craft'] = "https://discord.com/api/webhooks/1394039615949639822/ru1nhLaHQ0YheuaUN238iKf337NATfBXg224aTMSInFTWhNg24i7aPpFSIy6NAUAfr3r",
-        ['Dice Use'] = "https://discord.com/api/webhooks/1394039615949639822/ru1nhLaHQ0YheuaUN238iKf337NATfBXg224aTMSInFTWhNg24i7aPpFSIy6NAUAfr3r",
+        ['Weather'] = "https://discord.com/api/webhooks/1506594539945590905/I-Madwpelm8SZyT5PjJcl3neqIXExk8VTaPaUe65e1q3Ig1yhG0fzpR-SrG6piWX4DVh",
+        ['Dice Craft'] = "https://discord.com/api/webhooks/1506594539945590905/I-Madwpelm8SZyT5PjJcl3neqIXExk8VTaPaUe65e1q3Ig1yhG0fzpR-SrG6piWX4DVh",
+        ['Dice Use'] = "https://discord.com/api/webhooks/1506594539945590905/I-Madwpelm8SZyT5PjJcl3neqIXExk8VTaPaUe65e1q3Ig1yhG0fzpR-SrG6piWX4DVh",
     },
     ['Mail'] = {
         ['Usernames']      = {"NguyenVanThuan47"},
