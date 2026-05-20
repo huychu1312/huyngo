@@ -64,7 +64,6 @@ getgenv().Configuration = {
         ['Charm'] = {
             "Overload Charm"
         }
-    },
 },
     ["Dice On Bonus Only"] = true,
     ['Fire On Weather Only'] = true,
