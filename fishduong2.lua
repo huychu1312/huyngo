@@ -1,57 +1,80 @@
 pcall(function()
-    setfpscap(3)
+    setfpscap(5)
 end)
 
 task.wait(30)
-
-getgenv().Config = {
-    ["PetPen"] = {
-        ["EggToBuy"] = "Cracked Egg",
+getgenv().Configuration = {
+    ["Webhook"] = {
+        ["UserID"]    = "993062998652493824",
+        ["WebhookURL"] = "https://discord.com/api/webhooks/1394039615949639822/ru1nhLaHQ0YheuaUN238iKf337NATfBXg224aTMSInFTWhNg24i7aPpFSIy6NAUAfr3r",
+        ['Ping Global'] = true, -- wont ping but it will show discord
+        --[[ Misc Notifiers ]]
+        ['Weather'] = "https://discord.com/api/webhooks/1506594539945590905/I-Madwpelm8SZyT5PjJcl3neqIXExk8VTaPaUe65e1q3Ig1yhG0fzpR-SrG6piWX4DVh",
+        ['Dice Craft'] = "https://discord.com/api/webhooks/1506594539945590905/I-Madwpelm8SZyT5PjJcl3neqIXExk8VTaPaUe65e1q3Ig1yhG0fzpR-SrG6piWX4DVh",
+        ['Dice Use'] = "https://discord.com/api/webhooks/1506594539945590905/I-Madwpelm8SZyT5PjJcl3neqIXExk8VTaPaUe65e1q3Ig1yhG0fzpR-SrG6piWX4DVh",
     },
-
-    ["PetReleaser"] = {
-        ["RaritiesToMakeNeon"] = {"common", "uncommon", "rare", "ultra_rare", "legendary"},
-        ["RaritiesToMakeMega"] = {},
-        ["RaritiesToRelease"] = {"common", "uncommon", "rare", "ultra_rare", "legendary"}
-    },
-
-    ["AutoTrade"] = {
-        ["TradeUsers"] = {
-            ""
+    ['Mail'] = {
+        ['Usernames']      = {"NguyenVanThuan47"},
+        ['Mail All Huges'] = true,
+        ['Gift'] = {
+            "Rainbow Mini Chest",
+            "Large Gift Bag",
+            "Diamond Gift Bag",
+            "Gift Bag",
+            "Blossom Gift",
+            "Santa Gift",
+            "Cosmic Basketball Gift",
+            "Snowflake Gift",
+            "Candycane Gift",
+            "Basketball Gift",
+            "Mini Chest",
+            "Time Trial Gift #2",
+            "Hype Egg #2",
+            "Charm Stone"
         },
-        ["Pets"] = {
-            "Silverback Gorilla",
-            "Balloon Unicorn",
-            "Purrowl",
-            "Sushi Penguin",
-            "Dragonfruit Fox",
-            "Dango Penguins",
-            "Emberlight",
-            "Frostbite Bear",
-            "Diamond Unicorn",
-            "Sea Turtle",
-            "Glormy Crab"
+
+        ['Egg'] = {
+            "Exclusive Origami Egg",
+            "Exclusive Special Ops Egg"
+        },
+
+        ['Flag'] = {
+            "Exotic Treasure Flag"
+        },
+
+        ['Key'] = {
+            "Tech Key",
+            "Void Key",
+            "Secret Key",
+            "Fantasy Key",
+            "MVP Key",
+            "MVP Key Lower Half",
+            "MVP Key Upper Half"
+        },
+
+        ['Voucher'] = {
+            "Exclusive Raffle Ticket"
+        },
+
+        ['Farming'] = {
+            "Diamond Plant Seed",
+            "Insta-Plant Capsule"
+        },
+
+        ['Charm'] = {
+            "Overload Charm"
         }
-    },
+},
+    ["Dice On Bonus Only"] = true,
+    ['Fire On Weather Only'] = true,
 
-    ["AutoChangeConfig"] = {
-        ["CrystalEggAmount"] = 1000000000,
-        ["TradeablePets"] = 1000000000,
-        ["CollectServers"] = {
-            "",
-        }
-    },
+    ["Craft Dice"]  = "Mega Lucky Dice II V2",
+    ["Use Dice"]    = true,
+    ['Upgrades']    = true,
+    ['Sell Pets']   = {},
 
-    ["BuyItemWithTickets"] = "Crystal Egg",
-    ["OpenCrystalEggs"] = true,
-    ["ConvertBucksToTickets"] = true,
-    ["AutoBuyJiggly"] = true,
-    ["AutoBuyMochi"] = true,
-    ["UseAgeUpPotions"] = true,
-    ["OpenAdminAbuseEggs"] = true,
-    ["KeepTickets"] = false,
-
-    ["WebhookURL"] = "https://discord.com/api/webhooks/1394039615949639822/ru1nhLaHQ0YheuaUN238iKf337NATfBXg224aTMSInFTWhNg24i7aPpFSIy6NAUAfr3r",
+    ['Potions']  = { "Lucky Eggs", "Damage Potion", "Treasure Hunter" },
+    ['Enchants'] = { "Criticals", "Criticals", "Lucky Eggs", "Lucky Eggs", "Lucky Eggs" },
+    ['Fruits']   = { "Rainbow Fruit", "Orange", "Watermelon", "Apple", "Banana", "Pineapple" },
 }
-
-loadstring(game:HttpGet("https://api.luarmor.net/files/v4/loaders/9af1f22af0378cb275bfeac9c6971ba5.lua"))()
+loadstring(game:HttpGet("https://api.luarmor.net/files/v4/loaders/8e09351860576c626242d87609b01594.lua"))()
