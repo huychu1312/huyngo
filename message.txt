@@ -30,6 +30,9 @@ getgenv().Config = {
             "Frostbite Bear",
             "Diamond Unicorn",
             "Sea Turtle",
+            "Strawberry Shortcake Ducky",
+            "Unicorn Ducky",
+            "Shadow Dragon Ducky",
             "Glormy Crab"
         }
     },
