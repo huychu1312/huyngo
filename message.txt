@@ -6,7 +6,7 @@ task.wait(30)
 
 getgenv().Config = {
     ["PetPen"] = {
-        ["EggToBuy"] = "Cracked Egg",
+        ["EggToBuy"] = {"Cracked Egg", "Rubber Ducky Box"},
     },
 
     ["PetReleaser"] = {
@@ -43,6 +43,7 @@ getgenv().Config = {
     },
 
     ["BuyItemWithTickets"] = "Crystal Egg",
+    ["OpenRubberDuckyBox"] = true,
     ["OpenCrystalEggs"] = true,
     ["ConvertBucksToTickets"] = true,
     ["AutoBuyJiggly"] = true,
