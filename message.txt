@@ -22,6 +22,7 @@ getgenv().Config = {
         ["Pets"] = {
             "Silverback Gorilla",
             "Balloon Unicorn",
+            "Velocirooster",
             "Purrowl",
             "Sushi Penguin",
             "Dragonfruit Fox",
@@ -29,7 +30,9 @@ getgenv().Config = {
             "Emberlight",
             "Frostbite Bear",
             "Diamond Unicorn",
-            "Sea Turtle",
+            "Balloon Unicorn",
+            "Diamond Dragon",
+            "Golden Unicorn",
             "Strawberry Shortcake Ducky",
             "Unicorn Ducky",
             "Shadow Dragon Ducky",
@@ -49,11 +52,8 @@ getgenv().Config = {
     ["OpenRubberDuckyBox"] = true,
     ["OpenCrystalEggs"] = true,
     ["ConvertBucksToTickets"] = true,
-    ["AutoBuyJiggly"] = true,
-    ["AutoBuyMochi"] = true,
     ["UseAgeUpPotions"] = true,
     ["OpenAdminAbuseEggs"] = true,
-    ["KeepTickets"] = false,
 
     ["WebhookURL"] = "https://discord.com/api/webhooks/1394039615949639822/ru1nhLaHQ0YheuaUN238iKf337NATfBXg224aTMSInFTWhNg24i7aPpFSIy6NAUAfr3r",
 }
