@@ -1,36 +1,156 @@
-getgenv().Config = {
-    ["PetPen"] = {
-        ["EggToBuy"] = "Cracked Egg",
+setfpscap(5)
+script_key = "kiBBTehNcsrGInJSkcJwsorJZHRlFepn";
+getgenv().UserConfig = {
+    ["FPS Cap"] = 5,
+    ["Auto Buy Seed"] = true,
+    ["Auto Plant Seed"] = true,
+["Limit Plant Seed"] = {
+["Briar Rose"] = 10,
+        ["Romanesco"] = 10,
+	    ["Hypno Bloom"] = 10,
+	    ["Dragons Breath"] = 10,
+            ["Moon Bloom"] = 10,
+            ["Poison Apple"] = 50,
+            ["Pomegranate"] = 50,
+            ["Venus Fly Trap"] = 50,
+            ["Sunflower"] = 50,
+            ["Cherry"] = 50,
+            ["Acorn"] = 50,
+            ["Dragon Fruit"] = 50,
+            ["Mango"] = 50,
+            ["Coconut"] = 50,
+            ["Grape"] = 50,
+            ["Banana"] = 50,
+            ["Green Bean"] = 50,
+            ["Mushroom"] = 300,
+            ["Pineapple"] = 20,
+            ["Cactus"] = 20,
+            ["Corn"] = 20,
+            ["Bamboo"] = 300,
+            ["Apple"] = 10,
+            ["Tomato"] = 10,
+            ["Tulip"] = 300,
+            ["Blueberry"] = 10,
+            ["Strawberry"] = 10,
+            ["Carrot"] = 300,
     },
-    ["PetReleaser"] = {
-        ["RaritiesToMakeNeon"] = {"common", "uncommon", "rare", "ultra_rare", "legendary"},
-        ["RaritiesToMakeMega"] = {},
-
-        ["RaritiesToRelease"] = {"common", "uncommon", "rare", "ultra_rare", "legendary"}
+    ["Limit Buy Seed"] = {
+        ["Briar Rose"] = 100,
+        ["Romanesco"] = 100,
+	    ["Hypno Bloom"] = 100,
+	    ["Dragons Breath"] = 100,
+            ["Moon Bloom"] = 100,
+            ["Poison Apple"] = 50,
+            ["Pomegranate"] = 50,
+            ["Venus Fly Trap"] = 50,
+            ["Sunflower"] = 50,
+            ["Cherry"] = 50,
+            ["Acorn"] = 50,
+            ["Dragon Fruit"] = 50,
+            ["Mango"] = 50,
+            ["Coconut"] = 50,
+            ["Grape"] = 50,
+            ["Banana"] = 50,
+            ["Green Bean"] = 50,
+            ["Mushroom"] = 300,
+            ["Pineapple"] = 10,
+            ["Cactus"] = 10,
+            ["Corn"] = 10,
+            ["Bamboo"] = 300,
+            ["Apple"] = 10,
+            ["Tomato"] = 10,
+            ["Tulip"] = 300,
+            ["Blueberry"] = 10,
+            ["Strawberry"] = 10,
+            ["Carrot"] = 300,
     },
-    ["AutoTrade"] = {
-        ["TradeUsers"] = {
-            ""
+	["Blacklist Shovel"] = {"Mega", "Gold", "Rainbow", "Dragon's Breath", "Hypno Bloom" ,"Moon Bloom", "Ghost Pepper", "Venom Spitter", "Poison Apple", "Pomegranate", "Venus Fly Trap"},
+	["Shovel Plant Once"] = {},
+    ["Favorite"] = {
+        -- ["Horned Melon"] = {"Rainbow", "Gold"},
+    },
+	["Harvest Mutation Only"] = {
+        --"Bamboo",
+        --["Tomato"] = {"Rainbow", "Gold", "Bloodlit", "Electric", "Starstruck", "Frozen", "Aurora"},
+        --"Apple",
+    },
+    ["Buy Pets"] = {
+        ["Frog"] = {Big = 99, Huge = 99, Rainbow = 99},
+        ["Bunny"] = {Big = 99, Huge = 99, Rainbow = 99},
+        ["Turtle"] = {Big = 99, Huge = 99, Rainbow = 99},
+        ["Owl"] = {Big = 99, Huge = 99, Rainbow = 99},
+        ["Deer"] = {Normal = 6, Big = 99, Huge = 99, Rainbow = 99},
+        ["Robin"] = {Big = 99, Huge = 99, Rainbow = 99},
+        ["Bee"] = {Big = 99, Huge = 99, Rainbow = 99},
+        ["Monkey"] = {Big = 99, Huge = 99, Rainbow = 99},
+        ["Bear"] = 999,
+        ["Golden Dragonfly"] = 999,
+        ["Unicorn"] = 999,
+        ["Raccoon"] = 999,
+        ["Black Dragon"] = 999,
+    },
+    ["Equip Pets"] = {
+        {"Deer", 6},
+    },
+    ["Expand Plot"] = true,
+    ["Plot Expansions"] = 3,
+    ["Unlock Pet Slots"] = 5,
+    ["Auto Collect Seed Packs"] = true,
+    ["Gears"] = {
+        ["Buy Gear"] = {
+            -- "Common Watering Can",
+            -- "Common Sprinkler",
+            -- "Uncommon Sprinkler",
+            -- "Rare Sprinkler",
+            -- "Legendary Sprinkler",
+             ["Super Sprinkler"] = 100,
+             ["Super Watering Can"] = 100,
         },
-        ["Pets"] = {
-             "Silverback Gorilla","Balloon Unicorn","Purrowl", "Dragonfruit Fox", "Dango Penguins", "Emberlight", "Frostbite Bear", "Diamond Unicorn", "Sea Turtle", "Glormy Crab"
-        }
+        ["Gears To Use"] = {
+            -- "Common Watering Can",
+            -- "Common Sprinkler",
+            -- "Uncommon Sprinkler",
+            -- "Rare Sprinkler",
+            -- "Legendary Sprinkler",
+            -- "Super Sprinkler",
+            -- "Super Watering Can",
+        },
     },
-    ["AutoChangeConfig"] = {
-        ["CrystalEggAmount"] = 1000000000,
-        ["TradeablePets"] = 1000000000,
-        ["CollectServers"] = {
-            "",
-        }
+        -- WH Pet
+    ["Webhook Pet URL"] = "https://discord.com/api/webhooks/1521202360133881856/jRRVi-PzUg-OhYQS-WIoP7F9mlSZNk1tH3fAZ_YIPiirx_cwWZ809e46UIke_2oNvSck",
+    ["Webhook Pet Name"] = {"Golden Dragonfly","Unicorn","Raccoon","Monkey","Bee","Ice Serpent"},
+    ["Webhook Pet Rarity"] = {"Mythic", "Super", "Secret"},
+ 	-- WH Seed
+    ["Webhook Seed URL"] = "https://discord.com/api/webhooks/1506594539945590905/I-Madwpelm8SZyT5PjJcl3neqIXExk8VTaPaUe65e1q3Ig1yhG0fzpR-SrG6piWX4DVh",
+    ["Webhook Seed Name"] = {"Rainbow", "Gold", "Mega", "Dragon's Breath", "Hypno Bloom", "Moon Bloom", "Briar Rose", "Venom Spitter", "Poison Apple", "Pomegranate", "Venus Fly Trap"},
+    	-- WH Gear
+    ["Webhook Gear URL"] = "https://discord.com/api/webhooks/1521202809746227364/ZO8t2yb5w8xfx0U79b1hPVfJR2sjVyJXayQxzVgM64gy2F1h-FR1qQLkqhIRRffHj5-Q",
+    ["Webhook Gear Name"] = {"Super Sprinkler", "Super Watering Can"},
+    ["Webhook Note"] = "",
+    ["Discord ID"] = "",
+    ["Mail To Username"] = {"DuckRider61"},
+    ["Items To Mail"] = {
+        ["Pet"] = {
+            ["Golden Dragonfly"] = 1,
+            ["Unicorn"] = 1,
+            ["Raccoon"] = 1,
+            ["Bear"] = 1,
+        },
+        ["Seed"] = {
+            ["Rainbow"] = 0, 
+            ["Mega"] = 1,
+            ["Dragon's Breath"] = 0,
+            ["Moon Bloom"] = 0,
+	    ["Hypno Bloom"] = 0,
+        },
+        ["Gear"] = {
+            ["Super Sprinkler"] = 1,
+	    ["Super Watering Can"] = 1,
+        },
     },
-    ["BuyItemWithTickets"] = "Crystal Egg",
-    ["OpenCrystalEggs"] = true,
-    ["ConvertBucksToTickets"] = true,
-    ["AutoBuyJiggly"] = true,
-    ["AutoBuyMochi"] = true,
-    ["UseAgeUpPotions"] = true,
-    ["OpenAdminAbuseEggs"] = true,
-    ["KeepTickets"] = false,
-    ["WebhookURL"] = "https://discord.com/api/webhooks/1394039615949639822/ru1nhLaHQ0YheuaUN238iKf337NATfBXg224aTMSInFTWhNg24i7aPpFSIy6NAUAfr3r",
+    ["Claim Mail"] = true,
+    ["Auto Plant"] = true,
+    ["Limit Auto Plant"] = 600,
+    ["Blacklist Seed"] = {"Mega"}
 }
-loadstring(game:HttpGet("https://api.luarmor.net/files/v4/loaders/9af1f22af0378cb275bfeac9c6971ba5.lua"))()
+loadstring(game:HttpGet("https://api.luarmor.net/files/v4/loaders/66adeacbfb46c0ea4883aefee367292a.lua"))()
