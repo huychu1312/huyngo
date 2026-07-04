@@ -20,6 +20,7 @@ getgenv().UserConfig = {
         ["Banana"] = 5,
         ["Grape"] = 10,
         ["Coconut"] = 10,
+        ["Rocket Pop"] = 300,
         ["Mango"] = 10,
         ["Dragon Fruit"] = 10,
         ["Acorn"] = 10,
@@ -75,7 +76,7 @@ getgenv().UserConfig = {
 ["Venom Spitter"] = {"Rainbow", "Bloodlit", "Electric", "Starstruck", "Frozen", "Aurora", "Ignited", "Shocked"},
 ["Venus Fly Trap"] = {"Rainbow", "Bloodlit", "Electric", "Starstruck", "Frozen", "Aurora", "Ignited", "Shocked"},
     "Mushroom",
-    "Bamboo",
+    "Rocket Pop",
     },
     ["Buy Pets"] = {
         ["Frog"] = {Big = 99, Huge = 99, Rainbow = 99},
