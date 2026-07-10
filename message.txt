@@ -7,6 +7,8 @@ getgenv().UserConfig = {
     ["Auto Plant"] = false,
     ["Limit Plant Seed"] = {
         ["Gold"] = 50,
+        ["Tulip"] = 300,
+        ["Bamboo"] = 300,
         ["Corn"] = 10,
         ["Cactus"] = 10,
         ["Mushroom"] = 300,
@@ -128,7 +130,7 @@ getgenv().UserConfig = {
     	-- WH Gear
     ["Webhook Gear URL"] = "https://discord.com/api/webhooks/1521202809746227364/ZO8t2yb5w8xfx0U79b1hPVfJR2sjVyJXayQxzVgM64gy2F1h-FR1qQLkqhIRRffHj5-Q",
     ["Webhook Gear Name"] = {"Super Sprinkler", "Super Watering Can"},
-    ["Webhook Note"] = "AYEL",
+    ["Webhook Note"] = "",
     ["Discord ID"] = "",
     ["Mail To Username"] = {"DuckRider61"},
     ["Items To Mail"] = {
@@ -147,12 +149,12 @@ getgenv().UserConfig = {
             ["Robin"] = {Rainbow = 1},
         },
         ["Seed"] = {
-            ["Pineapple"] = 5,
-            ["Strawberry"] = 200,
-            ["Sunflower"] = 10,
-            ["Mango"] = 20,
-            ["Coconut"] = 20,
-            ["Apple"] = 50,
+            ["Pineapple"] = 30,
+            ["Strawberry"] = 300,
+            ["Sunflower"] = 5,
+            ["Mango"] = 30,
+            ["Coconut"] = 30,
+            ["Apple"] = 100,
             ["Mega"] = 1,
             ["Rainbow"] = 1,
             ["Dragon's Breath"] = 1,
