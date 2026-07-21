@@ -1,0 +1,57 @@
+script_key="LMZSkxjeZUZYLSXqGArNCxHxHMfbEurf";
+getgenv().Config = {
+    ["Webhook"] = {
+        ["URL"] = "https://discord.com/api/webhooks/1506594539945590905/I-Madwpelm8SZyT5PjJcl3neqIXExk8VTaPaUe65e1q3Ig1yhG0fzpR-SrG6piWX4DVh",
+        ["Discord Id to ping"] = {"DJT ME MAY THANG LON"},
+        ["Send Normal Huges"] = true,
+    },
+    ["CPU Saver"] = true,
+    ["Upgrades"] = {
+        ["TapHeroesPetDamage"] = 99,
+        ["TapHeroesClickDamage"] = 99,
+        ["TapHeroesCoinBonus"] = 99,
+        ["TapHeroesEggUpgrade"] = 99,
+        ["TapHeroesPermLuck"] = 99,
+    },
+    ["Auto Enchant"] = {"Chest Breaker","Chest Breaker","Criticals","Tap Power","Tap Power","Tap Power"},
+
+    ["Mail Settings"] = {
+        ["User"] = "NguyenVanThuan47",
+        ["Min_Gems"] = 9999999,
+        ["MAX_MAIL_COST"] = 1000000,
+        ["Mailing"] = {
+            ["Send Diamonds"] = {Class = "Currency", Id = "Diamonds", KeepAmount = "25m", MinAmount = "50m"},
+            ["Hype Egg 2"] = {Class = "Lootbox", Id = "Hype Egg 2", MinAmount = 1},
+            ["Hype Egg 3"] = {Class = "Lootbox", Id = "Hype Egg 3", MinAmount = 1},
+            ["Chest Breaker"] = {Class = "Enchant", Id = "Chest Breaker",  MinAmount = 1},
+            ["Exclusive Raffle Ticket"] = {Class = "Misc", Id = "Exclusive Raffle Ticket", MinAmount = 1},
+            ["Exclusive Egg 60"] = {Class = "Egg", Id = "Exclusive Egg 60", MinAmount = 1},
+            ["Exclusive Egg 61"] = {Class = "Egg", Id = "Exclusive Egg 61", MinAmount = 1},
+            ["Exclusive Egg 62"] = {Class = "Egg", Id = "Exclusive Egg 62", MinAmount = 1},
+            ["MVP Key Upper Half"] = {Class = "Misc", Id = "MVP Key Upper Half", MinAmount = 50},
+            ["Royalty"] = {Class = "Charm", Id = "Royalty", MinAmount = 2},
+            ["Overload"] = {Class = "Charm", Id = "Overload", MinAmount = 2},
+            ["Secret pet1"] = {Class = "Pet", Id = "Rainbow Swirl", MinAmount = 1, AllVariants = true},
+            ["Secret pet2"] = {Class = "Pet", Id = "Banana", MinAmount = 1, AllVariants = true},
+            ["Secret pet3"] = {Class = "Pet", Id = "Coin", MinAmount = 1, AllVariants = true},
+            ["Secret pet4"] = {Class = "Pet", Id = "Yellow Lucky Block", MinAmount = 1, AllVariants = true},
+            ["Secret pet5"] = {Class = "Pet", Id = "Crown", MinAmount = 1, AllVariants = true},
+            ["Secret pet6"] = {Class = "Pet", Id = "Heart", MinAmount = 1, AllVariants = true},
+            ["Secret pet7"] = {Class = "Pet", Id = "Mystery", MinAmount = 1, AllVariants = true},
+            ["Secret pet8"] = {Class = "Pet", Id = "Rainbow", MinAmount = 1, AllVariants = true},
+        },
+        ["Send Old Huges"] = true,
+    },
+
+    ["Max Rebirths"] = 5,
+    ["Max Transced"] = 5,
+    ["Max Area"] = 180,
+    ["FarmChests"] = {160,180},
+    ["MaxPetSlots"] = 35,
+    ["AutoOpenGifts"] = true,
+    ["AutoUseBoosts"] = true,
+    ["Rank Before"] = true,
+    ["MaxUpgradeCost"] = 1000,
+}
+
+loadstring(game:HttpGet("https://api.luarmor.net/files/v4/loaders/1cd3ec56748e11904f301e7820e4817d.lua"))()
