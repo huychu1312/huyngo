@@ -32,7 +32,7 @@ getgenv().Config = {
         },
     },
     ["Webhook"] = {
-        ["URL"] = "https://discord.com/api/webhooks/1521202360133881856/jRRVi-PzUg-OhYQS-WIoP7F9mlSZNk1tH3fAZ_YIPiirx_cwWZ809e46UIke_2oNvSck",
+        ["URL"] = "https://discord.com/api/webhooks/1533930176981893200/Jp-e9dWTyU-d3rAt4ZuXxkjJHLaUrAxTRg1dKG5DH3JyCOcfhkD7Vz3wxJhXLuGapmbw",
         ["Discord Id to ping"] = {"Paule"},
         ["Send Normal Huges"] = true,
     },
