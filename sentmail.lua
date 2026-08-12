@@ -1,3 +1,4 @@
+task.wait(30)
 getgenv().AutoMailConfig = getgenv().AutoMailConfig or {}
 local Config = getgenv().AutoMailConfig
 
