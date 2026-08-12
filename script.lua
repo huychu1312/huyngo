@@ -1,6 +1,7 @@
 pcall(function()
     setfpscap(5)
 end)
+task.wait(30)
 script_key="LMZSkxjeZUZYLSXqGArNCxHxHMfbEurf";
 getgenv().Config = {
     ["CPU Saver"] = true,
