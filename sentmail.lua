@@ -6,22 +6,6 @@ local defaultConfig = {
     TargetUser = "NguyenVanThuan47", -- Tên người nhận (main account)
     Message = "ccbm",        -- Lời nhắn gửi kèm theo thư
 
-    -- Config Fiesta Gift
-    SendFiestaGift = true,            -- Tự động gửi Fiesta Gift
-    MinFiestaGift = 300,               -- Số lượng tối thiểu để gửi
-
-    -- Config Fiesta Key
-    SendFiestaKey = true,         -- Tự động gửi Fiesta Key
-    MinFiestaKey = 150,            -- Số lượng tối thiểu để gửi
-
-    -- Config Garden Rain Potion III
-    SendFiestaMazeDamageBooster2 = true,             -- Tự động gửi Garden Rain Potion III
-    MinFiestaMazeDamageBooster2 = 1,                 -- Số lượng tối thiểu để gửi
-
-    -- Config Garden Sunlight Potion III
-    SendFiestaMazeXPBooster2 = true,         -- Tự động gửi Garden Sunlight Potion III
-    MinFiestaMazeXPBooster2 = 1,             -- Số lượng tối thiểu để
-
     -- Config Pet Huge
     SendAnyHugePet = true,              -- Tự động gửi BẤT KỲ Pet Huge nào có trong kho đồ
     SendLockedHuge = true,             -- false: Bỏ qua Pet Huge đang bị Khóa (Lock) | true: Gửi cả con bị khóa
